@@ -22,347 +22,494 @@ Partial Class Data_Penjualan
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label11 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.DGpenjualan = New System.Windows.Forms.DataGridView()
+        Me.nomor = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.no_nota = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.tgl_beli = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nm_pembeli = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.jumlah_beli = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.total_harga = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.uraian_jual = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Ttgl_beli = New System.Windows.Forms.DateTimePicker()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Ttotal_harga = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.DGpembelian = New System.Windows.Forms.DataGridView()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.jumlah = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.id_detail = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.no = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.kode_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nama_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.harga_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.sub_total = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Bsimpan = New System.Windows.Forms.Button()
-        Me.DGbarang = New System.Windows.Forms.DataGridView()
-        Me.Label10 = New System.Windows.Forms.Label()
+        Me.DGkeranjang = New System.Windows.Forms.DataGridView()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.Tnama_barang = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.Tkode_barang = New System.Windows.Forms.ComboBox()
+        Me.Ckode_barang = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Ttotal_harga = New System.Windows.Forms.TextBox()
+        Me.Tsub_total = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
+        Me.Tharga_beli = New System.Windows.Forms.TextBox()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.Tjumlah = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.Ttgl_beli = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Tno_nota = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Tnm_pembeli = New System.Windows.Forms.TextBox()
+        Me.Turaian_jual = New System.Windows.Forms.TextBox()
+        Me.Tstok = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
-        CType(Me.DGpembelian, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DGbarang, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGpenjualan, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGkeranjang, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'Button3
+        '
+        Me.Button3.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(551, 554)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(125, 23)
+        Me.Button3.TabIndex = 135
+        Me.Button3.Text = "HAPUS PENJUALAN"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'DGpenjualan
+        '
+        Me.DGpenjualan.AllowUserToAddRows = False
+        Me.DGpenjualan.AllowUserToDeleteRows = False
+        Me.DGpenjualan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGpenjualan.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.nomor, Me.no_nota, Me.tgl_beli, Me.nm_pembeli, Me.jumlah_beli, Me.total_harga, Me.uraian_jual})
+        Me.DGpenjualan.Location = New System.Drawing.Point(29, 435)
+        Me.DGpenjualan.Name = "DGpenjualan"
+        Me.DGpenjualan.ReadOnly = True
+        Me.DGpenjualan.Size = New System.Drawing.Size(647, 113)
+        Me.DGpenjualan.TabIndex = 133
+        '
+        'nomor
+        '
+        Me.nomor.HeaderText = "Nomor"
+        Me.nomor.Name = "nomor"
+        Me.nomor.ReadOnly = True
+        '
+        'no_nota
+        '
+        Me.no_nota.HeaderText = "No Nota"
+        Me.no_nota.Name = "no_nota"
+        Me.no_nota.ReadOnly = True
+        '
+        'tgl_beli
+        '
+        Me.tgl_beli.HeaderText = "Tanggal Beli"
+        Me.tgl_beli.Name = "tgl_beli"
+        Me.tgl_beli.ReadOnly = True
+        '
+        'nm_pembeli
+        '
+        Me.nm_pembeli.HeaderText = "Nama Pembeli"
+        Me.nm_pembeli.Name = "nm_pembeli"
+        Me.nm_pembeli.ReadOnly = True
+        '
+        'jumlah_beli
+        '
+        Me.jumlah_beli.HeaderText = "Jumlah"
+        Me.jumlah_beli.Name = "jumlah_beli"
+        Me.jumlah_beli.ReadOnly = True
+        '
+        'total_harga
+        '
+        Me.total_harga.HeaderText = "Total Harga"
+        Me.total_harga.Name = "total_harga"
+        Me.total_harga.ReadOnly = True
+        '
+        'uraian_jual
+        '
+        Me.uraian_jual.HeaderText = "Uraian Jual"
+        Me.uraian_jual.Name = "uraian_jual"
+        Me.uraian_jual.ReadOnly = True
+        '
+        'Ttgl_beli
+        '
+        Me.Ttgl_beli.CustomFormat = "dd-MM-yyyy"
+        Me.Ttgl_beli.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.Ttgl_beli.Location = New System.Drawing.Point(128, 199)
+        Me.Ttgl_beli.Name = "Ttgl_beli"
+        Me.Ttgl_beli.Size = New System.Drawing.Size(170, 20)
+        Me.Ttgl_beli.TabIndex = 139
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(275, 390)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(93, 17)
+        Me.Label10.TabIndex = 138
+        Me.Label10.Text = "TOTAL HARGA"
+        '
+        'Ttotal_harga
+        '
+        Me.Ttotal_harga.Location = New System.Drawing.Point(383, 390)
+        Me.Ttotal_harga.Name = "Ttotal_harga"
+        Me.Ttotal_harga.ReadOnly = True
+        Me.Ttotal_harga.Size = New System.Drawing.Size(225, 20)
+        Me.Ttotal_harga.TabIndex = 137
         '
         'Label11
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label11.Location = New System.Drawing.Point(292, 109)
+        Me.Label11.Location = New System.Drawing.Point(289, 110)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(253, 28)
-        Me.Label11.TabIndex = 135
+        Me.Label11.TabIndex = 136
         Me.Label11.Text = "INPUT DATA PENJUALAN"
-        '
-        'Button3
-        '
-        Me.Button3.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(554, 517)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(125, 23)
-        Me.Button3.TabIndex = 134
-        Me.Button3.Text = "HAPUS PENJUALAN"
-        Me.Button3.UseVisualStyleBackColor = True
         '
         'Button4
         '
         Me.Button4.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(685, 449)
+        Me.Button4.Location = New System.Drawing.Point(682, 486)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(88, 62)
-        Me.Button4.TabIndex = 133
+        Me.Button4.TabIndex = 134
         Me.Button4.Text = "CETAK"
         Me.Button4.UseVisualStyleBackColor = True
-        '
-        'DGpembelian
-        '
-        Me.DGpembelian.AllowUserToAddRows = False
-        Me.DGpembelian.AllowUserToDeleteRows = False
-        Me.DGpembelian.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGpembelian.Location = New System.Drawing.Point(19, 398)
-        Me.DGpembelian.Name = "DGpembelian"
-        Me.DGpembelian.ReadOnly = True
-        Me.DGpembelian.Size = New System.Drawing.Size(660, 113)
-        Me.DGpembelian.TabIndex = 132
         '
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(648, 369)
+        Me.Button2.Location = New System.Drawing.Point(645, 390)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(125, 23)
-        Me.Button2.TabIndex = 131
+        Me.Button2.TabIndex = 132
         Me.Button2.Text = "HAPUS BARANG"
         Me.Button2.UseVisualStyleBackColor = True
+        '
+        'jumlah
+        '
+        Me.jumlah.HeaderText = "Jumlah"
+        Me.jumlah.Name = "jumlah"
+        Me.jumlah.ReadOnly = True
+        '
+        'id_detail
+        '
+        Me.id_detail.HeaderText = "id_detail"
+        Me.id_detail.Name = "id_detail"
+        Me.id_detail.ReadOnly = True
+        Me.id_detail.Visible = False
+        '
+        'no
+        '
+        Me.no.HeaderText = "No"
+        Me.no.Name = "no"
+        Me.no.ReadOnly = True
+        '
+        'kode_barang
+        '
+        Me.kode_barang.HeaderText = "Kode Barang"
+        Me.kode_barang.Name = "kode_barang"
+        Me.kode_barang.ReadOnly = True
+        '
+        'nama_barang
+        '
+        Me.nama_barang.HeaderText = "Nama Barang"
+        Me.nama_barang.Name = "nama_barang"
+        Me.nama_barang.ReadOnly = True
+        '
+        'harga_barang
+        '
+        Me.harga_barang.HeaderText = "Harga Barang"
+        Me.harga_barang.Name = "harga_barang"
+        Me.harga_barang.ReadOnly = True
+        '
+        'sub_total
+        '
+        Me.sub_total.HeaderText = "Sub Total"
+        Me.sub_total.Name = "sub_total"
+        Me.sub_total.ReadOnly = True
         '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(163, 369)
+        Me.Button1.Location = New System.Drawing.Point(640, 252)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(125, 23)
-        Me.Button1.TabIndex = 130
+        Me.Button1.TabIndex = 131
         Me.Button1.Text = "TAMBAH BARANG"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Bsimpan
         '
         Me.Bsimpan.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Bsimpan.Location = New System.Drawing.Point(310, 369)
+        Me.Bsimpan.Location = New System.Drawing.Point(29, 393)
         Me.Bsimpan.Name = "Bsimpan"
         Me.Bsimpan.Size = New System.Drawing.Size(154, 23)
-        Me.Bsimpan.TabIndex = 129
+        Me.Bsimpan.TabIndex = 130
         Me.Bsimpan.Text = "SIMPAN PENJUALAN"
         Me.Bsimpan.UseVisualStyleBackColor = True
         '
-        'DGbarang
+        'DGkeranjang
         '
-        Me.DGbarang.AllowUserToAddRows = False
-        Me.DGbarang.AllowUserToDeleteRows = False
-        Me.DGbarang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGbarang.Location = New System.Drawing.Point(310, 185)
-        Me.DGbarang.Name = "DGbarang"
-        Me.DGbarang.ReadOnly = True
-        Me.DGbarang.Size = New System.Drawing.Size(463, 178)
-        Me.DGbarang.TabIndex = 128
+        Me.DGkeranjang.AllowUserToAddRows = False
+        Me.DGkeranjang.AllowUserToDeleteRows = False
+        Me.DGkeranjang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGkeranjang.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id_detail, Me.no, Me.kode_barang, Me.nama_barang, Me.harga_barang, Me.jumlah, Me.sub_total})
+        Me.DGkeranjang.Location = New System.Drawing.Point(29, 281)
+        Me.DGkeranjang.Name = "DGkeranjang"
+        Me.DGkeranjang.ReadOnly = True
+        Me.DGkeranjang.Size = New System.Drawing.Size(741, 106)
+        Me.DGkeranjang.TabIndex = 129
         '
-        'Label10
+        'Label7
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label10.Location = New System.Drawing.Point(305, 151)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(99, 28)
-        Me.Label10.TabIndex = 127
-        Me.Label10.Text = "No Nota "
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(26, 252)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(78, 17)
+        Me.Label7.TabIndex = 127
+        Me.Label7.Text = "Keterangan"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(26, 225)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(96, 17)
+        Me.Label9.TabIndex = 125
+        Me.Label9.Text = "Nama Pembeli"
         '
         'Tnama_barang
         '
-        Me.Tnama_barang.Location = New System.Drawing.Point(118, 238)
+        Me.Tnama_barang.Location = New System.Drawing.Point(396, 199)
         Me.Tnama_barang.Name = "Tnama_barang"
-        Me.Tnama_barang.Size = New System.Drawing.Size(170, 20)
-        Me.Tnama_barang.TabIndex = 122
+        Me.Tnama_barang.ReadOnly = True
+        Me.Tnama_barang.Size = New System.Drawing.Size(150, 20)
+        Me.Tnama_barang.TabIndex = 124
         '
         'Label16
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(16, 238)
+        Me.Label16.Location = New System.Drawing.Point(304, 199)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(91, 17)
-        Me.Label16.TabIndex = 121
+        Me.Label16.TabIndex = 123
         Me.Label16.Text = "Nama Barang"
         '
-        'Tkode_barang
+        'Ckode_barang
         '
-        Me.Tkode_barang.FormattingEnabled = True
-        Me.Tkode_barang.Location = New System.Drawing.Point(118, 211)
-        Me.Tkode_barang.Name = "Tkode_barang"
-        Me.Tkode_barang.Size = New System.Drawing.Size(170, 21)
-        Me.Tkode_barang.TabIndex = 120
+        Me.Ckode_barang.FormattingEnabled = True
+        Me.Ckode_barang.Location = New System.Drawing.Point(396, 172)
+        Me.Ckode_barang.Name = "Ckode_barang"
+        Me.Ckode_barang.Size = New System.Drawing.Size(150, 21)
+        Me.Ckode_barang.TabIndex = 122
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(16, 211)
+        Me.Label4.Location = New System.Drawing.Point(304, 172)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(86, 17)
-        Me.Label4.TabIndex = 119
+        Me.Label4.TabIndex = 121
         Me.Label4.Text = "Kode barang"
         '
-        'Ttotal_harga
+        'Tsub_total
         '
-        Me.Ttotal_harga.Location = New System.Drawing.Point(118, 343)
-        Me.Ttotal_harga.Name = "Ttotal_harga"
-        Me.Ttotal_harga.Size = New System.Drawing.Size(170, 20)
-        Me.Ttotal_harga.TabIndex = 118
+        Me.Tsub_total.Location = New System.Drawing.Point(640, 227)
+        Me.Tsub_total.Name = "Tsub_total"
+        Me.Tsub_total.ReadOnly = True
+        Me.Tsub_total.Size = New System.Drawing.Size(130, 20)
+        Me.Tsub_total.TabIndex = 120
         '
         'Label14
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(16, 343)
+        Me.Label14.Location = New System.Drawing.Point(558, 227)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(78, 17)
-        Me.Label14.TabIndex = 117
-        Me.Label14.Text = "Total Harga"
+        Me.Label14.Size = New System.Drawing.Size(64, 17)
+        Me.Label14.TabIndex = 119
+        Me.Label14.Text = "Sub Total"
+        '
+        'Tharga_beli
+        '
+        Me.Tharga_beli.Location = New System.Drawing.Point(640, 199)
+        Me.Tharga_beli.Name = "Tharga_beli"
+        Me.Tharga_beli.ReadOnly = True
+        Me.Tharga_beli.Size = New System.Drawing.Size(130, 20)
+        Me.Tharga_beli.TabIndex = 118
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(558, 199)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(70, 17)
+        Me.Label13.TabIndex = 117
+        Me.Label13.Text = "Harga Beli"
         '
         'Tjumlah
         '
-        Me.Tjumlah.Location = New System.Drawing.Point(118, 317)
+        Me.Tjumlah.Location = New System.Drawing.Point(640, 173)
         Me.Tjumlah.Name = "Tjumlah"
-        Me.Tjumlah.Size = New System.Drawing.Size(80, 20)
-        Me.Tjumlah.TabIndex = 114
+        Me.Tjumlah.Size = New System.Drawing.Size(130, 20)
+        Me.Tjumlah.TabIndex = 116
         '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(16, 317)
+        Me.Label8.Location = New System.Drawing.Point(558, 172)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(51, 17)
-        Me.Label8.TabIndex = 113
-        Me.Label8.Text = "Jumlah"
-        '
-        'Ttgl_beli
-        '
-        Me.Ttgl_beli.Location = New System.Drawing.Point(118, 185)
-        Me.Ttgl_beli.Name = "Ttgl_beli"
-        Me.Ttgl_beli.Size = New System.Drawing.Size(170, 20)
-        Me.Ttgl_beli.TabIndex = 112
+        Me.Label8.Size = New System.Drawing.Size(76, 17)
+        Me.Label8.TabIndex = 115
+        Me.Label8.Text = "Jumlah Beli"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(16, 185)
+        Me.Label6.Location = New System.Drawing.Point(26, 199)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(82, 17)
-        Me.Label6.TabIndex = 111
-        Me.Label6.Text = "Tanggal Jual"
+        Me.Label6.Size = New System.Drawing.Size(80, 17)
+        Me.Label6.TabIndex = 114
+        Me.Label6.Text = "Tanggal Beli"
         '
         'Tno_nota
         '
-        Me.Tno_nota.Location = New System.Drawing.Point(118, 159)
+        Me.Tno_nota.Location = New System.Drawing.Point(128, 173)
         Me.Tno_nota.Name = "Tno_nota"
         Me.Tno_nota.Size = New System.Drawing.Size(170, 20)
-        Me.Tno_nota.TabIndex = 110
+        Me.Tno_nota.TabIndex = 113
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(16, 159)
+        Me.Label5.Location = New System.Drawing.Point(26, 173)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(85, 17)
-        Me.Label5.TabIndex = 109
+        Me.Label5.TabIndex = 112
         Me.Label5.Text = "Nomor Nota"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label3.Location = New System.Drawing.Point(207, 81)
+        Me.Label3.Location = New System.Drawing.Point(204, 82)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(420, 28)
-        Me.Label3.TabIndex = 108
+        Me.Label3.TabIndex = 111
         Me.Label3.Text = "Hp. 0812 1904 1567 - Hp. 0852 6983 4202"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label2.Location = New System.Drawing.Point(198, 53)
+        Me.Label2.Location = New System.Drawing.Point(195, 54)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(439, 28)
-        Me.Label2.TabIndex = 107
+        Me.Label2.TabIndex = 110
         Me.Label2.Text = "Desa Karya Mulya Jl.Lintas Bengkulu-Padang"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(239, -1)
+        Me.Label1.Location = New System.Drawing.Point(236, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(357, 54)
-        Me.Label1.TabIndex = 106
+        Me.Label1.TabIndex = 109
         Me.Label1.Text = "Toko Ririn Busana"
         '
-        'TextBox1
+        'Tnm_pembeli
         '
-        Me.TextBox1.Location = New System.Drawing.Point(118, 264)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(80, 20)
-        Me.TextBox1.TabIndex = 137
+        Me.Tnm_pembeli.Location = New System.Drawing.Point(128, 227)
+        Me.Tnm_pembeli.Name = "Tnm_pembeli"
+        Me.Tnm_pembeli.Size = New System.Drawing.Size(170, 20)
+        Me.Tnm_pembeli.TabIndex = 140
         '
-        'Label7
+        'Turaian_jual
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(16, 264)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(41, 17)
-        Me.Label7.TabIndex = 136
-        Me.Label7.Text = "Stock"
+        Me.Turaian_jual.Location = New System.Drawing.Point(128, 252)
+        Me.Turaian_jual.Name = "Turaian_jual"
+        Me.Turaian_jual.Size = New System.Drawing.Size(170, 20)
+        Me.Turaian_jual.TabIndex = 141
         '
-        'TextBox2
+        'Tstok
         '
-        Me.TextBox2.Location = New System.Drawing.Point(118, 290)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(170, 20)
-        Me.TextBox2.TabIndex = 139
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(16, 290)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(45, 17)
-        Me.Label9.TabIndex = 138
-        Me.Label9.Text = "Harga"
+        Me.Tstok.Location = New System.Drawing.Point(396, 225)
+        Me.Tstok.Name = "Tstok"
+        Me.Tstok.ReadOnly = True
+        Me.Tstok.Size = New System.Drawing.Size(150, 20)
+        Me.Tstok.TabIndex = 142
         '
         'Label12
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(209, 264)
+        Me.Label12.Location = New System.Drawing.Point(304, 225)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(50, 17)
-        Me.Label12.TabIndex = 140
-        Me.Label12.Text = "Satuan"
+        Me.Label12.Size = New System.Drawing.Size(0, 17)
+        Me.Label12.TabIndex = 143
         '
         'Label15
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(204, 317)
+        Me.Label15.Location = New System.Drawing.Point(304, 225)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(50, 17)
-        Me.Label15.TabIndex = 141
-        Me.Label15.Text = "Satuan"
+        Me.Label15.Size = New System.Drawing.Size(35, 17)
+        Me.Label15.TabIndex = 144
+        Me.Label15.Text = "Stok"
         '
         'Data_Penjualan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label12)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.Tstok)
+        Me.Controls.Add(Me.Turaian_jual)
+        Me.Controls.Add(Me.Tnm_pembeli)
         Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.DGpenjualan)
+        Me.Controls.Add(Me.Ttgl_beli)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Ttotal_harga)
+        Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.DGpembelian)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Bsimpan)
-        Me.Controls.Add(Me.DGbarang)
-        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.DGkeranjang)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Tnama_barang)
         Me.Controls.Add(Me.Label16)
-        Me.Controls.Add(Me.Tkode_barang)
+        Me.Controls.Add(Me.Ckode_barang)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Ttotal_harga)
+        Me.Controls.Add(Me.Tsub_total)
         Me.Controls.Add(Me.Label14)
+        Me.Controls.Add(Me.Tharga_beli)
+        Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Tjumlah)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Ttgl_beli)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Tno_nota)
         Me.Controls.Add(Me.Label5)
@@ -370,42 +517,60 @@ Partial Class Data_Penjualan
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Data_Penjualan"
-        Me.Size = New System.Drawing.Size(788, 549)
-        CType(Me.DGpembelian, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DGbarang, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Size = New System.Drawing.Size(792, 584)
+        CType(Me.DGpenjualan, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGkeranjang, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Label11 As Label
     Friend WithEvents Button3 As Button
+    Friend WithEvents DGpenjualan As DataGridView
+    Friend WithEvents Ttgl_beli As DateTimePicker
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Ttotal_harga As TextBox
+    Friend WithEvents Label11 As Label
     Friend WithEvents Button4 As Button
-    Friend WithEvents DGpembelian As DataGridView
     Friend WithEvents Button2 As Button
+    Friend WithEvents jumlah As DataGridViewTextBoxColumn
+    Friend WithEvents id_detail As DataGridViewTextBoxColumn
+    Friend WithEvents no As DataGridViewTextBoxColumn
+    Friend WithEvents kode_barang As DataGridViewTextBoxColumn
+    Friend WithEvents nama_barang As DataGridViewTextBoxColumn
+    Friend WithEvents harga_barang As DataGridViewTextBoxColumn
+    Friend WithEvents sub_total As DataGridViewTextBoxColumn
     Friend WithEvents Button1 As Button
     Friend WithEvents Bsimpan As Button
-    Friend WithEvents DGbarang As DataGridView
-    Friend WithEvents Label10 As Label
+    Friend WithEvents DGkeranjang As DataGridView
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label9 As Label
     Friend WithEvents Tnama_barang As TextBox
     Friend WithEvents Label16 As Label
-    Friend WithEvents Tkode_barang As ComboBox
+    Friend WithEvents Ckode_barang As ComboBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents Ttotal_harga As TextBox
+    Friend WithEvents Tsub_total As TextBox
     Friend WithEvents Label14 As Label
+    Friend WithEvents Tharga_beli As TextBox
+    Friend WithEvents Label13 As Label
     Friend WithEvents Tjumlah As TextBox
     Friend WithEvents Label8 As Label
-    Friend WithEvents Ttgl_beli As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Tno_nota As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Label9 As Label
+    Friend WithEvents Tnm_pembeli As TextBox
+    Friend WithEvents Turaian_jual As TextBox
+    Friend WithEvents nomor As DataGridViewTextBoxColumn
+    Friend WithEvents no_nota As DataGridViewTextBoxColumn
+    Friend WithEvents tgl_beli As DataGridViewTextBoxColumn
+    Friend WithEvents nm_pembeli As DataGridViewTextBoxColumn
+    Friend WithEvents jumlah_beli As DataGridViewTextBoxColumn
+    Friend WithEvents total_harga As DataGridViewTextBoxColumn
+    Friend WithEvents uraian_jual As DataGridViewTextBoxColumn
+    Friend WithEvents Tstok As TextBox
     Friend WithEvents Label12 As Label
     Friend WithEvents Label15 As Label
 End Class

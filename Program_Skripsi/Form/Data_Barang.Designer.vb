@@ -34,6 +34,17 @@ Partial Class Data_Barang
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.DGbarang = New System.Windows.Forms.DataGridView()
+        Me.no = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.kode_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nama_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.harga_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.stock = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.biaya_pesan = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.biaya_simpan = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.jml_kebutuhan = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.leadtime = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.stock_cadangan = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.satuan = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -53,17 +64,6 @@ Partial Class Data_Barang
         Me.Tharga_barang = New System.Windows.Forms.NumericUpDown()
         Me.Tstock = New System.Windows.Forms.NumericUpDown()
         Me.Tcadangan = New System.Windows.Forms.NumericUpDown()
-        Me.no = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.kode_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.nama_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.harga_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.stock = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.biaya_pesan = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.biaya_simpan = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.jml_kebutuhan = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.leadtime = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.stock_cadangan = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.satuan = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DGbarang, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tbiaya_pesan, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tbiaya_simpan, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -188,6 +188,72 @@ Partial Class Data_Barang
         Me.DGbarang.ReadOnly = True
         Me.DGbarang.Size = New System.Drawing.Size(486, 150)
         Me.DGbarang.TabIndex = 51
+        '
+        'no
+        '
+        Me.no.HeaderText = "No"
+        Me.no.Name = "no"
+        Me.no.ReadOnly = True
+        '
+        'kode_barang
+        '
+        Me.kode_barang.HeaderText = "Kode Barang"
+        Me.kode_barang.Name = "kode_barang"
+        Me.kode_barang.ReadOnly = True
+        '
+        'nama_barang
+        '
+        Me.nama_barang.HeaderText = "Nama Barang"
+        Me.nama_barang.Name = "nama_barang"
+        Me.nama_barang.ReadOnly = True
+        '
+        'harga_barang
+        '
+        Me.harga_barang.HeaderText = "Harga Barang"
+        Me.harga_barang.Name = "harga_barang"
+        Me.harga_barang.ReadOnly = True
+        '
+        'stock
+        '
+        Me.stock.HeaderText = "Stock"
+        Me.stock.Name = "stock"
+        Me.stock.ReadOnly = True
+        '
+        'biaya_pesan
+        '
+        Me.biaya_pesan.HeaderText = "Biaya Pesan"
+        Me.biaya_pesan.Name = "biaya_pesan"
+        Me.biaya_pesan.ReadOnly = True
+        '
+        'biaya_simpan
+        '
+        Me.biaya_simpan.HeaderText = "Biaya Simpan"
+        Me.biaya_simpan.Name = "biaya_simpan"
+        Me.biaya_simpan.ReadOnly = True
+        '
+        'jml_kebutuhan
+        '
+        Me.jml_kebutuhan.HeaderText = "Jumlah Kebutuhan"
+        Me.jml_kebutuhan.Name = "jml_kebutuhan"
+        Me.jml_kebutuhan.ReadOnly = True
+        '
+        'leadtime
+        '
+        Me.leadtime.HeaderText = "Leadtime"
+        Me.leadtime.Name = "leadtime"
+        Me.leadtime.ReadOnly = True
+        '
+        'stock_cadangan
+        '
+        Me.stock_cadangan.HeaderText = "Stock Cadangan"
+        Me.stock_cadangan.Name = "stock_cadangan"
+        Me.stock_cadangan.ReadOnly = True
+        '
+        'satuan
+        '
+        Me.satuan.HeaderText = "Satuan"
+        Me.satuan.Name = "satuan"
+        Me.satuan.ReadOnly = True
         '
         'Button3
         '
@@ -316,6 +382,7 @@ Partial Class Data_Barang
         'Tbiaya_pesan
         '
         Me.Tbiaya_pesan.Increment = New Decimal(New Integer() {1, 0, 0, 65536})
+        Me.Tbiaya_pesan.InterceptArrowKeys = False
         Me.Tbiaya_pesan.Location = New System.Drawing.Point(433, 160)
         Me.Tbiaya_pesan.Maximum = New Decimal(New Integer() {100000000, 0, 0, 0})
         Me.Tbiaya_pesan.Name = "Tbiaya_pesan"
@@ -325,6 +392,7 @@ Partial Class Data_Barang
         'Tbiaya_simpan
         '
         Me.Tbiaya_simpan.Increment = New Decimal(New Integer() {1, 0, 0, 65536})
+        Me.Tbiaya_simpan.InterceptArrowKeys = False
         Me.Tbiaya_simpan.Location = New System.Drawing.Point(433, 193)
         Me.Tbiaya_simpan.Maximum = New Decimal(New Integer() {100000000, 0, 0, 0})
         Me.Tbiaya_simpan.Name = "Tbiaya_simpan"
@@ -362,72 +430,6 @@ Partial Class Data_Barang
         Me.Tcadangan.Name = "Tcadangan"
         Me.Tcadangan.Size = New System.Drawing.Size(170, 20)
         Me.Tcadangan.TabIndex = 73
-        '
-        'no
-        '
-        Me.no.HeaderText = "No"
-        Me.no.Name = "no"
-        Me.no.ReadOnly = True
-        '
-        'kode_barang
-        '
-        Me.kode_barang.HeaderText = "Kode Barang"
-        Me.kode_barang.Name = "kode_barang"
-        Me.kode_barang.ReadOnly = True
-        '
-        'nama_barang
-        '
-        Me.nama_barang.HeaderText = "Nama Barang"
-        Me.nama_barang.Name = "nama_barang"
-        Me.nama_barang.ReadOnly = True
-        '
-        'harga_barang
-        '
-        Me.harga_barang.HeaderText = "Harga Barang"
-        Me.harga_barang.Name = "harga_barang"
-        Me.harga_barang.ReadOnly = True
-        '
-        'stock
-        '
-        Me.stock.HeaderText = "Stock"
-        Me.stock.Name = "stock"
-        Me.stock.ReadOnly = True
-        '
-        'biaya_pesan
-        '
-        Me.biaya_pesan.HeaderText = "Biaya Pesan"
-        Me.biaya_pesan.Name = "biaya_pesan"
-        Me.biaya_pesan.ReadOnly = True
-        '
-        'biaya_simpan
-        '
-        Me.biaya_simpan.HeaderText = "Biaya Simpan"
-        Me.biaya_simpan.Name = "biaya_simpan"
-        Me.biaya_simpan.ReadOnly = True
-        '
-        'jml_kebutuhan
-        '
-        Me.jml_kebutuhan.HeaderText = "Jumlah Kebutuhan"
-        Me.jml_kebutuhan.Name = "jml_kebutuhan"
-        Me.jml_kebutuhan.ReadOnly = True
-        '
-        'leadtime
-        '
-        Me.leadtime.HeaderText = "Leadtime"
-        Me.leadtime.Name = "leadtime"
-        Me.leadtime.ReadOnly = True
-        '
-        'stock_cadangan
-        '
-        Me.stock_cadangan.HeaderText = "Stock Cadangan"
-        Me.stock_cadangan.Name = "stock_cadangan"
-        Me.stock_cadangan.ReadOnly = True
-        '
-        'satuan
-        '
-        Me.satuan.HeaderText = "Satuan"
-        Me.satuan.Name = "satuan"
-        Me.satuan.ReadOnly = True
         '
         'Data_Barang
         '

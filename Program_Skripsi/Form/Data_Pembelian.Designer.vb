@@ -31,7 +31,6 @@ Partial Class Data_Pembelian
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Tjumlah = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.Ttgl_beli = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Tno_nota = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -44,12 +43,6 @@ Partial Class Data_Pembelian
         Me.Ckode_supplier = New System.Windows.Forms.ComboBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.DGkeranjang = New System.Windows.Forms.DataGridView()
-        Me.no = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.kode_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.nama_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.harga_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.jumlah = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.sub_total = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Bsimpan = New System.Windows.Forms.Button()
@@ -64,8 +57,16 @@ Partial Class Data_Pembelian
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Ttotal_harga = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.Ttgl_beli = New System.Windows.Forms.DateTimePicker()
+        Me.id_detail = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.no = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.kode_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nama_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.harga_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.jumlah = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.sub_total = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DGkeranjang, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DGpembelian, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -151,13 +152,6 @@ Partial Class Data_Pembelian
         Me.Label8.TabIndex = 72
         Me.Label8.Text = "Jumlah Beli"
         '
-        'Ttgl_beli
-        '
-        Me.Ttgl_beli.Location = New System.Drawing.Point(140, 199)
-        Me.Ttgl_beli.Name = "Ttgl_beli"
-        Me.Ttgl_beli.Size = New System.Drawing.Size(170, 20)
-        Me.Ttgl_beli.TabIndex = 71
-        '
         'Label6
         '
         Me.Label6.AutoSize = True
@@ -172,7 +166,6 @@ Partial Class Data_Pembelian
         '
         Me.Tno_nota.Location = New System.Drawing.Point(140, 173)
         Me.Tno_nota.Name = "Tno_nota"
-        Me.Tno_nota.ReadOnly = True
         Me.Tno_nota.Size = New System.Drawing.Size(170, 20)
         Me.Tno_nota.TabIndex = 69
         '
@@ -263,48 +256,12 @@ Partial Class Data_Pembelian
         Me.DGkeranjang.AllowUserToAddRows = False
         Me.DGkeranjang.AllowUserToDeleteRows = False
         Me.DGkeranjang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGkeranjang.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.no, Me.kode_barang, Me.nama_barang, Me.harga_barang, Me.jumlah, Me.sub_total})
+        Me.DGkeranjang.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id_detail, Me.no, Me.kode_barang, Me.nama_barang, Me.harga_barang, Me.jumlah, Me.sub_total})
         Me.DGkeranjang.Location = New System.Drawing.Point(41, 280)
         Me.DGkeranjang.Name = "DGkeranjang"
         Me.DGkeranjang.ReadOnly = True
         Me.DGkeranjang.Size = New System.Drawing.Size(741, 84)
         Me.DGkeranjang.TabIndex = 98
-        '
-        'no
-        '
-        Me.no.HeaderText = "No"
-        Me.no.Name = "no"
-        Me.no.ReadOnly = True
-        '
-        'kode_barang
-        '
-        Me.kode_barang.HeaderText = "Kode Barang"
-        Me.kode_barang.Name = "kode_barang"
-        Me.kode_barang.ReadOnly = True
-        '
-        'nama_barang
-        '
-        Me.nama_barang.HeaderText = "Nama Barang"
-        Me.nama_barang.Name = "nama_barang"
-        Me.nama_barang.ReadOnly = True
-        '
-        'harga_barang
-        '
-        Me.harga_barang.HeaderText = "Harga Barang"
-        Me.harga_barang.Name = "harga_barang"
-        Me.harga_barang.ReadOnly = True
-        '
-        'jumlah
-        '
-        Me.jumlah.HeaderText = "Jumlah"
-        Me.jumlah.Name = "jumlah"
-        Me.jumlah.ReadOnly = True
-        '
-        'sub_total
-        '
-        Me.sub_total.HeaderText = "Sub Total"
-        Me.sub_total.Name = "sub_total"
-        Me.sub_total.ReadOnly = True
         '
         'Button2
         '
@@ -420,13 +377,13 @@ Partial Class Data_Pembelian
         Me.Label11.TabIndex = 105
         Me.Label11.Text = "INPUT DATA PEMBELIAN"
         '
-        'TextBox1
+        'Ttotal_harga
         '
-        Me.TextBox1.Location = New System.Drawing.Point(395, 367)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(225, 20)
-        Me.TextBox1.TabIndex = 106
+        Me.Ttotal_harga.Location = New System.Drawing.Point(395, 367)
+        Me.Ttotal_harga.Name = "Ttotal_harga"
+        Me.Ttotal_harga.ReadOnly = True
+        Me.Ttotal_harga.Size = New System.Drawing.Size(225, 20)
+        Me.Ttotal_harga.TabIndex = 106
         '
         'Label10
         '
@@ -438,13 +395,66 @@ Partial Class Data_Pembelian
         Me.Label10.TabIndex = 107
         Me.Label10.Text = "TOTAL HARGA"
         '
+        'Ttgl_beli
+        '
+        Me.Ttgl_beli.CustomFormat = "dd-MM-yyyy"
+        Me.Ttgl_beli.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.Ttgl_beli.Location = New System.Drawing.Point(140, 199)
+        Me.Ttgl_beli.Name = "Ttgl_beli"
+        Me.Ttgl_beli.Size = New System.Drawing.Size(170, 20)
+        Me.Ttgl_beli.TabIndex = 108
+        '
+        'id_detail
+        '
+        Me.id_detail.HeaderText = "id_detail"
+        Me.id_detail.Name = "id_detail"
+        Me.id_detail.ReadOnly = True
+        Me.id_detail.Visible = False
+        '
+        'no
+        '
+        Me.no.HeaderText = "No"
+        Me.no.Name = "no"
+        Me.no.ReadOnly = True
+        '
+        'kode_barang
+        '
+        Me.kode_barang.HeaderText = "Kode Barang"
+        Me.kode_barang.Name = "kode_barang"
+        Me.kode_barang.ReadOnly = True
+        '
+        'nama_barang
+        '
+        Me.nama_barang.HeaderText = "Nama Barang"
+        Me.nama_barang.Name = "nama_barang"
+        Me.nama_barang.ReadOnly = True
+        '
+        'harga_barang
+        '
+        Me.harga_barang.HeaderText = "Harga Barang"
+        Me.harga_barang.Name = "harga_barang"
+        Me.harga_barang.ReadOnly = True
+        '
+        'jumlah
+        '
+        Me.jumlah.HeaderText = "Jumlah"
+        Me.jumlah.Name = "jumlah"
+        Me.jumlah.ReadOnly = True
+        '
+        'sub_total
+        '
+        Me.sub_total.HeaderText = "Sub Total"
+        Me.sub_total.Name = "sub_total"
+        Me.sub_total.ReadOnly = True
+        '
         'Data_Pembelian
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Controls.Add(Me.Ttgl_beli)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Ttotal_harga)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button4)
@@ -467,7 +477,6 @@ Partial Class Data_Pembelian
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Tjumlah)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Ttgl_beli)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Tno_nota)
         Me.Controls.Add(Me.Label5)
@@ -492,7 +501,6 @@ Partial Class Data_Pembelian
     Friend WithEvents Label13 As Label
     Friend WithEvents Tjumlah As TextBox
     Friend WithEvents Label8 As Label
-    Friend WithEvents Ttgl_beli As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Tno_nota As TextBox
     Friend WithEvents Label5 As Label
@@ -512,12 +520,6 @@ Partial Class Data_Pembelian
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Label11 As Label
-    Friend WithEvents no As DataGridViewTextBoxColumn
-    Friend WithEvents kode_barang As DataGridViewTextBoxColumn
-    Friend WithEvents nama_barang As DataGridViewTextBoxColumn
-    Friend WithEvents harga_barang As DataGridViewTextBoxColumn
-    Friend WithEvents jumlah As DataGridViewTextBoxColumn
-    Friend WithEvents sub_total As DataGridViewTextBoxColumn
     Friend WithEvents nomor As DataGridViewTextBoxColumn
     Friend WithEvents no_nota As DataGridViewTextBoxColumn
     Friend WithEvents tgl_beli As DataGridViewTextBoxColumn
@@ -525,6 +527,14 @@ Partial Class Data_Pembelian
     Friend WithEvents nama_supplier As DataGridViewTextBoxColumn
     Friend WithEvents jumlah_beli As DataGridViewTextBoxColumn
     Friend WithEvents total_harga As DataGridViewTextBoxColumn
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Ttotal_harga As TextBox
     Friend WithEvents Label10 As Label
+    Friend WithEvents Ttgl_beli As DateTimePicker
+    Friend WithEvents id_detail As DataGridViewTextBoxColumn
+    Friend WithEvents no As DataGridViewTextBoxColumn
+    Friend WithEvents kode_barang As DataGridViewTextBoxColumn
+    Friend WithEvents nama_barang As DataGridViewTextBoxColumn
+    Friend WithEvents harga_barang As DataGridViewTextBoxColumn
+    Friend WithEvents jumlah As DataGridViewTextBoxColumn
+    Friend WithEvents sub_total As DataGridViewTextBoxColumn
 End Class

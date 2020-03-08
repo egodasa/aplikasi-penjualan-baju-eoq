@@ -21,16 +21,19 @@
         Me.Controls.Add(FBarang)
         Me.Controls.Add(FSupplier)
         Me.Controls.Add(FPembelian)
+        Me.Controls.Add(FPenjualan)
         Me.Controls.Add(FLaporanBarang)
         ShowForm(FBeranda, Me)
     End Sub
 
     Private Sub Tampil_Barang(sender As Object, e As EventArgs) Handles BarangToolStripMenuItem.Click
         ShowForm(FBarang, Me)
+        FBarang.BukaForm()
     End Sub
 
     Private Sub Tampil_Supplier(sender As Object, e As EventArgs) Handles SupplierToolStripMenuItem.Click
         ShowForm(FSupplier, Me)
+        FSupplier.BukaForm()
     End Sub
 
     Private Sub Tampil_Menu_Utama(sender As Object, e As EventArgs) Handles InputToolStripMenuItem.Click
@@ -39,10 +42,12 @@
 
     Private Sub Tampil_Pembelian(sender As Object, e As EventArgs) Handles PembelianToolStripMenuItem.Click
         ShowForm(FPembelian, Me)
+        FPembelian.BukaForm()
     End Sub
 
     Private Sub Tampil_Penjualan(sender As Object, e As EventArgs) Handles PenjualanToolStripMenuItem.Click
         ShowForm(FPenjualan, Me)
+        FPenjualan.BukaForm()
     End Sub
 
     Private Sub LaporanBarang(sender As Object, e As EventArgs) Handles BarangToolStripMenuItem1.Click

@@ -130,7 +130,7 @@
         AmbilData()
     End Sub
 
-    Private Sub Data_Barang_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Public Sub BukaForm()
         TampilData()
     End Sub
 End Class

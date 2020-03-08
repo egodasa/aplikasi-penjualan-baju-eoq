@@ -87,11 +87,12 @@
         HapusData()
     End Sub
 
-    Private Sub BukaForm(sender As Object, e As EventArgs) Handles MyBase.Load
+    Public Sub BukaForm()
         TampilData()
     End Sub
 
     Private Sub Edit(sender As Object, e As EventArgs) Handles Button1.Click
         EditData()
     End Sub
+
 End Class

@@ -24,36 +24,20 @@ Partial Class Data_Barang
     Private Sub InitializeComponent()
         Me.Tsatuan = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.Tcadangan = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.Tstock = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Tleadtime = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.Tjumlah_kebutuhan = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.Tbiaya_simpan = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Tbiaya_pesan = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.DGbarang = New System.Windows.Forms.DataGridView()
-        Me.no = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.kode_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.harga_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.stock = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.biaya_pesan = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.biaya_simpan = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.jml_kebutuhan = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.leadtime = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.stock_cadangan = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.satuan = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Bsimpan = New System.Windows.Forms.Button()
-        Me.Tharga_barang = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Tnama_barang = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -63,7 +47,30 @@ Partial Class Data_Barang
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Tbiaya_pesan = New System.Windows.Forms.NumericUpDown()
+        Me.Tbiaya_simpan = New System.Windows.Forms.NumericUpDown()
+        Me.Tjml_kebutuhan = New System.Windows.Forms.NumericUpDown()
+        Me.Tharga_barang = New System.Windows.Forms.NumericUpDown()
+        Me.Tstock = New System.Windows.Forms.NumericUpDown()
+        Me.Tcadangan = New System.Windows.Forms.NumericUpDown()
+        Me.no = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.kode_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nama_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.harga_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.stock = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.biaya_pesan = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.biaya_simpan = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.jml_kebutuhan = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.leadtime = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.stock_cadangan = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.satuan = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DGbarang, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Tbiaya_pesan, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Tbiaya_simpan, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Tjml_kebutuhan, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Tharga_barang, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Tstock, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Tcadangan, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Tsatuan
@@ -83,13 +90,6 @@ Partial Class Data_Barang
         Me.Label15.TabIndex = 66
         Me.Label15.Text = "Satuan"
         '
-        'Tcadangan
-        '
-        Me.Tcadangan.Location = New System.Drawing.Point(122, 283)
-        Me.Tcadangan.Name = "Tcadangan"
-        Me.Tcadangan.Size = New System.Drawing.Size(170, 20)
-        Me.Tcadangan.TabIndex = 65
-        '
         'Label14
         '
         Me.Label14.AutoSize = True
@@ -99,13 +99,6 @@ Partial Class Data_Barang
         Me.Label14.Size = New System.Drawing.Size(69, 17)
         Me.Label14.TabIndex = 64
         Me.Label14.Text = "Cadangan"
-        '
-        'Tstock
-        '
-        Me.Tstock.Location = New System.Drawing.Point(122, 255)
-        Me.Tstock.Name = "Tstock"
-        Me.Tstock.Size = New System.Drawing.Size(170, 20)
-        Me.Tstock.TabIndex = 63
         '
         'Label13
         '
@@ -144,13 +137,6 @@ Partial Class Data_Barang
         Me.Label11.TabIndex = 59
         Me.Label11.Text = "/Tahun"
         '
-        'Tjumlah_kebutuhan
-        '
-        Me.Tjumlah_kebutuhan.Location = New System.Drawing.Point(434, 226)
-        Me.Tjumlah_kebutuhan.Name = "Tjumlah_kebutuhan"
-        Me.Tjumlah_kebutuhan.Size = New System.Drawing.Size(113, 20)
-        Me.Tjumlah_kebutuhan.TabIndex = 58
-        '
         'Label10
         '
         Me.Label10.AutoSize = True
@@ -161,13 +147,6 @@ Partial Class Data_Barang
         Me.Label10.TabIndex = 57
         Me.Label10.Text = "Jumlah Kebutuhan"
         '
-        'Tbiaya_simpan
-        '
-        Me.Tbiaya_simpan.Location = New System.Drawing.Point(433, 193)
-        Me.Tbiaya_simpan.Name = "Tbiaya_simpan"
-        Me.Tbiaya_simpan.Size = New System.Drawing.Size(170, 20)
-        Me.Tbiaya_simpan.TabIndex = 56
-        '
         'Label9
         '
         Me.Label9.AutoSize = True
@@ -177,13 +156,6 @@ Partial Class Data_Barang
         Me.Label9.Size = New System.Drawing.Size(89, 17)
         Me.Label9.TabIndex = 55
         Me.Label9.Text = "Biaya Simpan"
-        '
-        'Tbiaya_pesan
-        '
-        Me.Tbiaya_pesan.Location = New System.Drawing.Point(433, 161)
-        Me.Tbiaya_pesan.Name = "Tbiaya_pesan"
-        Me.Tbiaya_pesan.Size = New System.Drawing.Size(170, 20)
-        Me.Tbiaya_pesan.TabIndex = 54
         '
         'Label7
         '
@@ -210,72 +182,12 @@ Partial Class Data_Barang
         Me.DGbarang.AllowUserToAddRows = False
         Me.DGbarang.AllowUserToDeleteRows = False
         Me.DGbarang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGbarang.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.no, Me.kode_barang, Me.harga_barang, Me.stock, Me.biaya_pesan, Me.biaya_simpan, Me.jml_kebutuhan, Me.leadtime, Me.stock_cadangan, Me.satuan})
+        Me.DGbarang.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.no, Me.kode_barang, Me.nama_barang, Me.harga_barang, Me.stock, Me.biaya_pesan, Me.biaya_simpan, Me.jml_kebutuhan, Me.leadtime, Me.stock_cadangan, Me.satuan})
         Me.DGbarang.Location = New System.Drawing.Point(23, 351)
         Me.DGbarang.Name = "DGbarang"
         Me.DGbarang.ReadOnly = True
         Me.DGbarang.Size = New System.Drawing.Size(486, 150)
         Me.DGbarang.TabIndex = 51
-        '
-        'no
-        '
-        Me.no.HeaderText = "No"
-        Me.no.Name = "no"
-        Me.no.ReadOnly = True
-        '
-        'kode_barang
-        '
-        Me.kode_barang.HeaderText = "Kode Barang"
-        Me.kode_barang.Name = "kode_barang"
-        Me.kode_barang.ReadOnly = True
-        '
-        'harga_barang
-        '
-        Me.harga_barang.HeaderText = "Harga Barang"
-        Me.harga_barang.Name = "harga_barang"
-        Me.harga_barang.ReadOnly = True
-        '
-        'stock
-        '
-        Me.stock.HeaderText = "Stock"
-        Me.stock.Name = "stock"
-        Me.stock.ReadOnly = True
-        '
-        'biaya_pesan
-        '
-        Me.biaya_pesan.HeaderText = "Biaya Pesan"
-        Me.biaya_pesan.Name = "biaya_pesan"
-        Me.biaya_pesan.ReadOnly = True
-        '
-        'biaya_simpan
-        '
-        Me.biaya_simpan.HeaderText = "Biaya Simpan"
-        Me.biaya_simpan.Name = "biaya_simpan"
-        Me.biaya_simpan.ReadOnly = True
-        '
-        'jml_kebutuhan
-        '
-        Me.jml_kebutuhan.HeaderText = "Jumlah Kebutuhan"
-        Me.jml_kebutuhan.Name = "jml_kebutuhan"
-        Me.jml_kebutuhan.ReadOnly = True
-        '
-        'leadtime
-        '
-        Me.leadtime.HeaderText = "Leadtime"
-        Me.leadtime.Name = "leadtime"
-        Me.leadtime.ReadOnly = True
-        '
-        'stock_cadangan
-        '
-        Me.stock_cadangan.HeaderText = "Stock Cadangan"
-        Me.stock_cadangan.Name = "stock_cadangan"
-        Me.stock_cadangan.ReadOnly = True
-        '
-        'satuan
-        '
-        Me.satuan.HeaderText = "Satuan"
-        Me.satuan.Name = "satuan"
-        Me.satuan.ReadOnly = True
         '
         'Button3
         '
@@ -316,13 +228,6 @@ Partial Class Data_Barang
         Me.Bsimpan.TabIndex = 47
         Me.Bsimpan.Text = "SIMPAN"
         Me.Bsimpan.UseVisualStyleBackColor = True
-        '
-        'Tharga_barang
-        '
-        Me.Tharga_barang.Location = New System.Drawing.Point(122, 226)
-        Me.Tharga_barang.Name = "Tharga_barang"
-        Me.Tharga_barang.Size = New System.Drawing.Size(170, 20)
-        Me.Tharga_barang.TabIndex = 46
         '
         'Label8
         '
@@ -408,25 +313,142 @@ Partial Class Data_Barang
         Me.Label1.TabIndex = 37
         Me.Label1.Text = "Toko Ririn Busana"
         '
+        'Tbiaya_pesan
+        '
+        Me.Tbiaya_pesan.Increment = New Decimal(New Integer() {1, 0, 0, 65536})
+        Me.Tbiaya_pesan.Location = New System.Drawing.Point(433, 160)
+        Me.Tbiaya_pesan.Maximum = New Decimal(New Integer() {100000000, 0, 0, 0})
+        Me.Tbiaya_pesan.Name = "Tbiaya_pesan"
+        Me.Tbiaya_pesan.Size = New System.Drawing.Size(170, 20)
+        Me.Tbiaya_pesan.TabIndex = 68
+        '
+        'Tbiaya_simpan
+        '
+        Me.Tbiaya_simpan.Increment = New Decimal(New Integer() {1, 0, 0, 65536})
+        Me.Tbiaya_simpan.Location = New System.Drawing.Point(433, 193)
+        Me.Tbiaya_simpan.Maximum = New Decimal(New Integer() {100000000, 0, 0, 0})
+        Me.Tbiaya_simpan.Name = "Tbiaya_simpan"
+        Me.Tbiaya_simpan.Size = New System.Drawing.Size(170, 20)
+        Me.Tbiaya_simpan.TabIndex = 69
+        '
+        'Tjml_kebutuhan
+        '
+        Me.Tjml_kebutuhan.Location = New System.Drawing.Point(434, 226)
+        Me.Tjml_kebutuhan.Maximum = New Decimal(New Integer() {100000000, 0, 0, 0})
+        Me.Tjml_kebutuhan.Name = "Tjml_kebutuhan"
+        Me.Tjml_kebutuhan.Size = New System.Drawing.Size(113, 20)
+        Me.Tjml_kebutuhan.TabIndex = 70
+        '
+        'Tharga_barang
+        '
+        Me.Tharga_barang.Location = New System.Drawing.Point(122, 226)
+        Me.Tharga_barang.Maximum = New Decimal(New Integer() {100000000, 0, 0, 0})
+        Me.Tharga_barang.Name = "Tharga_barang"
+        Me.Tharga_barang.Size = New System.Drawing.Size(170, 20)
+        Me.Tharga_barang.TabIndex = 71
+        '
+        'Tstock
+        '
+        Me.Tstock.Location = New System.Drawing.Point(122, 255)
+        Me.Tstock.Maximum = New Decimal(New Integer() {100000000, 0, 0, 0})
+        Me.Tstock.Name = "Tstock"
+        Me.Tstock.Size = New System.Drawing.Size(170, 20)
+        Me.Tstock.TabIndex = 72
+        '
+        'Tcadangan
+        '
+        Me.Tcadangan.Location = New System.Drawing.Point(122, 284)
+        Me.Tcadangan.Maximum = New Decimal(New Integer() {100000000, 0, 0, 0})
+        Me.Tcadangan.Name = "Tcadangan"
+        Me.Tcadangan.Size = New System.Drawing.Size(170, 20)
+        Me.Tcadangan.TabIndex = 73
+        '
+        'no
+        '
+        Me.no.HeaderText = "No"
+        Me.no.Name = "no"
+        Me.no.ReadOnly = True
+        '
+        'kode_barang
+        '
+        Me.kode_barang.HeaderText = "Kode Barang"
+        Me.kode_barang.Name = "kode_barang"
+        Me.kode_barang.ReadOnly = True
+        '
+        'nama_barang
+        '
+        Me.nama_barang.HeaderText = "Nama Barang"
+        Me.nama_barang.Name = "nama_barang"
+        Me.nama_barang.ReadOnly = True
+        '
+        'harga_barang
+        '
+        Me.harga_barang.HeaderText = "Harga Barang"
+        Me.harga_barang.Name = "harga_barang"
+        Me.harga_barang.ReadOnly = True
+        '
+        'stock
+        '
+        Me.stock.HeaderText = "Stock"
+        Me.stock.Name = "stock"
+        Me.stock.ReadOnly = True
+        '
+        'biaya_pesan
+        '
+        Me.biaya_pesan.HeaderText = "Biaya Pesan"
+        Me.biaya_pesan.Name = "biaya_pesan"
+        Me.biaya_pesan.ReadOnly = True
+        '
+        'biaya_simpan
+        '
+        Me.biaya_simpan.HeaderText = "Biaya Simpan"
+        Me.biaya_simpan.Name = "biaya_simpan"
+        Me.biaya_simpan.ReadOnly = True
+        '
+        'jml_kebutuhan
+        '
+        Me.jml_kebutuhan.HeaderText = "Jumlah Kebutuhan"
+        Me.jml_kebutuhan.Name = "jml_kebutuhan"
+        Me.jml_kebutuhan.ReadOnly = True
+        '
+        'leadtime
+        '
+        Me.leadtime.HeaderText = "Leadtime"
+        Me.leadtime.Name = "leadtime"
+        Me.leadtime.ReadOnly = True
+        '
+        'stock_cadangan
+        '
+        Me.stock_cadangan.HeaderText = "Stock Cadangan"
+        Me.stock_cadangan.Name = "stock_cadangan"
+        Me.stock_cadangan.ReadOnly = True
+        '
+        'satuan
+        '
+        Me.satuan.HeaderText = "Satuan"
+        Me.satuan.Name = "satuan"
+        Me.satuan.ReadOnly = True
+        '
         'Data_Barang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Controls.Add(Me.Tcadangan)
+        Me.Controls.Add(Me.Tstock)
+        Me.Controls.Add(Me.Tharga_barang)
+        Me.Controls.Add(Me.Tjml_kebutuhan)
+        Me.Controls.Add(Me.Tbiaya_simpan)
+        Me.Controls.Add(Me.Tbiaya_pesan)
         Me.Controls.Add(Me.Tsatuan)
         Me.Controls.Add(Me.Label15)
-        Me.Controls.Add(Me.Tcadangan)
         Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.Tstock)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Tleadtime)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.Tjumlah_kebutuhan)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.Tbiaya_simpan)
         Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Tbiaya_pesan)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.DGbarang)
@@ -434,7 +456,6 @@ Partial Class Data_Barang
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Bsimpan)
-        Me.Controls.Add(Me.Tharga_barang)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Tnama_barang)
         Me.Controls.Add(Me.Label6)
@@ -447,6 +468,12 @@ Partial Class Data_Barang
         Me.Name = "Data_Barang"
         Me.Size = New System.Drawing.Size(623, 515)
         CType(Me.DGbarang, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Tbiaya_pesan, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Tbiaya_simpan, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Tjml_kebutuhan, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Tharga_barang, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Tstock, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Tcadangan, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -454,18 +481,13 @@ Partial Class Data_Barang
 
     Friend WithEvents Tsatuan As TextBox
     Friend WithEvents Label15 As Label
-    Friend WithEvents Tcadangan As TextBox
     Friend WithEvents Label14 As Label
-    Friend WithEvents Tstock As TextBox
     Friend WithEvents Label13 As Label
     Friend WithEvents Tleadtime As TextBox
     Friend WithEvents Label12 As Label
     Friend WithEvents Label11 As Label
-    Friend WithEvents Tjumlah_kebutuhan As TextBox
     Friend WithEvents Label10 As Label
-    Friend WithEvents Tbiaya_simpan As TextBox
     Friend WithEvents Label9 As Label
-    Friend WithEvents Tbiaya_pesan As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Button4 As Button
     Friend WithEvents DGbarang As DataGridView
@@ -473,7 +495,6 @@ Partial Class Data_Barang
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents Bsimpan As Button
-    Friend WithEvents Tharga_barang As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Tnama_barang As TextBox
     Friend WithEvents Label6 As Label
@@ -483,8 +504,15 @@ Partial Class Data_Barang
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents Tbiaya_pesan As NumericUpDown
+    Friend WithEvents Tbiaya_simpan As NumericUpDown
+    Friend WithEvents Tjml_kebutuhan As NumericUpDown
+    Friend WithEvents Tharga_barang As NumericUpDown
+    Friend WithEvents Tstock As NumericUpDown
+    Friend WithEvents Tcadangan As NumericUpDown
     Friend WithEvents no As DataGridViewTextBoxColumn
     Friend WithEvents kode_barang As DataGridViewTextBoxColumn
+    Friend WithEvents nama_barang As DataGridViewTextBoxColumn
     Friend WithEvents harga_barang As DataGridViewTextBoxColumn
     Friend WithEvents stock As DataGridViewTextBoxColumn
     Friend WithEvents biaya_pesan As DataGridViewTextBoxColumn

@@ -31,13 +31,13 @@
         Dim stock As Integer = Tstock.Text
         Dim biaya_pesan As Integer = Tbiaya_pesan.Text
         Dim biaya_simpan As Integer = Tbiaya_simpan.Text
-        Dim jml_kebutuhan As Integer = Tjumlah_kebutuhan.Text
+        Dim jml_kebutuhan As Integer = Tjml_kebutuhan.Value
         Dim leadtime As Integer = Tleadtime.Text
         Dim stock_cadangan As Integer = Tcadangan.Text
         Dim satuan As String = Tsatuan.Text
         Dim sql_tambah As String = "INSERT INTO barang " &
             "(kode_barang, nama_barang, harga_barang, stock, biaya_pesan, biaya_simpan, jml_kebutuhan, leadtime, stock_cadangan, satuan) VALUES " &
-            "('" & kode_barang & "','" & nama_barang & "','" & harga_barang & "','" & stock & "','" & biaya_pesan & "','" & biaya_simpan & "'" &
+            "('" & kode_barang & "','" & nama_barang & "','" & harga_barang & "','" & stock & "','" & biaya_pesan & "','" & biaya_simpan & "'," &
             "'" & jml_kebutuhan & "','" & leadtime & "', '" & stock_cadangan & "', '" & satuan & "')"
         Aplikasi.Db.JalankanSql(sql_tambah)
         If Aplikasi.Db.ApakahError() = True Then
@@ -55,7 +55,7 @@
         Dim stock As Integer = Tstock.Text
         Dim biaya_pesan As Integer = Tbiaya_pesan.Text
         Dim biaya_simpan As Integer = Tbiaya_simpan.Text
-        Dim jml_kebutuhan As Integer = Tjumlah_kebutuhan.Text
+        Dim jml_kebutuhan As Integer = Tjml_kebutuhan.Value
         Dim leadtime As Integer = Tleadtime.Text
         Dim stock_cadangan As Integer = Tcadangan.Text
         Dim satuan As String = Tsatuan.Text
@@ -96,21 +96,21 @@
         Tstock.Text = DGbarang.Rows(data_terpilih).Cells("stock").Value
         Tbiaya_pesan.Text = DGbarang.Rows(data_terpilih).Cells("biaya_pesan").Value
         Tbiaya_simpan.Text = DGbarang.Rows(data_terpilih).Cells("biaya_simpan").Value
-        Tjumlah_kebutuhan.Text = DGbarang.Rows(data_terpilih).Cells("jumlah_kebutuhan").Value
+        Tjml_kebutuhan.Value = DGbarang.Rows(data_terpilih).Cells("jml_kebutuhan").Value
         Tleadtime.Text = DGbarang.Rows(data_terpilih).Cells("leadtime").Value
-        Tcadangan.Text = DGbarang.Rows(data_terpilih).Cells("cadangan").Value
+        Tcadangan.Text = DGbarang.Rows(data_terpilih).Cells("stock_cadangan").Value
         Tsatuan.Text = DGbarang.Rows(data_terpilih).Cells("satuan").Value
     End Sub
     Private Sub ResetData()
         Tkode_barang.Clear()
         Tnama_barang.Clear()
-        Tharga_barang.Clear()
-        Tstock.Clear()
-        Tbiaya_pesan.Clear()
-        Tbiaya_simpan.Clear()
-        Tjumlah_kebutuhan.Clear()
+        Tharga_barang.Value = 0
+        Tstock.Value = 0
+        Tbiaya_pesan.Value = 0
+        Tbiaya_simpan.Value = 0
+        Tjml_kebutuhan.Value = 0
         Tleadtime.Clear()
-        Tcadangan.Clear()
+        Tcadangan.Value = 0
         Tsatuan.Clear()
     End Sub
 
@@ -128,5 +128,9 @@
 
     Private Sub AmbilDataBarang(sender As Object, e As DataGridViewCellEventArgs) Handles DGbarang.CellContentClick
         AmbilData()
+    End Sub
+
+    Private Sub Data_Barang_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        TampilData()
     End Sub
 End Class

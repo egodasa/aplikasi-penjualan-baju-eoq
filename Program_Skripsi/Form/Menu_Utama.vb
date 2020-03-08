@@ -4,6 +4,7 @@
     Public FSupplier As New Data_Supplier
     Public FPembelian As New Data_Pembelian
     Public FPenjualan As New Data_Penjualan
+    Public FLaporanBarang As New Laporan
     Public Sub ShowForm(ByVal uc As UserControl, ByVal form As Form)
         uc.Location = New Point(0, 20)
         form.Size = New Size(uc.Size.Width + 2, uc.Size.Height + 50)
@@ -20,6 +21,7 @@
         Me.Controls.Add(FBarang)
         Me.Controls.Add(FSupplier)
         Me.Controls.Add(FPembelian)
+        Me.Controls.Add(FLaporanBarang)
         ShowForm(FBeranda, Me)
     End Sub
 
@@ -41,5 +43,9 @@
 
     Private Sub Tampil_Penjualan(sender As Object, e As EventArgs) Handles PenjualanToolStripMenuItem.Click
         ShowForm(FPenjualan, Me)
+    End Sub
+
+    Private Sub LaporanBarang(sender As Object, e As EventArgs) Handles BarangToolStripMenuItem1.Click
+        ShowForm(FLaporanBarang, Me)
     End Sub
 End Class

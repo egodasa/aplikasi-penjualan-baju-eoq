@@ -64,37 +64,37 @@ Partial Class Menu_Utama
         'PenggunaToolStripMenuItem
         '
         Me.PenggunaToolStripMenuItem.Name = "PenggunaToolStripMenuItem"
-        Me.PenggunaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PenggunaToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
         Me.PenggunaToolStripMenuItem.Text = "Pengguna"
         '
         'BarangToolStripMenuItem
         '
         Me.BarangToolStripMenuItem.Name = "BarangToolStripMenuItem"
-        Me.BarangToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.BarangToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
         Me.BarangToolStripMenuItem.Text = "Barang"
         '
         'SupplierToolStripMenuItem
         '
         Me.SupplierToolStripMenuItem.Name = "SupplierToolStripMenuItem"
-        Me.SupplierToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SupplierToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
         Me.SupplierToolStripMenuItem.Text = "Supplier"
         '
         'PembelianToolStripMenuItem
         '
         Me.PembelianToolStripMenuItem.Name = "PembelianToolStripMenuItem"
-        Me.PembelianToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PembelianToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
         Me.PembelianToolStripMenuItem.Text = "Pembelian"
         '
         'PenjualanToolStripMenuItem
         '
         Me.PenjualanToolStripMenuItem.Name = "PenjualanToolStripMenuItem"
-        Me.PenjualanToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PenjualanToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
         Me.PenjualanToolStripMenuItem.Text = "Penjualan"
         '
         'EOQToolStripMenuItem
         '
         Me.EOQToolStripMenuItem.Name = "EOQToolStripMenuItem"
-        Me.EOQToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EOQToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
         Me.EOQToolStripMenuItem.Text = "EOQ"
         '
         'KeluarToolStripMenuItem
@@ -107,19 +107,19 @@ Partial Class Menu_Utama
         'BarangToolStripMenuItem1
         '
         Me.BarangToolStripMenuItem1.Name = "BarangToolStripMenuItem1"
-        Me.BarangToolStripMenuItem1.Size = New System.Drawing.Size(130, 22)
+        Me.BarangToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.BarangToolStripMenuItem1.Text = "Barang"
         '
         'PenjualanToolStripMenuItem1
         '
         Me.PenjualanToolStripMenuItem1.Name = "PenjualanToolStripMenuItem1"
-        Me.PenjualanToolStripMenuItem1.Size = New System.Drawing.Size(130, 22)
+        Me.PenjualanToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.PenjualanToolStripMenuItem1.Text = "Penjualan"
         '
         'PembelianToolStripMenuItem1
         '
         Me.PembelianToolStripMenuItem1.Name = "PembelianToolStripMenuItem1"
-        Me.PembelianToolStripMenuItem1.Size = New System.Drawing.Size(130, 22)
+        Me.PembelianToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.PembelianToolStripMenuItem1.Text = "Pembelian"
         '
         'KeluarToolStripMenuItem1

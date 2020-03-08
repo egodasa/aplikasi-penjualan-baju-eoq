@@ -110,6 +110,12 @@
     <Compile Include="Form\Data_Penjualan.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Form\Laporan.Designer.vb">
+      <DependentUpon>Laporan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Laporan.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Form\Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
@@ -159,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Data_Penjualan.resx">
       <DependentUpon>Data_Penjualan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Laporan.resx">
+      <DependentUpon>Laporan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>

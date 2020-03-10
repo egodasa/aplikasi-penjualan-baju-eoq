@@ -78,4 +78,10 @@
         Cetak_Laporan.ShowDialog()
         Cetak_Laporan.AmbilDataLaporan()
     End Sub
+
+    Private Sub MenuPembelian(sender As Object, e As EventArgs) Handles PembelianToolStripMenuItem1.Click
+        Cetak_Laporan.url = Aplikasi.url_laporan & "/laporan-pembelian.php"
+        Cetak_Laporan.ShowDialog()
+        Cetak_Laporan.AmbilDataLaporan()
+    End Sub
 End Class

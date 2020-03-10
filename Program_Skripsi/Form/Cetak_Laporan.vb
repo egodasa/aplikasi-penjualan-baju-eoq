@@ -18,4 +18,8 @@
     Private Sub AksiMuatUlang(sender As Object, e As EventArgs) Handles Button1.Click
         AmbilDataLaporan()
     End Sub
+
+    Private Sub BukaForm(sender As Object, e As EventArgs) Handles MyBase.Load
+        AmbilDataLaporan()
+    End Sub
 End Class

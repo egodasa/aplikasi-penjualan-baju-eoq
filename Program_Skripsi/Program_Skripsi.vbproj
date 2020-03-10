@@ -98,6 +98,12 @@
     <Compile Include="Form\Beranda.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Form\Cetak_Laporan.Designer.vb">
+      <DependentUpon>Cetak_Laporan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Cetak_Laporan.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form\Data_Pembelian.Designer.vb">
       <DependentUpon>Data_Pembelian.vb</DependentUpon>
     </Compile>
@@ -110,10 +116,22 @@
     <Compile Include="Form\Data_Penjualan.vb">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Form\Laporan.Designer.vb">
-      <DependentUpon>Laporan.vb</DependentUpon>
+    <Compile Include="Form\Laporan_Penjualan_Bulanan.Designer.vb">
+      <DependentUpon>Laporan_Penjualan_Bulanan.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form\Laporan.vb">
+    <Compile Include="Form\Laporan_Penjualan_Bulanan.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Laporan_Penjualan_Harian.Designer.vb">
+      <DependentUpon>Laporan_Penjualan_Harian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Laporan_Penjualan_Harian.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Laporan_Penjualan_Tahunan.Designer.vb">
+      <DependentUpon>Laporan_Penjualan_Tahunan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Laporan_Penjualan_Tahunan.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Form\Login.Designer.vb">
@@ -160,14 +178,23 @@
     <EmbeddedResource Include="Form\Beranda.resx">
       <DependentUpon>Beranda.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\Cetak_Laporan.resx">
+      <DependentUpon>Cetak_Laporan.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\Data_Pembelian.resx">
       <DependentUpon>Data_Pembelian.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Data_Penjualan.resx">
       <DependentUpon>Data_Penjualan.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\Laporan.resx">
-      <DependentUpon>Laporan.vb</DependentUpon>
+    <EmbeddedResource Include="Form\Laporan_Penjualan_Bulanan.resx">
+      <DependentUpon>Laporan_Penjualan_Bulanan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Laporan_Penjualan_Harian.resx">
+      <DependentUpon>Laporan_Penjualan_Harian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Laporan_Penjualan_Tahunan.resx">
+      <DependentUpon>Laporan_Penjualan_Tahunan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
@@ -189,6 +216,22 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Laporan\helper.php" />
+    <None Include="Laporan\laporan-supplier.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Laporan\laporan-penjualan-tahunan.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Laporan\laporan-penjualan-bulanan.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Laporan\laporan-penjualan-harian.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Laporan\style_laporan.php" />
+    <None Include="Laporan\header_laporan.php" />
+    <None Include="Laporan\koneksi.php" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -210,21 +253,9 @@
     <Content Include="Database\MySql.Data.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Laporan\laporan-eoq.html">
+    <None Include="Laporan\laporan-barang.php">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Laporan\laporan-penjualan.html">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Laporan\laporan-pembelian.html">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Laporan\laporan-supplier.html">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Laporan\laporan-barang.html">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

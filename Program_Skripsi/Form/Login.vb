@@ -2,6 +2,7 @@
     Public Db As New Db()
     Public level As String
     Public username As String
+    Public url_laporan As String = "http://localhost:8090"
     Private Sub Keluar(sender As Object, e As EventArgs) Handles Breset.Click
         Me.Close()
     End Sub

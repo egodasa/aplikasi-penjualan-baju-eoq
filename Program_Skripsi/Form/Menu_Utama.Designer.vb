@@ -36,6 +36,10 @@ Partial Class Menu_Utama
         Me.PenjualanToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.PembelianToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.KeluarToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HarianToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BulananToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TahunanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SupplierToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -99,7 +103,7 @@ Partial Class Menu_Utama
         '
         'KeluarToolStripMenuItem
         '
-        Me.KeluarToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BarangToolStripMenuItem1, Me.PenjualanToolStripMenuItem1, Me.PembelianToolStripMenuItem1})
+        Me.KeluarToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BarangToolStripMenuItem1, Me.PenjualanToolStripMenuItem1, Me.PembelianToolStripMenuItem1, Me.SupplierToolStripMenuItem1})
         Me.KeluarToolStripMenuItem.Name = "KeluarToolStripMenuItem"
         Me.KeluarToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
         Me.KeluarToolStripMenuItem.Text = "Laporan"
@@ -112,6 +116,7 @@ Partial Class Menu_Utama
         '
         'PenjualanToolStripMenuItem1
         '
+        Me.PenjualanToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HarianToolStripMenuItem, Me.BulananToolStripMenuItem, Me.TahunanToolStripMenuItem})
         Me.PenjualanToolStripMenuItem1.Name = "PenjualanToolStripMenuItem1"
         Me.PenjualanToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.PenjualanToolStripMenuItem1.Text = "Penjualan"
@@ -127,6 +132,30 @@ Partial Class Menu_Utama
         Me.KeluarToolStripMenuItem1.Name = "KeluarToolStripMenuItem1"
         Me.KeluarToolStripMenuItem1.Size = New System.Drawing.Size(52, 20)
         Me.KeluarToolStripMenuItem1.Text = "Keluar"
+        '
+        'HarianToolStripMenuItem
+        '
+        Me.HarianToolStripMenuItem.Name = "HarianToolStripMenuItem"
+        Me.HarianToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.HarianToolStripMenuItem.Text = "Harian"
+        '
+        'BulananToolStripMenuItem
+        '
+        Me.BulananToolStripMenuItem.Name = "BulananToolStripMenuItem"
+        Me.BulananToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.BulananToolStripMenuItem.Text = "Bulanan"
+        '
+        'TahunanToolStripMenuItem
+        '
+        Me.TahunanToolStripMenuItem.Name = "TahunanToolStripMenuItem"
+        Me.TahunanToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.TahunanToolStripMenuItem.Text = "Tahunan"
+        '
+        'SupplierToolStripMenuItem1
+        '
+        Me.SupplierToolStripMenuItem1.Name = "SupplierToolStripMenuItem1"
+        Me.SupplierToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.SupplierToolStripMenuItem1.Text = "Supplier"
         '
         'Menu_Utama
         '
@@ -158,4 +187,8 @@ Partial Class Menu_Utama
     Friend WithEvents PembelianToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents KeluarToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents SupplierToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents HarianToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents BulananToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TahunanToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SupplierToolStripMenuItem1 As ToolStripMenuItem
 End Class

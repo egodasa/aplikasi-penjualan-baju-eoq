@@ -1,10 +1,13 @@
 ﻿Public Class Menu_Utama
+
     Public FBeranda As New Beranda
     Public FBarang As New Data_Barang
     Public FSupplier As New Data_Supplier
     Public FPembelian As New Data_Pembelian
     Public FPenjualan As New Data_Penjualan
-    Public FLaporanBarang As New Laporan
+    Public FLaporanPenjualanHarian As New Laporan_Penjualan_Harian
+    Public FLaporanPenjualanBulanan As New Laporan_Penjualan_Bulanan
+    Public FLaporanPenjualanTahunan As New Laporan_Penjualan_Tahunan
     Public Sub ShowForm(ByVal uc As UserControl, ByVal form As Form)
         uc.Location = New Point(0, 20)
         form.Size = New Size(uc.Size.Width + 2, uc.Size.Height + 50)
@@ -22,7 +25,9 @@
         Me.Controls.Add(FSupplier)
         Me.Controls.Add(FPembelian)
         Me.Controls.Add(FPenjualan)
-        Me.Controls.Add(FLaporanBarang)
+        Me.Controls.Add(FLaporanPenjualanHarian)
+        Me.Controls.Add(FLaporanPenjualanBulanan)
+        Me.Controls.Add(FLaporanPenjualanTahunan)
         ShowForm(FBeranda, Me)
     End Sub
 
@@ -51,6 +56,26 @@
     End Sub
 
     Private Sub LaporanBarang(sender As Object, e As EventArgs) Handles BarangToolStripMenuItem1.Click
-        ShowForm(FLaporanBarang, Me)
+        Cetak_Laporan.url = Aplikasi.url_laporan & "/laporan-barang.php"
+        Cetak_Laporan.ShowDialog()
+        Cetak_Laporan.AmbilDataLaporan()
+    End Sub
+
+    Private Sub MenuLaporanPenjualanHarian(sender As Object, e As EventArgs) Handles HarianToolStripMenuItem.Click
+        ShowForm(FLaporanPenjualanHarian, Me)
+    End Sub
+
+    Private Sub MenuLaporanPenjualanBulanan(sender As Object, e As EventArgs) Handles BulananToolStripMenuItem.Click
+        ShowForm(FLaporanPenjualanBulanan, Me)
+    End Sub
+
+    Private Sub MenuLaporanPenjualanTahunan(sender As Object, e As EventArgs) Handles TahunanToolStripMenuItem.Click
+        ShowForm(FLaporanPenjualanTahunan, Me)
+    End Sub
+
+    Private Sub MenuSupplier(sender As Object, e As EventArgs) Handles SupplierToolStripMenuItem1.Click
+        Cetak_Laporan.url = Aplikasi.url_laporan & "/laporan-supplier.php"
+        Cetak_Laporan.ShowDialog()
+        Cetak_Laporan.AmbilDataLaporan()
     End Sub
 End Class

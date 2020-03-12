@@ -22,8 +22,12 @@ Partial Class Data_Supplier
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.DGsupplier = New System.Windows.Forms.DataGridView()
+        Me.no = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.kode_supplier = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nama_supplier = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nohp = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.alamat = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -40,23 +44,8 @@ Partial Class Data_Supplier
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.no = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.kode_supplier = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.nama_supplier = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.nohp = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.alamat = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DGsupplier, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Button4
-        '
-        Me.Button4.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(480, 400)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(88, 62)
-        Me.Button4.TabIndex = 39
-        Me.Button4.Text = "CETAK"
-        Me.Button4.UseVisualStyleBackColor = True
         '
         'DGsupplier
         '
@@ -67,8 +56,38 @@ Partial Class Data_Supplier
         Me.DGsupplier.Location = New System.Drawing.Point(13, 312)
         Me.DGsupplier.Name = "DGsupplier"
         Me.DGsupplier.ReadOnly = True
-        Me.DGsupplier.Size = New System.Drawing.Size(461, 150)
+        Me.DGsupplier.Size = New System.Drawing.Size(555, 150)
         Me.DGsupplier.TabIndex = 38
+        '
+        'no
+        '
+        Me.no.HeaderText = "No"
+        Me.no.Name = "no"
+        Me.no.ReadOnly = True
+        '
+        'kode_supplier
+        '
+        Me.kode_supplier.HeaderText = "Kode Supplier"
+        Me.kode_supplier.Name = "kode_supplier"
+        Me.kode_supplier.ReadOnly = True
+        '
+        'nama_supplier
+        '
+        Me.nama_supplier.HeaderText = "nama_supplier"
+        Me.nama_supplier.Name = "nama_supplier"
+        Me.nama_supplier.ReadOnly = True
+        '
+        'nohp
+        '
+        Me.nohp.HeaderText = "NOHP"
+        Me.nohp.Name = "nohp"
+        Me.nohp.ReadOnly = True
+        '
+        'alamat
+        '
+        Me.alamat.HeaderText = "Alamat"
+        Me.alamat.Name = "alamat"
+        Me.alamat.ReadOnly = True
         '
         'Button3
         '
@@ -219,42 +238,11 @@ Partial Class Data_Supplier
         Me.Label1.TabIndex = 22
         Me.Label1.Text = "Toko Ririn Busana"
         '
-        'no
-        '
-        Me.no.HeaderText = "No"
-        Me.no.Name = "no"
-        Me.no.ReadOnly = True
-        '
-        'kode_supplier
-        '
-        Me.kode_supplier.HeaderText = "Kode Supplier"
-        Me.kode_supplier.Name = "kode_supplier"
-        Me.kode_supplier.ReadOnly = True
-        '
-        'nama_supplier
-        '
-        Me.nama_supplier.HeaderText = "nama_supplier"
-        Me.nama_supplier.Name = "nama_supplier"
-        Me.nama_supplier.ReadOnly = True
-        '
-        'nohp
-        '
-        Me.nohp.HeaderText = "NOHP"
-        Me.nohp.Name = "nohp"
-        Me.nohp.ReadOnly = True
-        '
-        'alamat
-        '
-        Me.alamat.HeaderText = "Alamat"
-        Me.alamat.Name = "alamat"
-        Me.alamat.ReadOnly = True
-        '
         'Data_Supplier
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.DGsupplier)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -279,8 +267,6 @@ Partial Class Data_Supplier
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Button4 As Button
     Friend WithEvents DGsupplier As DataGridView
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button

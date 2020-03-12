@@ -5,6 +5,7 @@
     Public FSupplier As New Data_Supplier
     Public FPembelian As New Data_Pembelian
     Public FPenjualan As New Data_Penjualan
+    Public FEoq As New Data_Eoq
     Public FLaporanPenjualanHarian As New Laporan_Penjualan_Harian
     Public FLaporanPenjualanBulanan As New Laporan_Penjualan_Bulanan
     Public FLaporanPenjualanTahunan As New Laporan_Penjualan_Tahunan
@@ -25,6 +26,7 @@
         Me.Controls.Add(FSupplier)
         Me.Controls.Add(FPembelian)
         Me.Controls.Add(FPenjualan)
+        Me.Controls.Add(FEoq)
         Me.Controls.Add(FLaporanPenjualanHarian)
         Me.Controls.Add(FLaporanPenjualanBulanan)
         Me.Controls.Add(FLaporanPenjualanTahunan)
@@ -83,5 +85,15 @@
         Cetak_Laporan.url = Aplikasi.url_laporan & "/laporan-pembelian.php"
         Cetak_Laporan.ShowDialog()
         Cetak_Laporan.AmbilDataLaporan()
+    End Sub
+
+    Private Sub MenuLaporanEoq(sender As Object, e As EventArgs) Handles EOQToolStripMenuItem1.Click
+        Cetak_Laporan.url = Aplikasi.url_laporan & "/laporan-eoq.php"
+        Cetak_Laporan.ShowDialog()
+        Cetak_Laporan.AmbilDataLaporan()
+    End Sub
+
+    Private Sub MenuEoq(sender As Object, e As EventArgs) Handles EOQToolStripMenuItem.Click
+        Me.ShowForm(FEoq, Me)
     End Sub
 End Class

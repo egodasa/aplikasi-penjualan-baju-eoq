@@ -32,7 +32,6 @@ Partial Class Data_Barang
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.DGbarang = New System.Windows.Forms.DataGridView()
         Me.no = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.kode_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -167,16 +166,6 @@ Partial Class Data_Barang
         Me.Label7.TabIndex = 53
         Me.Label7.Text = "Biaya Pesan"
         '
-        'Button4
-        '
-        Me.Button4.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(515, 439)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(88, 62)
-        Me.Button4.TabIndex = 52
-        Me.Button4.Text = "CETAK"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
         'DGbarang
         '
         Me.DGbarang.AllowUserToAddRows = False
@@ -186,7 +175,7 @@ Partial Class Data_Barang
         Me.DGbarang.Location = New System.Drawing.Point(23, 351)
         Me.DGbarang.Name = "DGbarang"
         Me.DGbarang.ReadOnly = True
-        Me.DGbarang.Size = New System.Drawing.Size(486, 150)
+        Me.DGbarang.Size = New System.Drawing.Size(580, 150)
         Me.DGbarang.TabIndex = 51
         '
         'no
@@ -452,7 +441,6 @@ Partial Class Data_Barang
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.DGbarang)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -491,7 +479,6 @@ Partial Class Data_Barang
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents Button4 As Button
     Friend WithEvents DGbarang As DataGridView
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button

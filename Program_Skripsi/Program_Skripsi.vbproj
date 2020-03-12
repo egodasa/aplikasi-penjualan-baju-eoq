@@ -104,6 +104,12 @@
     <Compile Include="Form\Cetak_Laporan.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form\Data_Eoq.Designer.vb">
+      <DependentUpon>Data_Eoq.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Data_Eoq.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Form\Data_Pembelian.Designer.vb">
       <DependentUpon>Data_Pembelian.vb</DependentUpon>
     </Compile>
@@ -181,6 +187,9 @@
     <EmbeddedResource Include="Form\Cetak_Laporan.resx">
       <DependentUpon>Cetak_Laporan.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\Data_Eoq.resx">
+      <DependentUpon>Data_Eoq.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\Data_Pembelian.resx">
       <DependentUpon>Data_Pembelian.vb</DependentUpon>
     </EmbeddedResource>
@@ -216,7 +225,12 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Laporan\helper.php" />
+    <None Include="Laporan\helper.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Laporan\laporan-eoq.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Laporan\laporan-pembelian.php">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -232,9 +246,15 @@
     <None Include="Laporan\laporan-penjualan-harian.php">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Laporan\style_laporan.php" />
-    <None Include="Laporan\header_laporan.php" />
-    <None Include="Laporan\koneksi.php" />
+    <None Include="Laporan\style_laporan.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Laporan\header_laporan.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Laporan\koneksi.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

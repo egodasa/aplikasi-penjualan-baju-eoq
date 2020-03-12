@@ -224,4 +224,10 @@
     Private Sub AksiHitungSubTotal(sender As Object, e As KeyEventArgs) Handles Tjumlah.KeyUp
         HitungSubTotal()
     End Sub
+
+    Private Sub AksiCetakNota(sender As Object, e As EventArgs) Handles Button4.Click
+        Dim no_nota As String = DGpenjualan.Rows(DGpenjualan.CurrentRow.Index).Cells("no_nota").Value
+        Cetak_Laporan.url = Aplikasi.url_laporan & "/cetak-nota.php?no_nota=" & no_nota
+        Cetak_Laporan.ShowDialog()
+    End Sub
 End Class

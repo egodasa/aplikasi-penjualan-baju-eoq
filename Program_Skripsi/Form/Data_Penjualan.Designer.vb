@@ -182,7 +182,7 @@ Partial Class Data_Penjualan
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(88, 62)
         Me.Button4.TabIndex = 134
-        Me.Button4.Text = "CETAK"
+        Me.Button4.Text = "CETAK" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "NOTA"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button2

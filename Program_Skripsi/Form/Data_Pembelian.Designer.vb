@@ -43,6 +43,13 @@ Partial Class Data_Pembelian
         Me.Ckode_supplier = New System.Windows.Forms.ComboBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.DGkeranjang = New System.Windows.Forms.DataGridView()
+        Me.id_detail = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.no = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.kode_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nama_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.harga_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.jumlah = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.sub_total = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Bsimpan = New System.Windows.Forms.Button()
@@ -54,19 +61,11 @@ Partial Class Data_Pembelian
         Me.nama_supplier = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.jumlah_beli = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.total_harga = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Ttotal_harga = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Ttgl_beli = New System.Windows.Forms.DateTimePicker()
-        Me.id_detail = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.no = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.kode_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.nama_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.harga_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.jumlah = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.sub_total = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DGkeranjang, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DGpembelian, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -263,6 +262,49 @@ Partial Class Data_Pembelian
         Me.DGkeranjang.Size = New System.Drawing.Size(741, 84)
         Me.DGkeranjang.TabIndex = 98
         '
+        'id_detail
+        '
+        Me.id_detail.HeaderText = "id_detail"
+        Me.id_detail.Name = "id_detail"
+        Me.id_detail.ReadOnly = True
+        Me.id_detail.Visible = False
+        '
+        'no
+        '
+        Me.no.HeaderText = "No"
+        Me.no.Name = "no"
+        Me.no.ReadOnly = True
+        '
+        'kode_barang
+        '
+        Me.kode_barang.HeaderText = "Kode Barang"
+        Me.kode_barang.Name = "kode_barang"
+        Me.kode_barang.ReadOnly = True
+        '
+        'nama_barang
+        '
+        Me.nama_barang.HeaderText = "Nama Barang"
+        Me.nama_barang.Name = "nama_barang"
+        Me.nama_barang.ReadOnly = True
+        '
+        'harga_barang
+        '
+        Me.harga_barang.HeaderText = "Harga Barang"
+        Me.harga_barang.Name = "harga_barang"
+        Me.harga_barang.ReadOnly = True
+        '
+        'jumlah
+        '
+        Me.jumlah.HeaderText = "Jumlah"
+        Me.jumlah.Name = "jumlah"
+        Me.jumlah.ReadOnly = True
+        '
+        'sub_total
+        '
+        Me.sub_total.HeaderText = "Sub Total"
+        Me.sub_total.Name = "sub_total"
+        Me.sub_total.ReadOnly = True
+        '
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -302,7 +344,7 @@ Partial Class Data_Pembelian
         Me.DGpembelian.Location = New System.Drawing.Point(41, 435)
         Me.DGpembelian.Name = "DGpembelian"
         Me.DGpembelian.ReadOnly = True
-        Me.DGpembelian.Size = New System.Drawing.Size(647, 113)
+        Me.DGpembelian.Size = New System.Drawing.Size(741, 113)
         Me.DGpembelian.TabIndex = 102
         '
         'nomor
@@ -346,16 +388,6 @@ Partial Class Data_Pembelian
         Me.total_harga.HeaderText = "Total Harga"
         Me.total_harga.Name = "total_harga"
         Me.total_harga.ReadOnly = True
-        '
-        'Button4
-        '
-        Me.Button4.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(694, 486)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(88, 62)
-        Me.Button4.TabIndex = 103
-        Me.Button4.Text = "CETAK"
-        Me.Button4.UseVisualStyleBackColor = True
         '
         'Button3
         '
@@ -404,49 +436,6 @@ Partial Class Data_Pembelian
         Me.Ttgl_beli.Size = New System.Drawing.Size(170, 20)
         Me.Ttgl_beli.TabIndex = 108
         '
-        'id_detail
-        '
-        Me.id_detail.HeaderText = "id_detail"
-        Me.id_detail.Name = "id_detail"
-        Me.id_detail.ReadOnly = True
-        Me.id_detail.Visible = False
-        '
-        'no
-        '
-        Me.no.HeaderText = "No"
-        Me.no.Name = "no"
-        Me.no.ReadOnly = True
-        '
-        'kode_barang
-        '
-        Me.kode_barang.HeaderText = "Kode Barang"
-        Me.kode_barang.Name = "kode_barang"
-        Me.kode_barang.ReadOnly = True
-        '
-        'nama_barang
-        '
-        Me.nama_barang.HeaderText = "Nama Barang"
-        Me.nama_barang.Name = "nama_barang"
-        Me.nama_barang.ReadOnly = True
-        '
-        'harga_barang
-        '
-        Me.harga_barang.HeaderText = "Harga Barang"
-        Me.harga_barang.Name = "harga_barang"
-        Me.harga_barang.ReadOnly = True
-        '
-        'jumlah
-        '
-        Me.jumlah.HeaderText = "Jumlah"
-        Me.jumlah.Name = "jumlah"
-        Me.jumlah.ReadOnly = True
-        '
-        'sub_total
-        '
-        Me.sub_total.HeaderText = "Sub Total"
-        Me.sub_total.Name = "sub_total"
-        Me.sub_total.ReadOnly = True
-        '
         'Data_Pembelian
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -457,7 +446,6 @@ Partial Class Data_Pembelian
         Me.Controls.Add(Me.Ttotal_harga)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.DGpembelian)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -517,7 +505,6 @@ Partial Class Data_Pembelian
     Friend WithEvents Button1 As Button
     Friend WithEvents Bsimpan As Button
     Friend WithEvents DGpembelian As DataGridView
-    Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Label11 As Label
     Friend WithEvents nomor As DataGridViewTextBoxColumn

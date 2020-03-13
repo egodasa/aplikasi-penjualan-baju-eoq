@@ -21,6 +21,13 @@
     End Sub
 
     Private Sub Init(sender As Object, e As EventArgs) Handles MyBase.Load
+        If Aplikasi.level = "Karyawan" Then
+            TSMInput.Enabled = True
+            TSMlaporan.Enabled = True
+        Else
+            TSMInput.Enabled = False
+            TSMlaporan.Enabled = True
+        End If
         Me.Controls.Add(FBeranda)
         Me.Controls.Add(FBarang)
         Me.Controls.Add(FSupplier)

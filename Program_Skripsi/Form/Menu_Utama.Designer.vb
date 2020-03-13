@@ -24,14 +24,14 @@ Partial Class Menu_Utama
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.InputToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LaporanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSMInput = New System.Windows.Forms.ToolStripMenuItem()
         Me.PenggunaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SupplierToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PembelianToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PenjualanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EOQToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.KeluarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TSMlaporan = New System.Windows.Forms.ToolStripMenuItem()
         Me.BarangToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.PenjualanToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.HarianToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -46,7 +46,7 @@ Partial Class Menu_Utama
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InputToolStripMenuItem, Me.LaporanToolStripMenuItem, Me.KeluarToolStripMenuItem, Me.KeluarToolStripMenuItem1})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InputToolStripMenuItem, Me.TSMInput, Me.TSMlaporan, Me.KeluarToolStripMenuItem1})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(526, 24)
@@ -59,67 +59,67 @@ Partial Class Menu_Utama
         Me.InputToolStripMenuItem.Size = New System.Drawing.Size(88, 20)
         Me.InputToolStripMenuItem.Text = "Menu Utama"
         '
-        'LaporanToolStripMenuItem
+        'TSMInput
         '
-        Me.LaporanToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PenggunaToolStripMenuItem, Me.BarangToolStripMenuItem, Me.SupplierToolStripMenuItem, Me.PembelianToolStripMenuItem, Me.PenjualanToolStripMenuItem, Me.EOQToolStripMenuItem})
-        Me.LaporanToolStripMenuItem.Name = "LaporanToolStripMenuItem"
-        Me.LaporanToolStripMenuItem.Size = New System.Drawing.Size(47, 20)
-        Me.LaporanToolStripMenuItem.Text = "Input"
+        Me.TSMInput.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PenggunaToolStripMenuItem, Me.BarangToolStripMenuItem, Me.SupplierToolStripMenuItem, Me.PembelianToolStripMenuItem, Me.PenjualanToolStripMenuItem, Me.EOQToolStripMenuItem})
+        Me.TSMInput.Name = "TSMInput"
+        Me.TSMInput.Size = New System.Drawing.Size(47, 20)
+        Me.TSMInput.Text = "Input"
         '
         'PenggunaToolStripMenuItem
         '
         Me.PenggunaToolStripMenuItem.Name = "PenggunaToolStripMenuItem"
-        Me.PenggunaToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
+        Me.PenggunaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.PenggunaToolStripMenuItem.Text = "Pengguna"
         '
         'BarangToolStripMenuItem
         '
         Me.BarangToolStripMenuItem.Name = "BarangToolStripMenuItem"
-        Me.BarangToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
+        Me.BarangToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.BarangToolStripMenuItem.Text = "Barang"
         '
         'SupplierToolStripMenuItem
         '
         Me.SupplierToolStripMenuItem.Name = "SupplierToolStripMenuItem"
-        Me.SupplierToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
+        Me.SupplierToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.SupplierToolStripMenuItem.Text = "Supplier"
         '
         'PembelianToolStripMenuItem
         '
         Me.PembelianToolStripMenuItem.Name = "PembelianToolStripMenuItem"
-        Me.PembelianToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
+        Me.PembelianToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.PembelianToolStripMenuItem.Text = "Pembelian"
         '
         'PenjualanToolStripMenuItem
         '
         Me.PenjualanToolStripMenuItem.Name = "PenjualanToolStripMenuItem"
-        Me.PenjualanToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
+        Me.PenjualanToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.PenjualanToolStripMenuItem.Text = "Penjualan"
         '
         'EOQToolStripMenuItem
         '
         Me.EOQToolStripMenuItem.Name = "EOQToolStripMenuItem"
-        Me.EOQToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
+        Me.EOQToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.EOQToolStripMenuItem.Text = "EOQ"
         '
-        'KeluarToolStripMenuItem
+        'TSMlaporan
         '
-        Me.KeluarToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BarangToolStripMenuItem1, Me.PenjualanToolStripMenuItem1, Me.PembelianToolStripMenuItem1, Me.SupplierToolStripMenuItem1, Me.EOQToolStripMenuItem1})
-        Me.KeluarToolStripMenuItem.Name = "KeluarToolStripMenuItem"
-        Me.KeluarToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
-        Me.KeluarToolStripMenuItem.Text = "Laporan"
+        Me.TSMlaporan.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BarangToolStripMenuItem1, Me.PenjualanToolStripMenuItem1, Me.PembelianToolStripMenuItem1, Me.SupplierToolStripMenuItem1, Me.EOQToolStripMenuItem1})
+        Me.TSMlaporan.Name = "TSMlaporan"
+        Me.TSMlaporan.Size = New System.Drawing.Size(62, 20)
+        Me.TSMlaporan.Text = "Laporan"
         '
         'BarangToolStripMenuItem1
         '
         Me.BarangToolStripMenuItem1.Name = "BarangToolStripMenuItem1"
-        Me.BarangToolStripMenuItem1.Size = New System.Drawing.Size(130, 22)
+        Me.BarangToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.BarangToolStripMenuItem1.Text = "Barang"
         '
         'PenjualanToolStripMenuItem1
         '
         Me.PenjualanToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HarianToolStripMenuItem, Me.BulananToolStripMenuItem, Me.TahunanToolStripMenuItem})
         Me.PenjualanToolStripMenuItem1.Name = "PenjualanToolStripMenuItem1"
-        Me.PenjualanToolStripMenuItem1.Size = New System.Drawing.Size(130, 22)
+        Me.PenjualanToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.PenjualanToolStripMenuItem1.Text = "Penjualan"
         '
         'HarianToolStripMenuItem
@@ -143,19 +143,19 @@ Partial Class Menu_Utama
         'PembelianToolStripMenuItem1
         '
         Me.PembelianToolStripMenuItem1.Name = "PembelianToolStripMenuItem1"
-        Me.PembelianToolStripMenuItem1.Size = New System.Drawing.Size(130, 22)
+        Me.PembelianToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.PembelianToolStripMenuItem1.Text = "Pembelian"
         '
         'SupplierToolStripMenuItem1
         '
         Me.SupplierToolStripMenuItem1.Name = "SupplierToolStripMenuItem1"
-        Me.SupplierToolStripMenuItem1.Size = New System.Drawing.Size(130, 22)
+        Me.SupplierToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.SupplierToolStripMenuItem1.Text = "Supplier"
         '
         'EOQToolStripMenuItem1
         '
         Me.EOQToolStripMenuItem1.Name = "EOQToolStripMenuItem1"
-        Me.EOQToolStripMenuItem1.Size = New System.Drawing.Size(130, 22)
+        Me.EOQToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.EOQToolStripMenuItem1.Text = "EOQ"
         '
         'KeluarToolStripMenuItem1
@@ -182,13 +182,13 @@ Partial Class Menu_Utama
 
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents InputToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents LaporanToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TSMInput As ToolStripMenuItem
     Friend WithEvents PenggunaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents BarangToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PenjualanToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PembelianToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EOQToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents KeluarToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TSMlaporan As ToolStripMenuItem
     Friend WithEvents BarangToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents PenjualanToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents PembelianToolStripMenuItem1 As ToolStripMenuItem

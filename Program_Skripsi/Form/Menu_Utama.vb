@@ -95,5 +95,6 @@
 
     Private Sub MenuEoq(sender As Object, e As EventArgs) Handles EOQToolStripMenuItem.Click
         Me.ShowForm(FEoq, Me)
+        FEoq.BukaForm()
     End Sub
 End Class

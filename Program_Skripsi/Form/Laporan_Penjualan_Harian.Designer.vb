@@ -35,7 +35,7 @@ Partial Class Laporan_Penjualan_Harian
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label4.Location = New System.Drawing.Point(76, 123)
+        Me.Label4.Location = New System.Drawing.Point(100, 129)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(312, 28)
         Me.Label4.TabIndex = 29
@@ -45,7 +45,7 @@ Partial Class Laporan_Penjualan_Harian
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label3.Location = New System.Drawing.Point(20, 95)
+        Me.Label3.Location = New System.Drawing.Point(44, 101)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(420, 28)
         Me.Label3.TabIndex = 28
@@ -55,7 +55,7 @@ Partial Class Laporan_Penjualan_Harian
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label2.Location = New System.Drawing.Point(11, 67)
+        Me.Label2.Location = New System.Drawing.Point(35, 73)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(439, 28)
         Me.Label2.TabIndex = 27
@@ -65,7 +65,7 @@ Partial Class Laporan_Penjualan_Harian
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(52, 13)
+        Me.Label1.Location = New System.Drawing.Point(76, 19)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(357, 54)
         Me.Label1.TabIndex = 26
@@ -75,7 +75,7 @@ Partial Class Laporan_Penjualan_Harian
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(12, 173)
+        Me.Label5.Location = New System.Drawing.Point(36, 179)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(84, 17)
         Me.Label5.TabIndex = 30
@@ -85,14 +85,14 @@ Partial Class Laporan_Penjualan_Harian
         '
         Me.Ttgl.CustomFormat = "dd-MM-yyyy"
         Me.Ttgl.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.Ttgl.Location = New System.Drawing.Point(114, 173)
+        Me.Ttgl.Location = New System.Drawing.Point(138, 179)
         Me.Ttgl.Name = "Ttgl"
-        Me.Ttgl.Size = New System.Drawing.Size(132, 20)
+        Me.Ttgl.Size = New System.Drawing.Size(203, 20)
         Me.Ttgl.TabIndex = 31
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(267, 171)
+        Me.Button1.Location = New System.Drawing.Point(358, 177)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 32
@@ -103,6 +103,7 @@ Partial Class Laporan_Penjualan_Harian
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.HotPink
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Ttgl)
         Me.Controls.Add(Me.Label5)
@@ -111,7 +112,7 @@ Partial Class Laporan_Penjualan_Harian
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Laporan_Penjualan_Harian"
-        Me.Size = New System.Drawing.Size(465, 213)
+        Me.Size = New System.Drawing.Size(507, 238)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

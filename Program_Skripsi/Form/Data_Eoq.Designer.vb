@@ -22,10 +22,6 @@ Partial Class Data_Eoq
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Tjml_kebutuhan = New System.Windows.Forms.NumericUpDown()
-        Me.Tbiaya_simpan = New System.Windows.Forms.NumericUpDown()
-        Me.Tbiaya_pesan = New System.Windows.Forms.NumericUpDown()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Bsimpan = New System.Windows.Forms.Button()
         Me.Tnama_barang = New System.Windows.Forms.TextBox()
@@ -44,10 +40,6 @@ Partial Class Data_Eoq
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.DGeoq = New System.Windows.Forms.DataGridView()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Ckode_barang = New System.Windows.Forms.ComboBox()
-        Me.Tkode_eoq = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.no = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.kode_eoq = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.kode_barang = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -57,54 +49,28 @@ Partial Class Data_Eoq
         Me.jml_kebutuhan = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.eoq = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.frekuensi = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        CType(Me.Tjml_kebutuhan, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Tbiaya_simpan, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Tbiaya_pesan, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Ckode_barang = New System.Windows.Forms.ComboBox()
+        Me.Tkode_eoq = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Tjml_kebutuhan = New System.Windows.Forms.TextBox()
+        Me.Twaktu = New System.Windows.Forms.DateTimePicker()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Tbiaya_pesan = New System.Windows.Forms.TextBox()
+        Me.Tbiaya_simpan = New System.Windows.Forms.TextBox()
+        Me.Tstock_cadangan = New System.Windows.Forms.TextBox()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Tleadtime = New System.Windows.Forms.TextBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Thari = New System.Windows.Forms.TextBox()
+        Me.Label17 = New System.Windows.Forms.Label()
         CType(Me.DGeoq, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Tjml_kebutuhan
-        '
-        Me.Tjml_kebutuhan.Location = New System.Drawing.Point(135, 321)
-        Me.Tjml_kebutuhan.Maximum = New Decimal(New Integer() {100000000, 0, 0, 0})
-        Me.Tjml_kebutuhan.Name = "Tjml_kebutuhan"
-        Me.Tjml_kebutuhan.Size = New System.Drawing.Size(113, 20)
-        Me.Tjml_kebutuhan.TabIndex = 100
-        '
-        'Tbiaya_simpan
-        '
-        Me.Tbiaya_simpan.Increment = New Decimal(New Integer() {1, 0, 0, 65536})
-        Me.Tbiaya_simpan.InterceptArrowKeys = False
-        Me.Tbiaya_simpan.Location = New System.Drawing.Point(134, 288)
-        Me.Tbiaya_simpan.Maximum = New Decimal(New Integer() {100000000, 0, 0, 0})
-        Me.Tbiaya_simpan.Name = "Tbiaya_simpan"
-        Me.Tbiaya_simpan.Size = New System.Drawing.Size(170, 20)
-        Me.Tbiaya_simpan.TabIndex = 99
-        '
-        'Tbiaya_pesan
-        '
-        Me.Tbiaya_pesan.Increment = New Decimal(New Integer() {1, 0, 0, 65536})
-        Me.Tbiaya_pesan.InterceptArrowKeys = False
-        Me.Tbiaya_pesan.Location = New System.Drawing.Point(134, 255)
-        Me.Tbiaya_pesan.Maximum = New Decimal(New Integer() {100000000, 0, 0, 0})
-        Me.Tbiaya_pesan.Name = "Tbiaya_pesan"
-        Me.Tbiaya_pesan.Size = New System.Drawing.Size(170, 20)
-        Me.Tbiaya_pesan.TabIndex = 98
-        '
-        'Button3
-        '
-        Me.Button3.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(464, 349)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(125, 23)
-        Me.Button3.TabIndex = 86
-        Me.Button3.Text = "KELUAR"
-        Me.Button3.UseVisualStyleBackColor = True
         '
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(235, 349)
+        Me.Button2.Location = New System.Drawing.Point(33, 366)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(125, 23)
         Me.Button2.TabIndex = 85
@@ -114,7 +80,7 @@ Partial Class Data_Eoq
         'Bsimpan
         '
         Me.Bsimpan.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Bsimpan.Location = New System.Drawing.Point(9, 349)
+        Me.Bsimpan.Location = New System.Drawing.Point(511, 366)
         Me.Bsimpan.Name = "Bsimpan"
         Me.Bsimpan.Size = New System.Drawing.Size(125, 23)
         Me.Bsimpan.TabIndex = 83
@@ -123,17 +89,17 @@ Partial Class Data_Eoq
         '
         'Tnama_barang
         '
-        Me.Tnama_barang.Location = New System.Drawing.Point(134, 229)
+        Me.Tnama_barang.Location = New System.Drawing.Point(145, 251)
         Me.Tnama_barang.Name = "Tnama_barang"
         Me.Tnama_barang.ReadOnly = True
-        Me.Tnama_barang.Size = New System.Drawing.Size(170, 20)
+        Me.Tnama_barang.Size = New System.Drawing.Size(162, 20)
         Me.Tnama_barang.TabIndex = 81
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(6, 229)
+        Me.Label6.Location = New System.Drawing.Point(29, 251)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(91, 17)
         Me.Label6.TabIndex = 80
@@ -143,7 +109,7 @@ Partial Class Data_Eoq
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(6, 197)
+        Me.Label5.Location = New System.Drawing.Point(29, 219)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(86, 17)
         Me.Label5.TabIndex = 78
@@ -153,7 +119,7 @@ Partial Class Data_Eoq
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label4.Location = New System.Drawing.Point(112, 119)
+        Me.Label4.Location = New System.Drawing.Point(149, 137)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(377, 28)
         Me.Label4.TabIndex = 77
@@ -163,7 +129,7 @@ Partial Class Data_Eoq
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label3.Location = New System.Drawing.Point(100, 82)
+        Me.Label3.Location = New System.Drawing.Point(137, 100)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(420, 28)
         Me.Label3.TabIndex = 76
@@ -173,7 +139,7 @@ Partial Class Data_Eoq
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label2.Location = New System.Drawing.Point(91, 54)
+        Me.Label2.Location = New System.Drawing.Point(128, 72)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(439, 28)
         Me.Label2.TabIndex = 75
@@ -183,7 +149,7 @@ Partial Class Data_Eoq
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(132, 0)
+        Me.Label1.Location = New System.Drawing.Point(169, 18)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(357, 54)
         Me.Label1.TabIndex = 74
@@ -191,16 +157,16 @@ Partial Class Data_Eoq
         '
         'Trop
         '
-        Me.Trop.Location = New System.Drawing.Point(419, 319)
+        Me.Trop.Location = New System.Drawing.Point(438, 335)
         Me.Trop.Name = "Trop"
-        Me.Trop.Size = New System.Drawing.Size(170, 20)
+        Me.Trop.Size = New System.Drawing.Size(198, 20)
         Me.Trop.TabIndex = 97
         '
         'Label15
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(333, 319)
+        Me.Label15.Location = New System.Drawing.Point(313, 334)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(66, 17)
         Me.Label15.TabIndex = 96
@@ -208,16 +174,16 @@ Partial Class Data_Eoq
         '
         'Teoq
         '
-        Me.Teoq.Location = New System.Drawing.Point(419, 291)
+        Me.Teoq.Location = New System.Drawing.Point(438, 307)
         Me.Teoq.Name = "Teoq"
-        Me.Teoq.Size = New System.Drawing.Size(170, 20)
+        Me.Teoq.Size = New System.Drawing.Size(198, 20)
         Me.Teoq.TabIndex = 93
         '
         'Label12
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(333, 291)
+        Me.Label12.Location = New System.Drawing.Point(313, 306)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(82, 17)
         Me.Label12.TabIndex = 92
@@ -227,17 +193,17 @@ Partial Class Data_Eoq
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(254, 321)
+        Me.Label11.Location = New System.Drawing.Point(488, 247)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(50, 17)
+        Me.Label11.Size = New System.Drawing.Size(47, 17)
         Me.Label11.TabIndex = 91
-        Me.Label11.Text = "/Tahun"
+        Me.Label11.Text = "/Bulan"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(7, 321)
+        Me.Label10.Location = New System.Drawing.Point(313, 247)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(122, 17)
         Me.Label10.TabIndex = 90
@@ -247,7 +213,7 @@ Partial Class Data_Eoq
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(7, 288)
+        Me.Label9.Location = New System.Drawing.Point(30, 310)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(89, 17)
         Me.Label9.TabIndex = 89
@@ -257,7 +223,7 @@ Partial Class Data_Eoq
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(7, 256)
+        Me.Label7.Location = New System.Drawing.Point(30, 278)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(80, 17)
         Me.Label7.TabIndex = 88
@@ -269,46 +235,11 @@ Partial Class Data_Eoq
         Me.DGeoq.AllowUserToDeleteRows = False
         Me.DGeoq.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGeoq.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.no, Me.kode_eoq, Me.kode_barang, Me.nama_barang, Me.biaya_pesan, Me.biaya_simpan, Me.jml_kebutuhan, Me.eoq, Me.frekuensi})
-        Me.DGeoq.Location = New System.Drawing.Point(9, 387)
+        Me.DGeoq.Location = New System.Drawing.Point(32, 404)
         Me.DGeoq.Name = "DGeoq"
         Me.DGeoq.ReadOnly = True
-        Me.DGeoq.Size = New System.Drawing.Size(580, 150)
+        Me.DGeoq.Size = New System.Drawing.Size(604, 150)
         Me.DGeoq.TabIndex = 87
-        '
-        'Button4
-        '
-        Me.Button4.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(419, 197)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(125, 49)
-        Me.Button4.TabIndex = 101
-        Me.Button4.Text = "HITUNG"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Ckode_barang
-        '
-        Me.Ckode_barang.FormattingEnabled = True
-        Me.Ckode_barang.Location = New System.Drawing.Point(134, 197)
-        Me.Ckode_barang.Name = "Ckode_barang"
-        Me.Ckode_barang.Size = New System.Drawing.Size(170, 21)
-        Me.Ckode_barang.TabIndex = 102
-        '
-        'Tkode_eoq
-        '
-        Me.Tkode_eoq.Location = New System.Drawing.Point(134, 168)
-        Me.Tkode_eoq.Name = "Tkode_eoq"
-        Me.Tkode_eoq.Size = New System.Drawing.Size(170, 20)
-        Me.Tkode_eoq.TabIndex = 104
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(7, 168)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(70, 17)
-        Me.Label8.TabIndex = 103
-        Me.Label8.Text = "Kode EOQ"
         '
         'no
         '
@@ -364,18 +295,152 @@ Partial Class Data_Eoq
         Me.frekuensi.Name = "frekuensi"
         Me.frekuensi.ReadOnly = True
         '
+        'Button4
+        '
+        Me.Button4.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.Location = New System.Drawing.Point(511, 275)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(125, 25)
+        Me.Button4.TabIndex = 101
+        Me.Button4.Text = "HITUNG"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Ckode_barang
+        '
+        Me.Ckode_barang.FormattingEnabled = True
+        Me.Ckode_barang.Location = New System.Drawing.Point(145, 219)
+        Me.Ckode_barang.Name = "Ckode_barang"
+        Me.Ckode_barang.Size = New System.Drawing.Size(162, 21)
+        Me.Ckode_barang.TabIndex = 102
+        '
+        'Tkode_eoq
+        '
+        Me.Tkode_eoq.Location = New System.Drawing.Point(145, 190)
+        Me.Tkode_eoq.Name = "Tkode_eoq"
+        Me.Tkode_eoq.Size = New System.Drawing.Size(162, 20)
+        Me.Tkode_eoq.TabIndex = 104
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(30, 190)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(70, 17)
+        Me.Label8.TabIndex = 103
+        Me.Label8.Text = "Kode EOQ"
+        '
+        'Tjml_kebutuhan
+        '
+        Me.Tjml_kebutuhan.Location = New System.Drawing.Point(437, 247)
+        Me.Tjml_kebutuhan.Name = "Tjml_kebutuhan"
+        Me.Tjml_kebutuhan.Size = New System.Drawing.Size(43, 20)
+        Me.Tjml_kebutuhan.TabIndex = 105
+        '
+        'Twaktu
+        '
+        Me.Twaktu.CustomFormat = "MM yyyy"
+        Me.Twaktu.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.Twaktu.Location = New System.Drawing.Point(437, 219)
+        Me.Twaktu.Name = "Twaktu"
+        Me.Twaktu.Size = New System.Drawing.Size(199, 20)
+        Me.Twaktu.TabIndex = 106
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(313, 219)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(118, 17)
+        Me.Label13.TabIndex = 107
+        Me.Label13.Text = "Waktu Kebutuhan"
+        '
+        'Tbiaya_pesan
+        '
+        Me.Tbiaya_pesan.Location = New System.Drawing.Point(145, 279)
+        Me.Tbiaya_pesan.Name = "Tbiaya_pesan"
+        Me.Tbiaya_pesan.Size = New System.Drawing.Size(162, 20)
+        Me.Tbiaya_pesan.TabIndex = 108
+        '
+        'Tbiaya_simpan
+        '
+        Me.Tbiaya_simpan.Location = New System.Drawing.Point(145, 308)
+        Me.Tbiaya_simpan.Name = "Tbiaya_simpan"
+        Me.Tbiaya_simpan.Size = New System.Drawing.Size(162, 20)
+        Me.Tbiaya_simpan.TabIndex = 109
+        '
+        'Tstock_cadangan
+        '
+        Me.Tstock_cadangan.Location = New System.Drawing.Point(145, 335)
+        Me.Tstock_cadangan.Name = "Tstock_cadangan"
+        Me.Tstock_cadangan.Size = New System.Drawing.Size(162, 20)
+        Me.Tstock_cadangan.TabIndex = 111
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(30, 337)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(106, 17)
+        Me.Label14.TabIndex = 110
+        Me.Label14.Text = "Stock Cadangan"
+        '
+        'Tleadtime
+        '
+        Me.Tleadtime.Location = New System.Drawing.Point(438, 187)
+        Me.Tleadtime.Name = "Tleadtime"
+        Me.Tleadtime.Size = New System.Drawing.Size(198, 20)
+        Me.Tleadtime.TabIndex = 113
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(313, 187)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(63, 17)
+        Me.Label16.TabIndex = 112
+        Me.Label16.Text = "Leadtime"
+        '
+        'Thari
+        '
+        Me.Thari.Location = New System.Drawing.Point(538, 247)
+        Me.Thari.Name = "Thari"
+        Me.Thari.Size = New System.Drawing.Size(43, 20)
+        Me.Thari.TabIndex = 115
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(589, 247)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(47, 17)
+        Me.Label17.TabIndex = 114
+        Me.Label17.Text = "/Bulan"
+        '
         'Data_Eoq
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.HotPink
+        Me.Controls.Add(Me.Thari)
+        Me.Controls.Add(Me.Label17)
+        Me.Controls.Add(Me.Tleadtime)
+        Me.Controls.Add(Me.Label16)
+        Me.Controls.Add(Me.Tstock_cadangan)
+        Me.Controls.Add(Me.Label14)
+        Me.Controls.Add(Me.Tbiaya_simpan)
+        Me.Controls.Add(Me.Tbiaya_pesan)
+        Me.Controls.Add(Me.Label13)
+        Me.Controls.Add(Me.Twaktu)
+        Me.Controls.Add(Me.Tjml_kebutuhan)
         Me.Controls.Add(Me.Tkode_eoq)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Ckode_barang)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Tjml_kebutuhan)
-        Me.Controls.Add(Me.Tbiaya_simpan)
-        Me.Controls.Add(Me.Tbiaya_pesan)
-        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Bsimpan)
         Me.Controls.Add(Me.Tnama_barang)
@@ -395,19 +460,12 @@ Partial Class Data_Eoq
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.DGeoq)
         Me.Name = "Data_Eoq"
-        Me.Size = New System.Drawing.Size(605, 550)
-        CType(Me.Tjml_kebutuhan, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Tbiaya_simpan, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Tbiaya_pesan, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Size = New System.Drawing.Size(673, 579)
         CType(Me.DGeoq, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Tjml_kebutuhan As NumericUpDown
-    Friend WithEvents Tbiaya_simpan As NumericUpDown
-    Friend WithEvents Tbiaya_pesan As NumericUpDown
-    Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Bsimpan As Button
     Friend WithEvents Tnama_barang As TextBox
@@ -439,4 +497,15 @@ Partial Class Data_Eoq
     Friend WithEvents jml_kebutuhan As DataGridViewTextBoxColumn
     Friend WithEvents eoq As DataGridViewTextBoxColumn
     Friend WithEvents frekuensi As DataGridViewTextBoxColumn
+    Friend WithEvents Tjml_kebutuhan As TextBox
+    Friend WithEvents Twaktu As DateTimePicker
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Tbiaya_pesan As TextBox
+    Friend WithEvents Tbiaya_simpan As TextBox
+    Friend WithEvents Tstock_cadangan As TextBox
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Tleadtime As TextBox
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Thari As TextBox
+    Friend WithEvents Label17 As Label
 End Class

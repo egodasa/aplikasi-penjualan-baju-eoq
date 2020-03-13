@@ -74,7 +74,7 @@ Partial Class Data_Pembelian
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label3.Location = New System.Drawing.Point(216, 82)
+        Me.Label3.Location = New System.Drawing.Point(216, 94)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(420, 28)
         Me.Label3.TabIndex = 42
@@ -84,7 +84,7 @@ Partial Class Data_Pembelian
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label2.Location = New System.Drawing.Point(207, 54)
+        Me.Label2.Location = New System.Drawing.Point(207, 66)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(439, 28)
         Me.Label2.TabIndex = 41
@@ -94,7 +94,7 @@ Partial Class Data_Pembelian
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(248, 0)
+        Me.Label1.Location = New System.Drawing.Point(248, 12)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(357, 54)
         Me.Label1.TabIndex = 40
@@ -102,7 +102,7 @@ Partial Class Data_Pembelian
         '
         'Tsub_total
         '
-        Me.Tsub_total.Location = New System.Drawing.Point(408, 227)
+        Me.Tsub_total.Location = New System.Drawing.Point(408, 239)
         Me.Tsub_total.Name = "Tsub_total"
         Me.Tsub_total.Size = New System.Drawing.Size(374, 20)
         Me.Tsub_total.TabIndex = 86
@@ -111,7 +111,7 @@ Partial Class Data_Pembelian
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(316, 227)
+        Me.Label14.Location = New System.Drawing.Point(316, 239)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(64, 17)
         Me.Label14.TabIndex = 85
@@ -119,7 +119,7 @@ Partial Class Data_Pembelian
         '
         'Tharga_beli
         '
-        Me.Tharga_beli.Location = New System.Drawing.Point(652, 202)
+        Me.Tharga_beli.Location = New System.Drawing.Point(652, 214)
         Me.Tharga_beli.Name = "Tharga_beli"
         Me.Tharga_beli.Size = New System.Drawing.Size(130, 20)
         Me.Tharga_beli.TabIndex = 84
@@ -128,7 +128,7 @@ Partial Class Data_Pembelian
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(570, 202)
+        Me.Label13.Location = New System.Drawing.Point(570, 214)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(70, 17)
         Me.Label13.TabIndex = 83
@@ -136,7 +136,7 @@ Partial Class Data_Pembelian
         '
         'Tjumlah
         '
-        Me.Tjumlah.Location = New System.Drawing.Point(652, 173)
+        Me.Tjumlah.Location = New System.Drawing.Point(652, 185)
         Me.Tjumlah.Name = "Tjumlah"
         Me.Tjumlah.Size = New System.Drawing.Size(130, 20)
         Me.Tjumlah.TabIndex = 73
@@ -145,7 +145,7 @@ Partial Class Data_Pembelian
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(570, 172)
+        Me.Label8.Location = New System.Drawing.Point(570, 184)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(76, 17)
         Me.Label8.TabIndex = 72
@@ -155,7 +155,7 @@ Partial Class Data_Pembelian
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(38, 199)
+        Me.Label6.Location = New System.Drawing.Point(38, 211)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(80, 17)
         Me.Label6.TabIndex = 70
@@ -163,7 +163,7 @@ Partial Class Data_Pembelian
         '
         'Tno_nota
         '
-        Me.Tno_nota.Location = New System.Drawing.Point(140, 173)
+        Me.Tno_nota.Location = New System.Drawing.Point(140, 185)
         Me.Tno_nota.Name = "Tno_nota"
         Me.Tno_nota.Size = New System.Drawing.Size(170, 20)
         Me.Tno_nota.TabIndex = 69
@@ -172,7 +172,7 @@ Partial Class Data_Pembelian
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(38, 173)
+        Me.Label5.Location = New System.Drawing.Point(38, 185)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(85, 17)
         Me.Label5.TabIndex = 68
@@ -182,7 +182,7 @@ Partial Class Data_Pembelian
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(316, 172)
+        Me.Label4.Location = New System.Drawing.Point(316, 184)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(86, 17)
         Me.Label4.TabIndex = 89
@@ -191,14 +191,14 @@ Partial Class Data_Pembelian
         'Ckode_barang
         '
         Me.Ckode_barang.FormattingEnabled = True
-        Me.Ckode_barang.Location = New System.Drawing.Point(408, 172)
+        Me.Ckode_barang.Location = New System.Drawing.Point(408, 184)
         Me.Ckode_barang.Name = "Ckode_barang"
         Me.Ckode_barang.Size = New System.Drawing.Size(150, 21)
         Me.Ckode_barang.TabIndex = 90
         '
         'Tnama_barang
         '
-        Me.Tnama_barang.Location = New System.Drawing.Point(408, 199)
+        Me.Tnama_barang.Location = New System.Drawing.Point(408, 211)
         Me.Tnama_barang.Name = "Tnama_barang"
         Me.Tnama_barang.ReadOnly = True
         Me.Tnama_barang.Size = New System.Drawing.Size(150, 20)
@@ -208,7 +208,7 @@ Partial Class Data_Pembelian
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(316, 199)
+        Me.Label16.Location = New System.Drawing.Point(316, 211)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(91, 17)
         Me.Label16.TabIndex = 91
@@ -216,7 +216,7 @@ Partial Class Data_Pembelian
         '
         'Tnama_supplier
         '
-        Me.Tnama_supplier.Location = New System.Drawing.Point(140, 252)
+        Me.Tnama_supplier.Location = New System.Drawing.Point(140, 264)
         Me.Tnama_supplier.Name = "Tnama_supplier"
         Me.Tnama_supplier.ReadOnly = True
         Me.Tnama_supplier.Size = New System.Drawing.Size(170, 20)
@@ -226,7 +226,7 @@ Partial Class Data_Pembelian
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(38, 252)
+        Me.Label7.Location = New System.Drawing.Point(38, 264)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(97, 17)
         Me.Label7.TabIndex = 95
@@ -235,7 +235,7 @@ Partial Class Data_Pembelian
         'Ckode_supplier
         '
         Me.Ckode_supplier.FormattingEnabled = True
-        Me.Ckode_supplier.Location = New System.Drawing.Point(140, 225)
+        Me.Ckode_supplier.Location = New System.Drawing.Point(140, 237)
         Me.Ckode_supplier.Name = "Ckode_supplier"
         Me.Ckode_supplier.Size = New System.Drawing.Size(170, 21)
         Me.Ckode_supplier.TabIndex = 94
@@ -244,7 +244,7 @@ Partial Class Data_Pembelian
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(38, 225)
+        Me.Label9.Location = New System.Drawing.Point(38, 237)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(92, 17)
         Me.Label9.TabIndex = 93
@@ -256,7 +256,7 @@ Partial Class Data_Pembelian
         Me.DGkeranjang.AllowUserToDeleteRows = False
         Me.DGkeranjang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGkeranjang.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id_detail, Me.no, Me.kode_barang, Me.nama_barang, Me.harga_barang, Me.jumlah, Me.sub_total})
-        Me.DGkeranjang.Location = New System.Drawing.Point(41, 280)
+        Me.DGkeranjang.Location = New System.Drawing.Point(41, 292)
         Me.DGkeranjang.Name = "DGkeranjang"
         Me.DGkeranjang.ReadOnly = True
         Me.DGkeranjang.Size = New System.Drawing.Size(741, 84)
@@ -308,7 +308,7 @@ Partial Class Data_Pembelian
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(657, 367)
+        Me.Button2.Location = New System.Drawing.Point(657, 379)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(125, 23)
         Me.Button2.TabIndex = 101
@@ -318,7 +318,7 @@ Partial Class Data_Pembelian
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(652, 252)
+        Me.Button1.Location = New System.Drawing.Point(652, 264)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(125, 23)
         Me.Button1.TabIndex = 100
@@ -328,7 +328,7 @@ Partial Class Data_Pembelian
         'Bsimpan
         '
         Me.Bsimpan.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Bsimpan.Location = New System.Drawing.Point(41, 370)
+        Me.Bsimpan.Location = New System.Drawing.Point(41, 382)
         Me.Bsimpan.Name = "Bsimpan"
         Me.Bsimpan.Size = New System.Drawing.Size(154, 23)
         Me.Bsimpan.TabIndex = 99
@@ -341,7 +341,7 @@ Partial Class Data_Pembelian
         Me.DGpembelian.AllowUserToDeleteRows = False
         Me.DGpembelian.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGpembelian.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.nomor, Me.no_nota, Me.tgl_beli, Me.kode_supplier, Me.nama_supplier, Me.jumlah_beli, Me.total_harga})
-        Me.DGpembelian.Location = New System.Drawing.Point(41, 435)
+        Me.DGpembelian.Location = New System.Drawing.Point(41, 447)
         Me.DGpembelian.Name = "DGpembelian"
         Me.DGpembelian.ReadOnly = True
         Me.DGpembelian.Size = New System.Drawing.Size(741, 113)
@@ -392,7 +392,7 @@ Partial Class Data_Pembelian
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(563, 554)
+        Me.Button3.Location = New System.Drawing.Point(657, 566)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(125, 23)
         Me.Button3.TabIndex = 104
@@ -403,7 +403,7 @@ Partial Class Data_Pembelian
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label11.Location = New System.Drawing.Point(301, 110)
+        Me.Label11.Location = New System.Drawing.Point(301, 122)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(249, 28)
         Me.Label11.TabIndex = 105
@@ -411,7 +411,7 @@ Partial Class Data_Pembelian
         '
         'Ttotal_harga
         '
-        Me.Ttotal_harga.Location = New System.Drawing.Point(395, 367)
+        Me.Ttotal_harga.Location = New System.Drawing.Point(395, 379)
         Me.Ttotal_harga.Name = "Ttotal_harga"
         Me.Ttotal_harga.ReadOnly = True
         Me.Ttotal_harga.Size = New System.Drawing.Size(225, 20)
@@ -421,7 +421,7 @@ Partial Class Data_Pembelian
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(287, 367)
+        Me.Label10.Location = New System.Drawing.Point(287, 379)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(93, 17)
         Me.Label10.TabIndex = 107
@@ -431,7 +431,7 @@ Partial Class Data_Pembelian
         '
         Me.Ttgl_beli.CustomFormat = "dd-MM-yyyy"
         Me.Ttgl_beli.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.Ttgl_beli.Location = New System.Drawing.Point(140, 199)
+        Me.Ttgl_beli.Location = New System.Drawing.Point(140, 211)
         Me.Ttgl_beli.Name = "Ttgl_beli"
         Me.Ttgl_beli.Size = New System.Drawing.Size(170, 20)
         Me.Ttgl_beli.TabIndex = 108
@@ -440,7 +440,7 @@ Partial Class Data_Pembelian
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.HotPink
         Me.Controls.Add(Me.Ttgl_beli)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Ttotal_harga)
@@ -472,7 +472,7 @@ Partial Class Data_Pembelian
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Data_Pembelian"
-        Me.Size = New System.Drawing.Size(806, 595)
+        Me.Size = New System.Drawing.Size(836, 610)
         CType(Me.DGkeranjang, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DGpembelian, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

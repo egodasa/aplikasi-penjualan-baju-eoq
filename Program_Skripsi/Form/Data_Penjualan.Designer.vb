@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Data_Penjualan
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Data_Penjualan
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.DGpenjualan = New System.Windows.Forms.DataGridView()
@@ -77,7 +77,7 @@ Partial Class Data_Penjualan
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(551, 554)
+        Me.Button3.Location = New System.Drawing.Point(562, 568)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(125, 23)
         Me.Button3.TabIndex = 135
@@ -90,7 +90,7 @@ Partial Class Data_Penjualan
         Me.DGpenjualan.AllowUserToDeleteRows = False
         Me.DGpenjualan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGpenjualan.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.nomor, Me.no_nota, Me.tgl_beli, Me.nm_pembeli, Me.jumlah_beli, Me.total_harga, Me.uraian_jual})
-        Me.DGpenjualan.Location = New System.Drawing.Point(29, 435)
+        Me.DGpenjualan.Location = New System.Drawing.Point(40, 449)
         Me.DGpenjualan.Name = "DGpenjualan"
         Me.DGpenjualan.ReadOnly = True
         Me.DGpenjualan.Size = New System.Drawing.Size(647, 113)
@@ -142,7 +142,7 @@ Partial Class Data_Penjualan
         '
         Me.Ttgl_beli.CustomFormat = "dd-MM-yyyy"
         Me.Ttgl_beli.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.Ttgl_beli.Location = New System.Drawing.Point(128, 199)
+        Me.Ttgl_beli.Location = New System.Drawing.Point(139, 213)
         Me.Ttgl_beli.Name = "Ttgl_beli"
         Me.Ttgl_beli.Size = New System.Drawing.Size(170, 20)
         Me.Ttgl_beli.TabIndex = 139
@@ -151,7 +151,7 @@ Partial Class Data_Penjualan
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(275, 390)
+        Me.Label10.Location = New System.Drawing.Point(286, 404)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(93, 17)
         Me.Label10.TabIndex = 138
@@ -159,7 +159,7 @@ Partial Class Data_Penjualan
         '
         'Ttotal_harga
         '
-        Me.Ttotal_harga.Location = New System.Drawing.Point(383, 390)
+        Me.Ttotal_harga.Location = New System.Drawing.Point(394, 404)
         Me.Ttotal_harga.Name = "Ttotal_harga"
         Me.Ttotal_harga.ReadOnly = True
         Me.Ttotal_harga.Size = New System.Drawing.Size(225, 20)
@@ -169,7 +169,7 @@ Partial Class Data_Penjualan
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label11.Location = New System.Drawing.Point(289, 110)
+        Me.Label11.Location = New System.Drawing.Point(300, 124)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(253, 28)
         Me.Label11.TabIndex = 136
@@ -178,7 +178,7 @@ Partial Class Data_Penjualan
         'Button4
         '
         Me.Button4.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(682, 486)
+        Me.Button4.Location = New System.Drawing.Point(693, 500)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(88, 62)
         Me.Button4.TabIndex = 134
@@ -188,7 +188,7 @@ Partial Class Data_Penjualan
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(645, 390)
+        Me.Button2.Location = New System.Drawing.Point(656, 404)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(125, 23)
         Me.Button2.TabIndex = 132
@@ -241,7 +241,7 @@ Partial Class Data_Penjualan
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(640, 252)
+        Me.Button1.Location = New System.Drawing.Point(651, 266)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(125, 23)
         Me.Button1.TabIndex = 131
@@ -251,7 +251,7 @@ Partial Class Data_Penjualan
         'Bsimpan
         '
         Me.Bsimpan.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Bsimpan.Location = New System.Drawing.Point(29, 393)
+        Me.Bsimpan.Location = New System.Drawing.Point(40, 407)
         Me.Bsimpan.Name = "Bsimpan"
         Me.Bsimpan.Size = New System.Drawing.Size(154, 23)
         Me.Bsimpan.TabIndex = 130
@@ -264,7 +264,7 @@ Partial Class Data_Penjualan
         Me.DGkeranjang.AllowUserToDeleteRows = False
         Me.DGkeranjang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGkeranjang.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id_detail, Me.no, Me.kode_barang, Me.nama_barang, Me.harga_barang, Me.jumlah, Me.sub_total})
-        Me.DGkeranjang.Location = New System.Drawing.Point(29, 281)
+        Me.DGkeranjang.Location = New System.Drawing.Point(40, 295)
         Me.DGkeranjang.Name = "DGkeranjang"
         Me.DGkeranjang.ReadOnly = True
         Me.DGkeranjang.Size = New System.Drawing.Size(741, 106)
@@ -274,7 +274,7 @@ Partial Class Data_Penjualan
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(26, 252)
+        Me.Label7.Location = New System.Drawing.Point(37, 266)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(78, 17)
         Me.Label7.TabIndex = 127
@@ -284,7 +284,7 @@ Partial Class Data_Penjualan
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(26, 225)
+        Me.Label9.Location = New System.Drawing.Point(37, 239)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(96, 17)
         Me.Label9.TabIndex = 125
@@ -292,7 +292,7 @@ Partial Class Data_Penjualan
         '
         'Tnama_barang
         '
-        Me.Tnama_barang.Location = New System.Drawing.Point(396, 199)
+        Me.Tnama_barang.Location = New System.Drawing.Point(407, 213)
         Me.Tnama_barang.Name = "Tnama_barang"
         Me.Tnama_barang.ReadOnly = True
         Me.Tnama_barang.Size = New System.Drawing.Size(150, 20)
@@ -302,7 +302,7 @@ Partial Class Data_Penjualan
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(304, 199)
+        Me.Label16.Location = New System.Drawing.Point(315, 213)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(91, 17)
         Me.Label16.TabIndex = 123
@@ -311,7 +311,7 @@ Partial Class Data_Penjualan
         'Ckode_barang
         '
         Me.Ckode_barang.FormattingEnabled = True
-        Me.Ckode_barang.Location = New System.Drawing.Point(396, 172)
+        Me.Ckode_barang.Location = New System.Drawing.Point(407, 186)
         Me.Ckode_barang.Name = "Ckode_barang"
         Me.Ckode_barang.Size = New System.Drawing.Size(150, 21)
         Me.Ckode_barang.TabIndex = 122
@@ -320,7 +320,7 @@ Partial Class Data_Penjualan
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(304, 172)
+        Me.Label4.Location = New System.Drawing.Point(315, 186)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(86, 17)
         Me.Label4.TabIndex = 121
@@ -328,7 +328,7 @@ Partial Class Data_Penjualan
         '
         'Tsub_total
         '
-        Me.Tsub_total.Location = New System.Drawing.Point(640, 227)
+        Me.Tsub_total.Location = New System.Drawing.Point(651, 241)
         Me.Tsub_total.Name = "Tsub_total"
         Me.Tsub_total.ReadOnly = True
         Me.Tsub_total.Size = New System.Drawing.Size(130, 20)
@@ -338,7 +338,7 @@ Partial Class Data_Penjualan
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(558, 227)
+        Me.Label14.Location = New System.Drawing.Point(569, 241)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(64, 17)
         Me.Label14.TabIndex = 119
@@ -346,7 +346,7 @@ Partial Class Data_Penjualan
         '
         'Tharga_beli
         '
-        Me.Tharga_beli.Location = New System.Drawing.Point(640, 199)
+        Me.Tharga_beli.Location = New System.Drawing.Point(651, 213)
         Me.Tharga_beli.Name = "Tharga_beli"
         Me.Tharga_beli.ReadOnly = True
         Me.Tharga_beli.Size = New System.Drawing.Size(130, 20)
@@ -356,7 +356,7 @@ Partial Class Data_Penjualan
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(558, 199)
+        Me.Label13.Location = New System.Drawing.Point(569, 213)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(70, 17)
         Me.Label13.TabIndex = 117
@@ -364,7 +364,7 @@ Partial Class Data_Penjualan
         '
         'Tjumlah
         '
-        Me.Tjumlah.Location = New System.Drawing.Point(640, 173)
+        Me.Tjumlah.Location = New System.Drawing.Point(651, 187)
         Me.Tjumlah.Name = "Tjumlah"
         Me.Tjumlah.Size = New System.Drawing.Size(130, 20)
         Me.Tjumlah.TabIndex = 116
@@ -373,7 +373,7 @@ Partial Class Data_Penjualan
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(558, 172)
+        Me.Label8.Location = New System.Drawing.Point(569, 186)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(76, 17)
         Me.Label8.TabIndex = 115
@@ -383,7 +383,7 @@ Partial Class Data_Penjualan
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(26, 199)
+        Me.Label6.Location = New System.Drawing.Point(37, 213)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(80, 17)
         Me.Label6.TabIndex = 114
@@ -391,7 +391,7 @@ Partial Class Data_Penjualan
         '
         'Tno_nota
         '
-        Me.Tno_nota.Location = New System.Drawing.Point(128, 173)
+        Me.Tno_nota.Location = New System.Drawing.Point(139, 187)
         Me.Tno_nota.Name = "Tno_nota"
         Me.Tno_nota.Size = New System.Drawing.Size(170, 20)
         Me.Tno_nota.TabIndex = 113
@@ -400,7 +400,7 @@ Partial Class Data_Penjualan
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(26, 173)
+        Me.Label5.Location = New System.Drawing.Point(37, 187)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(85, 17)
         Me.Label5.TabIndex = 112
@@ -410,7 +410,7 @@ Partial Class Data_Penjualan
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label3.Location = New System.Drawing.Point(204, 82)
+        Me.Label3.Location = New System.Drawing.Point(215, 96)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(420, 28)
         Me.Label3.TabIndex = 111
@@ -420,7 +420,7 @@ Partial Class Data_Penjualan
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label2.Location = New System.Drawing.Point(195, 54)
+        Me.Label2.Location = New System.Drawing.Point(206, 68)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(439, 28)
         Me.Label2.TabIndex = 110
@@ -430,7 +430,7 @@ Partial Class Data_Penjualan
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(236, 0)
+        Me.Label1.Location = New System.Drawing.Point(247, 14)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(357, 54)
         Me.Label1.TabIndex = 109
@@ -438,21 +438,21 @@ Partial Class Data_Penjualan
         '
         'Tnm_pembeli
         '
-        Me.Tnm_pembeli.Location = New System.Drawing.Point(128, 227)
+        Me.Tnm_pembeli.Location = New System.Drawing.Point(139, 241)
         Me.Tnm_pembeli.Name = "Tnm_pembeli"
         Me.Tnm_pembeli.Size = New System.Drawing.Size(170, 20)
         Me.Tnm_pembeli.TabIndex = 140
         '
         'Turaian_jual
         '
-        Me.Turaian_jual.Location = New System.Drawing.Point(128, 252)
+        Me.Turaian_jual.Location = New System.Drawing.Point(139, 266)
         Me.Turaian_jual.Name = "Turaian_jual"
         Me.Turaian_jual.Size = New System.Drawing.Size(170, 20)
         Me.Turaian_jual.TabIndex = 141
         '
         'Tstok
         '
-        Me.Tstok.Location = New System.Drawing.Point(396, 225)
+        Me.Tstok.Location = New System.Drawing.Point(407, 239)
         Me.Tstok.Name = "Tstok"
         Me.Tstok.ReadOnly = True
         Me.Tstok.Size = New System.Drawing.Size(150, 20)
@@ -462,7 +462,7 @@ Partial Class Data_Penjualan
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(304, 225)
+        Me.Label12.Location = New System.Drawing.Point(315, 239)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(0, 17)
         Me.Label12.TabIndex = 143
@@ -471,7 +471,7 @@ Partial Class Data_Penjualan
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(304, 225)
+        Me.Label15.Location = New System.Drawing.Point(315, 239)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(35, 17)
         Me.Label15.TabIndex = 144
@@ -481,7 +481,7 @@ Partial Class Data_Penjualan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.HotPink
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Tstok)
@@ -517,7 +517,7 @@ Partial Class Data_Penjualan
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Data_Penjualan"
-        Me.Size = New System.Drawing.Size(792, 584)
+        Me.Size = New System.Drawing.Size(836, 612)
         CType(Me.DGpenjualan, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DGkeranjang, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

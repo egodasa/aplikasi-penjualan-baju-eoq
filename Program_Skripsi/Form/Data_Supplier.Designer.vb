@@ -53,7 +53,7 @@ Partial Class Data_Supplier
         Me.DGsupplier.AllowUserToDeleteRows = False
         Me.DGsupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGsupplier.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.no, Me.kode_supplier, Me.nama_supplier, Me.nohp, Me.alamat})
-        Me.DGsupplier.Location = New System.Drawing.Point(13, 312)
+        Me.DGsupplier.Location = New System.Drawing.Point(41, 335)
         Me.DGsupplier.Name = "DGsupplier"
         Me.DGsupplier.ReadOnly = True
         Me.DGsupplier.Size = New System.Drawing.Size(555, 150)
@@ -92,7 +92,7 @@ Partial Class Data_Supplier
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(443, 266)
+        Me.Button3.Location = New System.Drawing.Point(471, 289)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(125, 23)
         Me.Button3.TabIndex = 37
@@ -102,7 +102,7 @@ Partial Class Data_Supplier
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(298, 266)
+        Me.Button2.Location = New System.Drawing.Point(326, 289)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(125, 23)
         Me.Button2.TabIndex = 36
@@ -112,7 +112,7 @@ Partial Class Data_Supplier
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(157, 266)
+        Me.Button1.Location = New System.Drawing.Point(185, 289)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(125, 23)
         Me.Button1.TabIndex = 35
@@ -122,7 +122,7 @@ Partial Class Data_Supplier
         'Bsimpan
         '
         Me.Bsimpan.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Bsimpan.Location = New System.Drawing.Point(13, 266)
+        Me.Bsimpan.Location = New System.Drawing.Point(41, 289)
         Me.Bsimpan.Name = "Bsimpan"
         Me.Bsimpan.Size = New System.Drawing.Size(125, 23)
         Me.Bsimpan.TabIndex = 34
@@ -131,7 +131,7 @@ Partial Class Data_Supplier
         '
         'Tnohp
         '
-        Me.Tnohp.Location = New System.Drawing.Point(112, 226)
+        Me.Tnohp.Location = New System.Drawing.Point(140, 249)
         Me.Tnohp.Name = "Tnohp"
         Me.Tnohp.Size = New System.Drawing.Size(170, 20)
         Me.Tnohp.TabIndex = 33
@@ -140,7 +140,7 @@ Partial Class Data_Supplier
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(10, 226)
+        Me.Label8.Location = New System.Drawing.Point(38, 249)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(85, 17)
         Me.Label8.TabIndex = 32
@@ -148,7 +148,7 @@ Partial Class Data_Supplier
         '
         'Talamat
         '
-        Me.Talamat.Location = New System.Drawing.Point(316, 181)
+        Me.Talamat.Location = New System.Drawing.Point(344, 204)
         Me.Talamat.Multiline = True
         Me.Talamat.Name = "Talamat"
         Me.Talamat.Size = New System.Drawing.Size(252, 65)
@@ -158,7 +158,7 @@ Partial Class Data_Supplier
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(313, 161)
+        Me.Label7.Location = New System.Drawing.Point(341, 184)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(51, 17)
         Me.Label7.TabIndex = 30
@@ -166,7 +166,7 @@ Partial Class Data_Supplier
         '
         'Tnama_supplier
         '
-        Me.Tnama_supplier.Location = New System.Drawing.Point(112, 193)
+        Me.Tnama_supplier.Location = New System.Drawing.Point(140, 216)
         Me.Tnama_supplier.Name = "Tnama_supplier"
         Me.Tnama_supplier.Size = New System.Drawing.Size(170, 20)
         Me.Tnama_supplier.TabIndex = 29
@@ -175,7 +175,7 @@ Partial Class Data_Supplier
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(10, 193)
+        Me.Label6.Location = New System.Drawing.Point(38, 216)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(97, 17)
         Me.Label6.TabIndex = 28
@@ -183,7 +183,7 @@ Partial Class Data_Supplier
         '
         'Tkode_supplier
         '
-        Me.Tkode_supplier.Location = New System.Drawing.Point(112, 161)
+        Me.Tkode_supplier.Location = New System.Drawing.Point(140, 184)
         Me.Tkode_supplier.Name = "Tkode_supplier"
         Me.Tkode_supplier.Size = New System.Drawing.Size(170, 20)
         Me.Tkode_supplier.TabIndex = 27
@@ -192,7 +192,7 @@ Partial Class Data_Supplier
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(10, 161)
+        Me.Label5.Location = New System.Drawing.Point(38, 184)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(92, 17)
         Me.Label5.TabIndex = 26
@@ -202,7 +202,7 @@ Partial Class Data_Supplier
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label4.Location = New System.Drawing.Point(197, 122)
+        Me.Label4.Location = New System.Drawing.Point(208, 145)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(226, 28)
         Me.Label4.TabIndex = 25
@@ -212,7 +212,7 @@ Partial Class Data_Supplier
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label3.Location = New System.Drawing.Point(107, 82)
+        Me.Label3.Location = New System.Drawing.Point(118, 105)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(420, 28)
         Me.Label3.TabIndex = 24
@@ -222,7 +222,7 @@ Partial Class Data_Supplier
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label2.Location = New System.Drawing.Point(98, 54)
+        Me.Label2.Location = New System.Drawing.Point(109, 77)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(439, 28)
         Me.Label2.TabIndex = 23
@@ -232,7 +232,7 @@ Partial Class Data_Supplier
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(139, 0)
+        Me.Label1.Location = New System.Drawing.Point(150, 23)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(357, 54)
         Me.Label1.TabIndex = 22
@@ -242,7 +242,7 @@ Partial Class Data_Supplier
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.BackColor = System.Drawing.Color.HotPink
         Me.Controls.Add(Me.DGsupplier)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -261,7 +261,7 @@ Partial Class Data_Supplier
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Data_Supplier"
-        Me.Size = New System.Drawing.Size(591, 487)
+        Me.Size = New System.Drawing.Size(643, 512)
         CType(Me.DGsupplier, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -39,8 +39,8 @@ Partial Class Menu_Utama
         Me.TahunanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PembelianToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.SupplierToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.KeluarToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.EOQToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.KeluarToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -49,7 +49,7 @@ Partial Class Menu_Utama
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InputToolStripMenuItem, Me.LaporanToolStripMenuItem, Me.KeluarToolStripMenuItem, Me.KeluarToolStripMenuItem1})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(637, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(526, 24)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -99,7 +99,7 @@ Partial Class Menu_Utama
         'EOQToolStripMenuItem
         '
         Me.EOQToolStripMenuItem.Name = "EOQToolStripMenuItem"
-        Me.EOQToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EOQToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
         Me.EOQToolStripMenuItem.Text = "EOQ"
         '
         'KeluarToolStripMenuItem
@@ -112,14 +112,14 @@ Partial Class Menu_Utama
         'BarangToolStripMenuItem1
         '
         Me.BarangToolStripMenuItem1.Name = "BarangToolStripMenuItem1"
-        Me.BarangToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.BarangToolStripMenuItem1.Size = New System.Drawing.Size(130, 22)
         Me.BarangToolStripMenuItem1.Text = "Barang"
         '
         'PenjualanToolStripMenuItem1
         '
         Me.PenjualanToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HarianToolStripMenuItem, Me.BulananToolStripMenuItem, Me.TahunanToolStripMenuItem})
         Me.PenjualanToolStripMenuItem1.Name = "PenjualanToolStripMenuItem1"
-        Me.PenjualanToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.PenjualanToolStripMenuItem1.Size = New System.Drawing.Size(130, 22)
         Me.PenjualanToolStripMenuItem1.Text = "Penjualan"
         '
         'HarianToolStripMenuItem
@@ -143,14 +143,20 @@ Partial Class Menu_Utama
         'PembelianToolStripMenuItem1
         '
         Me.PembelianToolStripMenuItem1.Name = "PembelianToolStripMenuItem1"
-        Me.PembelianToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.PembelianToolStripMenuItem1.Size = New System.Drawing.Size(130, 22)
         Me.PembelianToolStripMenuItem1.Text = "Pembelian"
         '
         'SupplierToolStripMenuItem1
         '
         Me.SupplierToolStripMenuItem1.Name = "SupplierToolStripMenuItem1"
-        Me.SupplierToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.SupplierToolStripMenuItem1.Size = New System.Drawing.Size(130, 22)
         Me.SupplierToolStripMenuItem1.Text = "Supplier"
+        '
+        'EOQToolStripMenuItem1
+        '
+        Me.EOQToolStripMenuItem1.Name = "EOQToolStripMenuItem1"
+        Me.EOQToolStripMenuItem1.Size = New System.Drawing.Size(130, 22)
+        Me.EOQToolStripMenuItem1.Text = "EOQ"
         '
         'KeluarToolStripMenuItem1
         '
@@ -158,18 +164,12 @@ Partial Class Menu_Utama
         Me.KeluarToolStripMenuItem1.Size = New System.Drawing.Size(52, 20)
         Me.KeluarToolStripMenuItem1.Text = "Keluar"
         '
-        'EOQToolStripMenuItem1
-        '
-        Me.EOQToolStripMenuItem1.Name = "EOQToolStripMenuItem1"
-        Me.EOQToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
-        Me.EOQToolStripMenuItem1.Text = "EOQ"
-        '
         'Menu_Utama
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(637, 295)
+        Me.BackColor = System.Drawing.Color.HotPink
+        Me.ClientSize = New System.Drawing.Size(526, 289)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Name = "Menu_Utama"
         Me.Text = "Menu_Utama"

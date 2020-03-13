@@ -74,7 +74,7 @@ Partial Class Data_Barang
         '
         'Tsatuan
         '
-        Me.Tsatuan.Location = New System.Drawing.Point(433, 283)
+        Me.Tsatuan.Location = New System.Drawing.Point(452, 308)
         Me.Tsatuan.Name = "Tsatuan"
         Me.Tsatuan.Size = New System.Drawing.Size(170, 20)
         Me.Tsatuan.TabIndex = 67
@@ -83,7 +83,7 @@ Partial Class Data_Barang
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(306, 283)
+        Me.Label15.Location = New System.Drawing.Point(325, 308)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(50, 17)
         Me.Label15.TabIndex = 66
@@ -93,7 +93,7 @@ Partial Class Data_Barang
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(20, 283)
+        Me.Label14.Location = New System.Drawing.Point(39, 308)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(69, 17)
         Me.Label14.TabIndex = 64
@@ -103,7 +103,7 @@ Partial Class Data_Barang
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(20, 255)
+        Me.Label13.Location = New System.Drawing.Point(39, 280)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(88, 17)
         Me.Label13.TabIndex = 62
@@ -111,7 +111,7 @@ Partial Class Data_Barang
         '
         'Tleadtime
         '
-        Me.Tleadtime.Location = New System.Drawing.Point(433, 255)
+        Me.Tleadtime.Location = New System.Drawing.Point(452, 280)
         Me.Tleadtime.Name = "Tleadtime"
         Me.Tleadtime.Size = New System.Drawing.Size(170, 20)
         Me.Tleadtime.TabIndex = 61
@@ -120,7 +120,7 @@ Partial Class Data_Barang
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(306, 255)
+        Me.Label12.Location = New System.Drawing.Point(325, 280)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(63, 17)
         Me.Label12.TabIndex = 60
@@ -130,7 +130,7 @@ Partial Class Data_Barang
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(553, 226)
+        Me.Label11.Location = New System.Drawing.Point(572, 251)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(50, 17)
         Me.Label11.TabIndex = 59
@@ -140,7 +140,7 @@ Partial Class Data_Barang
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(306, 226)
+        Me.Label10.Location = New System.Drawing.Point(325, 251)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(122, 17)
         Me.Label10.TabIndex = 57
@@ -150,7 +150,7 @@ Partial Class Data_Barang
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(306, 193)
+        Me.Label9.Location = New System.Drawing.Point(325, 218)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(89, 17)
         Me.Label9.TabIndex = 55
@@ -160,7 +160,7 @@ Partial Class Data_Barang
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(306, 161)
+        Me.Label7.Location = New System.Drawing.Point(325, 186)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(80, 17)
         Me.Label7.TabIndex = 53
@@ -172,7 +172,7 @@ Partial Class Data_Barang
         Me.DGbarang.AllowUserToDeleteRows = False
         Me.DGbarang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGbarang.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.no, Me.kode_barang, Me.nama_barang, Me.harga_barang, Me.stock, Me.biaya_pesan, Me.biaya_simpan, Me.jml_kebutuhan, Me.leadtime, Me.stock_cadangan, Me.satuan})
-        Me.DGbarang.Location = New System.Drawing.Point(23, 351)
+        Me.DGbarang.Location = New System.Drawing.Point(42, 376)
         Me.DGbarang.Name = "DGbarang"
         Me.DGbarang.ReadOnly = True
         Me.DGbarang.Size = New System.Drawing.Size(580, 150)
@@ -247,7 +247,7 @@ Partial Class Data_Barang
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(453, 313)
+        Me.Button3.Location = New System.Drawing.Point(472, 338)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(125, 23)
         Me.Button3.TabIndex = 50
@@ -257,7 +257,7 @@ Partial Class Data_Barang
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(308, 313)
+        Me.Button2.Location = New System.Drawing.Point(327, 338)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(125, 23)
         Me.Button2.TabIndex = 49
@@ -267,7 +267,7 @@ Partial Class Data_Barang
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(167, 313)
+        Me.Button1.Location = New System.Drawing.Point(186, 338)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(125, 23)
         Me.Button1.TabIndex = 48
@@ -277,7 +277,7 @@ Partial Class Data_Barang
         'Bsimpan
         '
         Me.Bsimpan.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Bsimpan.Location = New System.Drawing.Point(23, 313)
+        Me.Bsimpan.Location = New System.Drawing.Point(42, 338)
         Me.Bsimpan.Name = "Bsimpan"
         Me.Bsimpan.Size = New System.Drawing.Size(125, 23)
         Me.Bsimpan.TabIndex = 47
@@ -288,7 +288,7 @@ Partial Class Data_Barang
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(20, 226)
+        Me.Label8.Location = New System.Drawing.Point(39, 251)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(92, 17)
         Me.Label8.TabIndex = 45
@@ -296,7 +296,7 @@ Partial Class Data_Barang
         '
         'Tnama_barang
         '
-        Me.Tnama_barang.Location = New System.Drawing.Point(122, 193)
+        Me.Tnama_barang.Location = New System.Drawing.Point(141, 218)
         Me.Tnama_barang.Name = "Tnama_barang"
         Me.Tnama_barang.Size = New System.Drawing.Size(170, 20)
         Me.Tnama_barang.TabIndex = 44
@@ -305,7 +305,7 @@ Partial Class Data_Barang
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(20, 193)
+        Me.Label6.Location = New System.Drawing.Point(39, 218)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(91, 17)
         Me.Label6.TabIndex = 43
@@ -313,7 +313,7 @@ Partial Class Data_Barang
         '
         'Tkode_barang
         '
-        Me.Tkode_barang.Location = New System.Drawing.Point(122, 161)
+        Me.Tkode_barang.Location = New System.Drawing.Point(141, 186)
         Me.Tkode_barang.Name = "Tkode_barang"
         Me.Tkode_barang.Size = New System.Drawing.Size(170, 20)
         Me.Tkode_barang.TabIndex = 42
@@ -322,7 +322,7 @@ Partial Class Data_Barang
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(20, 161)
+        Me.Label5.Location = New System.Drawing.Point(39, 186)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(86, 17)
         Me.Label5.TabIndex = 41
@@ -332,7 +332,7 @@ Partial Class Data_Barang
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label4.Location = New System.Drawing.Point(207, 122)
+        Me.Label4.Location = New System.Drawing.Point(226, 147)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(221, 28)
         Me.Label4.TabIndex = 40
@@ -342,7 +342,7 @@ Partial Class Data_Barang
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label3.Location = New System.Drawing.Point(117, 82)
+        Me.Label3.Location = New System.Drawing.Point(136, 107)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(420, 28)
         Me.Label3.TabIndex = 39
@@ -352,7 +352,7 @@ Partial Class Data_Barang
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label2.Location = New System.Drawing.Point(108, 54)
+        Me.Label2.Location = New System.Drawing.Point(127, 79)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(439, 28)
         Me.Label2.TabIndex = 38
@@ -362,7 +362,7 @@ Partial Class Data_Barang
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(149, 0)
+        Me.Label1.Location = New System.Drawing.Point(168, 25)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(357, 54)
         Me.Label1.TabIndex = 37
@@ -372,7 +372,7 @@ Partial Class Data_Barang
         '
         Me.Tbiaya_pesan.Increment = New Decimal(New Integer() {1, 0, 0, 65536})
         Me.Tbiaya_pesan.InterceptArrowKeys = False
-        Me.Tbiaya_pesan.Location = New System.Drawing.Point(433, 160)
+        Me.Tbiaya_pesan.Location = New System.Drawing.Point(452, 185)
         Me.Tbiaya_pesan.Maximum = New Decimal(New Integer() {100000000, 0, 0, 0})
         Me.Tbiaya_pesan.Name = "Tbiaya_pesan"
         Me.Tbiaya_pesan.Size = New System.Drawing.Size(170, 20)
@@ -382,7 +382,7 @@ Partial Class Data_Barang
         '
         Me.Tbiaya_simpan.Increment = New Decimal(New Integer() {1, 0, 0, 65536})
         Me.Tbiaya_simpan.InterceptArrowKeys = False
-        Me.Tbiaya_simpan.Location = New System.Drawing.Point(433, 193)
+        Me.Tbiaya_simpan.Location = New System.Drawing.Point(452, 218)
         Me.Tbiaya_simpan.Maximum = New Decimal(New Integer() {100000000, 0, 0, 0})
         Me.Tbiaya_simpan.Name = "Tbiaya_simpan"
         Me.Tbiaya_simpan.Size = New System.Drawing.Size(170, 20)
@@ -390,7 +390,7 @@ Partial Class Data_Barang
         '
         'Tjml_kebutuhan
         '
-        Me.Tjml_kebutuhan.Location = New System.Drawing.Point(434, 226)
+        Me.Tjml_kebutuhan.Location = New System.Drawing.Point(453, 251)
         Me.Tjml_kebutuhan.Maximum = New Decimal(New Integer() {100000000, 0, 0, 0})
         Me.Tjml_kebutuhan.Name = "Tjml_kebutuhan"
         Me.Tjml_kebutuhan.Size = New System.Drawing.Size(113, 20)
@@ -398,7 +398,7 @@ Partial Class Data_Barang
         '
         'Tharga_barang
         '
-        Me.Tharga_barang.Location = New System.Drawing.Point(122, 226)
+        Me.Tharga_barang.Location = New System.Drawing.Point(141, 251)
         Me.Tharga_barang.Maximum = New Decimal(New Integer() {100000000, 0, 0, 0})
         Me.Tharga_barang.Name = "Tharga_barang"
         Me.Tharga_barang.Size = New System.Drawing.Size(170, 20)
@@ -406,7 +406,7 @@ Partial Class Data_Barang
         '
         'Tstock
         '
-        Me.Tstock.Location = New System.Drawing.Point(122, 255)
+        Me.Tstock.Location = New System.Drawing.Point(141, 280)
         Me.Tstock.Maximum = New Decimal(New Integer() {100000000, 0, 0, 0})
         Me.Tstock.Name = "Tstock"
         Me.Tstock.Size = New System.Drawing.Size(170, 20)
@@ -414,7 +414,7 @@ Partial Class Data_Barang
         '
         'Tcadangan
         '
-        Me.Tcadangan.Location = New System.Drawing.Point(122, 284)
+        Me.Tcadangan.Location = New System.Drawing.Point(141, 309)
         Me.Tcadangan.Maximum = New Decimal(New Integer() {100000000, 0, 0, 0})
         Me.Tcadangan.Name = "Tcadangan"
         Me.Tcadangan.Size = New System.Drawing.Size(170, 20)
@@ -424,7 +424,7 @@ Partial Class Data_Barang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.BackColor = System.Drawing.Color.HotPink
         Me.Controls.Add(Me.Tcadangan)
         Me.Controls.Add(Me.Tstock)
         Me.Controls.Add(Me.Tharga_barang)
@@ -456,7 +456,7 @@ Partial Class Data_Barang
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Data_Barang"
-        Me.Size = New System.Drawing.Size(623, 515)
+        Me.Size = New System.Drawing.Size(672, 554)
         CType(Me.DGbarang, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Tbiaya_pesan, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Tbiaya_simpan, System.ComponentModel.ISupportInitialize).EndInit()

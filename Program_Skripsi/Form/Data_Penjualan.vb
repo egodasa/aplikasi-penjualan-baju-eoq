@@ -230,4 +230,7 @@
         Cetak_Laporan.url = Aplikasi.url_laporan & "/cetak-nota.php?no_nota=" & no_nota
         Cetak_Laporan.ShowDialog()
     End Sub
+
+    Private Sub FlowLayoutPanel1_Paint(sender As Object, e As PaintEventArgs)
+    End Sub
 End Class

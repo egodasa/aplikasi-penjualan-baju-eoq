@@ -33,7 +33,7 @@ Partial Class Laporan_Penjualan_Tahunan
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(349, 160)
+        Me.Button1.Location = New System.Drawing.Point(365, 178)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 46
@@ -44,7 +44,7 @@ Partial Class Laporan_Penjualan_Tahunan
         '
         Me.Ttgl.CustomFormat = "yyyy"
         Me.Ttgl.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.Ttgl.Location = New System.Drawing.Point(163, 161)
+        Me.Ttgl.Location = New System.Drawing.Point(179, 179)
         Me.Ttgl.Name = "Ttgl"
         Me.Ttgl.Size = New System.Drawing.Size(162, 20)
         Me.Ttgl.TabIndex = 45
@@ -53,7 +53,7 @@ Partial Class Laporan_Penjualan_Tahunan
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(18, 160)
+        Me.Label5.Location = New System.Drawing.Point(34, 178)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(139, 17)
         Me.Label5.TabIndex = 44
@@ -63,7 +63,7 @@ Partial Class Laporan_Penjualan_Tahunan
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label4.Location = New System.Drawing.Point(82, 110)
+        Me.Label4.Location = New System.Drawing.Point(98, 128)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(312, 28)
         Me.Label4.TabIndex = 43
@@ -73,7 +73,7 @@ Partial Class Laporan_Penjualan_Tahunan
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label3.Location = New System.Drawing.Point(26, 82)
+        Me.Label3.Location = New System.Drawing.Point(42, 100)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(420, 28)
         Me.Label3.TabIndex = 42
@@ -83,7 +83,7 @@ Partial Class Laporan_Penjualan_Tahunan
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label2.Location = New System.Drawing.Point(17, 54)
+        Me.Label2.Location = New System.Drawing.Point(33, 72)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(439, 28)
         Me.Label2.TabIndex = 41
@@ -93,7 +93,7 @@ Partial Class Laporan_Penjualan_Tahunan
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(58, 0)
+        Me.Label1.Location = New System.Drawing.Point(74, 18)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(357, 54)
         Me.Label1.TabIndex = 40
@@ -103,6 +103,7 @@ Partial Class Laporan_Penjualan_Tahunan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.HotPink
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Ttgl)
         Me.Controls.Add(Me.Label5)
@@ -111,7 +112,7 @@ Partial Class Laporan_Penjualan_Tahunan
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Laporan_Penjualan_Tahunan"
-        Me.Size = New System.Drawing.Size(476, 201)
+        Me.Size = New System.Drawing.Size(505, 232)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

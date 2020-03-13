@@ -31,7 +31,7 @@ Partial Class Beranda
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label3.Location = New System.Drawing.Point(127, 186)
+        Me.Label3.Location = New System.Drawing.Point(146, 199)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(420, 28)
         Me.Label3.TabIndex = 27
@@ -41,7 +41,7 @@ Partial Class Beranda
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.Label2.Location = New System.Drawing.Point(118, 158)
+        Me.Label2.Location = New System.Drawing.Point(137, 171)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(439, 28)
         Me.Label2.TabIndex = 26
@@ -51,7 +51,7 @@ Partial Class Beranda
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(159, 104)
+        Me.Label1.Location = New System.Drawing.Point(178, 117)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(357, 54)
         Me.Label1.TabIndex = 25
@@ -61,11 +61,12 @@ Partial Class Beranda
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.HotPink
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Beranda"
-        Me.Size = New System.Drawing.Size(667, 343)
+        Me.Size = New System.Drawing.Size(737, 381)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

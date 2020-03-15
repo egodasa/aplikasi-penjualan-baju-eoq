@@ -112,14 +112,14 @@ Partial Class Menu_Utama
         'BarangToolStripMenuItem1
         '
         Me.BarangToolStripMenuItem1.Name = "BarangToolStripMenuItem1"
-        Me.BarangToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.BarangToolStripMenuItem1.Size = New System.Drawing.Size(130, 22)
         Me.BarangToolStripMenuItem1.Text = "Barang"
         '
         'PenjualanToolStripMenuItem1
         '
         Me.PenjualanToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HarianToolStripMenuItem, Me.BulananToolStripMenuItem, Me.TahunanToolStripMenuItem})
         Me.PenjualanToolStripMenuItem1.Name = "PenjualanToolStripMenuItem1"
-        Me.PenjualanToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.PenjualanToolStripMenuItem1.Size = New System.Drawing.Size(130, 22)
         Me.PenjualanToolStripMenuItem1.Text = "Penjualan"
         '
         'HarianToolStripMenuItem
@@ -143,19 +143,19 @@ Partial Class Menu_Utama
         'PembelianToolStripMenuItem1
         '
         Me.PembelianToolStripMenuItem1.Name = "PembelianToolStripMenuItem1"
-        Me.PembelianToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.PembelianToolStripMenuItem1.Size = New System.Drawing.Size(130, 22)
         Me.PembelianToolStripMenuItem1.Text = "Pembelian"
         '
         'SupplierToolStripMenuItem1
         '
         Me.SupplierToolStripMenuItem1.Name = "SupplierToolStripMenuItem1"
-        Me.SupplierToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.SupplierToolStripMenuItem1.Size = New System.Drawing.Size(130, 22)
         Me.SupplierToolStripMenuItem1.Text = "Supplier"
         '
         'EOQToolStripMenuItem1
         '
         Me.EOQToolStripMenuItem1.Name = "EOQToolStripMenuItem1"
-        Me.EOQToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.EOQToolStripMenuItem1.Size = New System.Drawing.Size(130, 22)
         Me.EOQToolStripMenuItem1.Text = "EOQ"
         '
         'KeluarToolStripMenuItem1

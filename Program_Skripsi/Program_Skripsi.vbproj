@@ -116,6 +116,12 @@
     <Compile Include="Form\Data_Pembelian.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Form\Data_Pengguna.Designer.vb">
+      <DependentUpon>Data_Pengguna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Data_Pengguna.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Form\Data_Penjualan.Designer.vb">
       <DependentUpon>Data_Penjualan.vb</DependentUpon>
     </Compile>
@@ -192,6 +198,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Data_Pembelian.resx">
       <DependentUpon>Data_Pembelian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Data_Pengguna.resx">
+      <DependentUpon>Data_Pengguna.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Data_Penjualan.resx">
       <DependentUpon>Data_Penjualan.vb</DependentUpon>

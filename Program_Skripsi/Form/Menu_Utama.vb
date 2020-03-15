@@ -6,6 +6,7 @@
     Public FPembelian As New Data_Pembelian
     Public FPenjualan As New Data_Penjualan
     Public FEoq As New Data_Eoq
+    Public FPengguna As New Data_Pengguna
     Public FLaporanPenjualanHarian As New Laporan_Penjualan_Harian
     Public FLaporanPenjualanBulanan As New Laporan_Penjualan_Bulanan
     Public FLaporanPenjualanTahunan As New Laporan_Penjualan_Tahunan
@@ -37,6 +38,7 @@
         Me.Controls.Add(FLaporanPenjualanHarian)
         Me.Controls.Add(FLaporanPenjualanBulanan)
         Me.Controls.Add(FLaporanPenjualanTahunan)
+        Me.Controls.Add(FPengguna)
         ShowForm(FBeranda, Me)
     End Sub
 
@@ -103,5 +105,10 @@
     Private Sub MenuEoq(sender As Object, e As EventArgs) Handles EOQToolStripMenuItem.Click
         Me.ShowForm(FEoq, Me)
         FEoq.BukaForm()
+    End Sub
+
+    Private Sub PenggunaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PenggunaToolStripMenuItem.Click
+        Me.ShowForm(FPengguna, Me)
+        FPengguna.BukaForm()
     End Sub
 End Class

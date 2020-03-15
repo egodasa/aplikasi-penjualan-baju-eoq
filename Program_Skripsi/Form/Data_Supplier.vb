@@ -47,6 +47,7 @@
         Else
             MessageBox.Show("Data berhasil disimpan!", "Pesan")
             TampilData()
+            ResetData()
         End If
     End Sub
     Private Sub HapusData()
@@ -59,7 +60,6 @@
             MessageBox.Show("Data berhasil dihapus!", "Pesan")
             TampilData()
         End If
-        TampilData()
     End Sub
     Private Sub AmbilData()
         Dim data_terpilih As Int16 = DGsupplier.CurrentRow.Index

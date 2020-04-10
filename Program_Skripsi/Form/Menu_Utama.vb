@@ -52,7 +52,7 @@
         FSupplier.BukaForm()
     End Sub
 
-    Private Sub Tampil_Menu_Utama(sender As Object, e As EventArgs) Handles InputToolStripMenuItem.Click
+    Private Sub Tampil_Menu_Utama(sender As Object, e As EventArgs) 
         ShowForm(FBeranda, Me)
     End Sub
 

@@ -35,7 +35,7 @@ Partial Class Cetak_Laporan
         'Panel1
         '
         Me.Panel1.AutoSize = True
-        Me.Panel1.BackColor = System.Drawing.Color.HotPink
+        Me.Panel1.BackColor = System.Drawing.Color.Orange
         Me.Panel1.Controls.Add(Me.Button3)
         Me.Panel1.Controls.Add(Me.Button2)
         Me.Panel1.Controls.Add(Me.Button1)

@@ -93,17 +93,17 @@ Partial Class Laporan_Penjualan_Bulanan
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(66, 21)
+        Me.Label1.Location = New System.Drawing.Point(20, 21)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(357, 54)
+        Me.Label1.Size = New System.Drawing.Size(522, 54)
         Me.Label1.TabIndex = 33
-        Me.Label1.Text = "Toko Ririn Busana"
+        Me.Label1.Text = "Toko Eman Perabot Jepara"
         '
         'Laporan_Penjualan_Bulanan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.HotPink
+        Me.BackColor = System.Drawing.Color.Orange
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Ttgl)
         Me.Controls.Add(Me.Label5)
@@ -112,7 +112,7 @@ Partial Class Laporan_Penjualan_Bulanan
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Laporan_Penjualan_Bulanan"
-        Me.Size = New System.Drawing.Size(494, 240)
+        Me.Size = New System.Drawing.Size(554, 275)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

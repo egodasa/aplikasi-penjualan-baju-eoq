@@ -23,6 +23,13 @@ Partial Class Data_Pengguna
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DGpengguna = New System.Windows.Forms.DataGridView()
+        Me.no = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DGid_pengguna = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.username = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.password = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.level = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nohp = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.alamat = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Bsimpan = New System.Windows.Forms.Button()
@@ -41,13 +48,6 @@ Partial Class Data_Pengguna
         Me.Talamat = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.no = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DGid_pengguna = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.username = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.password = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.level = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.nohp = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.alamat = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DGpengguna, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -62,6 +62,50 @@ Partial Class Data_Pengguna
         Me.DGpengguna.ReadOnly = True
         Me.DGpengguna.Size = New System.Drawing.Size(555, 150)
         Me.DGpengguna.TabIndex = 55
+        '
+        'no
+        '
+        Me.no.HeaderText = "No"
+        Me.no.Name = "no"
+        Me.no.ReadOnly = True
+        '
+        'DGid_pengguna
+        '
+        Me.DGid_pengguna.HeaderText = "id_pengguna"
+        Me.DGid_pengguna.Name = "DGid_pengguna"
+        Me.DGid_pengguna.ReadOnly = True
+        Me.DGid_pengguna.Visible = False
+        '
+        'username
+        '
+        Me.username.HeaderText = "Username"
+        Me.username.Name = "username"
+        Me.username.ReadOnly = True
+        '
+        'password
+        '
+        Me.password.HeaderText = "password"
+        Me.password.Name = "password"
+        Me.password.ReadOnly = True
+        Me.password.Visible = False
+        '
+        'level
+        '
+        Me.level.HeaderText = "Level"
+        Me.level.Name = "level"
+        Me.level.ReadOnly = True
+        '
+        'nohp
+        '
+        Me.nohp.HeaderText = "Nohp"
+        Me.nohp.Name = "nohp"
+        Me.nohp.ReadOnly = True
+        '
+        'alamat
+        '
+        Me.alamat.HeaderText = "Alamat"
+        Me.alamat.Name = "alamat"
+        Me.alamat.ReadOnly = True
         '
         'Button2
         '
@@ -172,11 +216,11 @@ Partial Class Data_Pengguna
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(150, 24)
+        Me.Label1.Location = New System.Drawing.Point(74, 24)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(357, 54)
+        Me.Label1.Size = New System.Drawing.Size(522, 54)
         Me.Label1.TabIndex = 39
-        Me.Label1.Text = "Toko Ririn Busana"
+        Me.Label1.Text = "Toko Eman Perabot Jepara"
         '
         'Clevel
         '
@@ -231,55 +275,11 @@ Partial Class Data_Pengguna
         Me.Button3.Text = "KELUAR"
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'no
-        '
-        Me.no.HeaderText = "No"
-        Me.no.Name = "no"
-        Me.no.ReadOnly = True
-        '
-        'DGid_pengguna
-        '
-        Me.DGid_pengguna.HeaderText = "id_pengguna"
-        Me.DGid_pengguna.Name = "DGid_pengguna"
-        Me.DGid_pengguna.ReadOnly = True
-        Me.DGid_pengguna.Visible = False
-        '
-        'username
-        '
-        Me.username.HeaderText = "Username"
-        Me.username.Name = "username"
-        Me.username.ReadOnly = True
-        '
-        'password
-        '
-        Me.password.HeaderText = "password"
-        Me.password.Name = "password"
-        Me.password.ReadOnly = True
-        Me.password.Visible = False
-        '
-        'level
-        '
-        Me.level.HeaderText = "Level"
-        Me.level.Name = "level"
-        Me.level.ReadOnly = True
-        '
-        'nohp
-        '
-        Me.nohp.HeaderText = "Nohp"
-        Me.nohp.Name = "nohp"
-        Me.nohp.ReadOnly = True
-        '
-        'alamat
-        '
-        Me.alamat.HeaderText = "Alamat"
-        Me.alamat.Name = "alamat"
-        Me.alamat.ReadOnly = True
-        '
         'Data_Pengguna
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.HotPink
+        Me.BackColor = System.Drawing.Color.Orange
         Me.Controls.Add(Me.Talamat)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Tnohp)

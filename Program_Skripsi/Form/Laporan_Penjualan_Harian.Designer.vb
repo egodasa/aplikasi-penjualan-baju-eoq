@@ -65,11 +65,11 @@ Partial Class Laporan_Penjualan_Harian
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(76, 19)
+        Me.Label1.Location = New System.Drawing.Point(21, 19)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(357, 54)
+        Me.Label1.Size = New System.Drawing.Size(522, 54)
         Me.Label1.TabIndex = 26
-        Me.Label1.Text = "Toko Ririn Busana"
+        Me.Label1.Text = "Toko Eman Perabot Jepara"
         '
         'Label5
         '
@@ -103,7 +103,7 @@ Partial Class Laporan_Penjualan_Harian
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.HotPink
+        Me.BackColor = System.Drawing.Color.Orange
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Ttgl)
         Me.Controls.Add(Me.Label5)
@@ -112,7 +112,7 @@ Partial Class Laporan_Penjualan_Harian
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Laporan_Penjualan_Harian"
-        Me.Size = New System.Drawing.Size(507, 238)
+        Me.Size = New System.Drawing.Size(554, 245)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

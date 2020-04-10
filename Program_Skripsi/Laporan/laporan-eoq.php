@@ -52,7 +52,7 @@
 
 		<div style="float: right;width: 300px;text-align: center;">
 			<?=tanggal_indo(date("Y-m-d"), true)?> <br>
-			Admin Ririn Busana
+			Pimpinan
 			<br>
 			<br>
 			<br>

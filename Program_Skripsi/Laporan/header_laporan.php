@@ -1,5 +1,5 @@
 ﻿<div style="text-align: center;">
-	<h1>Toko Ririn Busana</h1>
+	<h1>Toko Eman Perabot Jepara</h1>
 	<p>
 		Menjual Bermacam-macam Busana Pria Dan Wanita <br>
 		Desa Karya Mulya jl. Lintas Bengkulu - Padang <br>

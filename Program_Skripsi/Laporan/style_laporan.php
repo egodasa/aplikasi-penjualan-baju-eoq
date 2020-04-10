@@ -10,7 +10,7 @@
 				width: 100%;
 			}
 			th {
-				background-color: gray;
+				background-color: #ffb000;
 				padding: 5px 7px;
 			}
 			td {

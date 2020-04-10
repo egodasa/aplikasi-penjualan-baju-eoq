@@ -23,7 +23,6 @@ Partial Class Menu_Utama
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.InputToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TSMInput = New System.Windows.Forms.ToolStripMenuItem()
         Me.PenggunaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -46,18 +45,12 @@ Partial Class Menu_Utama
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InputToolStripMenuItem, Me.TSMInput, Me.TSMlaporan, Me.KeluarToolStripMenuItem1})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TSMInput, Me.TSMlaporan, Me.KeluarToolStripMenuItem1})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(526, 24)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'InputToolStripMenuItem
-        '
-        Me.InputToolStripMenuItem.Name = "InputToolStripMenuItem"
-        Me.InputToolStripMenuItem.Size = New System.Drawing.Size(88, 20)
-        Me.InputToolStripMenuItem.Text = "Menu Utama"
         '
         'TSMInput
         '
@@ -69,37 +62,37 @@ Partial Class Menu_Utama
         'PenggunaToolStripMenuItem
         '
         Me.PenggunaToolStripMenuItem.Name = "PenggunaToolStripMenuItem"
-        Me.PenggunaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PenggunaToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
         Me.PenggunaToolStripMenuItem.Text = "Pengguna"
         '
         'BarangToolStripMenuItem
         '
         Me.BarangToolStripMenuItem.Name = "BarangToolStripMenuItem"
-        Me.BarangToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.BarangToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
         Me.BarangToolStripMenuItem.Text = "Barang"
         '
         'SupplierToolStripMenuItem
         '
         Me.SupplierToolStripMenuItem.Name = "SupplierToolStripMenuItem"
-        Me.SupplierToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SupplierToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
         Me.SupplierToolStripMenuItem.Text = "Supplier"
         '
         'PembelianToolStripMenuItem
         '
         Me.PembelianToolStripMenuItem.Name = "PembelianToolStripMenuItem"
-        Me.PembelianToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PembelianToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
         Me.PembelianToolStripMenuItem.Text = "Pembelian"
         '
         'PenjualanToolStripMenuItem
         '
         Me.PenjualanToolStripMenuItem.Name = "PenjualanToolStripMenuItem"
-        Me.PenjualanToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PenjualanToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
         Me.PenjualanToolStripMenuItem.Text = "Penjualan"
         '
         'EOQToolStripMenuItem
         '
         Me.EOQToolStripMenuItem.Name = "EOQToolStripMenuItem"
-        Me.EOQToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EOQToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
         Me.EOQToolStripMenuItem.Text = "EOQ"
         '
         'TSMlaporan
@@ -168,7 +161,7 @@ Partial Class Menu_Utama
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.HotPink
+        Me.BackColor = System.Drawing.Color.Orange
         Me.ClientSize = New System.Drawing.Size(526, 289)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Name = "Menu_Utama"
@@ -181,7 +174,6 @@ Partial Class Menu_Utama
     End Sub
 
     Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents InputToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TSMInput As ToolStripMenuItem
     Friend WithEvents PenggunaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents BarangToolStripMenuItem As ToolStripMenuItem

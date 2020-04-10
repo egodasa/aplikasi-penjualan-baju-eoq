@@ -23,7 +23,6 @@ Partial Class Aplikasi
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Tpassword = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Tusername = New System.Windows.Forms.TextBox()
@@ -36,35 +35,25 @@ Partial Class Aplikasi
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Bold)
-        Me.Label1.Location = New System.Drawing.Point(43, 9)
+        Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(196, 30)
+        Me.Label1.Size = New System.Drawing.Size(288, 30)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Toko Ririn Busana"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(55, 39)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(165, 25)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "SILAHKAN LOGIN"
+        Me.Label1.Text = "Toko Eman Perabot Jepara"
         '
         'Tpassword
         '
-        Me.Tpassword.Location = New System.Drawing.Point(97, 108)
+        Me.Tpassword.Location = New System.Drawing.Point(94, 88)
         Me.Tpassword.Name = "Tpassword"
         Me.Tpassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.Tpassword.Size = New System.Drawing.Size(152, 20)
+        Me.Tpassword.Size = New System.Drawing.Size(190, 20)
         Me.Tpassword.TabIndex = 8
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(22, 108)
+        Me.Label3.Location = New System.Drawing.Point(19, 88)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(66, 17)
         Me.Label3.TabIndex = 7
@@ -72,16 +61,16 @@ Partial Class Aplikasi
         '
         'Tusername
         '
-        Me.Tusername.Location = New System.Drawing.Point(97, 73)
+        Me.Tusername.Location = New System.Drawing.Point(94, 53)
         Me.Tusername.Name = "Tusername"
-        Me.Tusername.Size = New System.Drawing.Size(152, 20)
+        Me.Tusername.Size = New System.Drawing.Size(190, 20)
         Me.Tusername.TabIndex = 6
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(22, 73)
+        Me.Label4.Location = New System.Drawing.Point(19, 53)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(69, 17)
         Me.Label4.TabIndex = 5
@@ -90,7 +79,7 @@ Partial Class Aplikasi
         'Breset
         '
         Me.Breset.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Breset.Location = New System.Drawing.Point(148, 144)
+        Me.Breset.Location = New System.Drawing.Point(94, 124)
         Me.Breset.Name = "Breset"
         Me.Breset.Size = New System.Drawing.Size(75, 23)
         Me.Breset.TabIndex = 16
@@ -100,7 +89,7 @@ Partial Class Aplikasi
         'Bsimpan
         '
         Me.Bsimpan.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Bsimpan.Location = New System.Drawing.Point(48, 144)
+        Me.Bsimpan.Location = New System.Drawing.Point(209, 124)
         Me.Bsimpan.Name = "Bsimpan"
         Me.Bsimpan.Size = New System.Drawing.Size(75, 23)
         Me.Bsimpan.TabIndex = 15
@@ -111,18 +100,17 @@ Partial Class Aplikasi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.HotPink
-        Me.ClientSize = New System.Drawing.Size(272, 182)
+        Me.BackColor = System.Drawing.Color.Orange
+        Me.ClientSize = New System.Drawing.Size(304, 181)
         Me.Controls.Add(Me.Breset)
         Me.Controls.Add(Me.Bsimpan)
         Me.Controls.Add(Me.Tpassword)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Tusername)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.MaximumSize = New System.Drawing.Size(288, 221)
-        Me.MinimumSize = New System.Drawing.Size(287, 220)
+        Me.MaximumSize = New System.Drawing.Size(320, 221)
+        Me.MinimumSize = New System.Drawing.Size(320, 220)
         Me.Name = "Aplikasi"
         Me.Text = "Login"
         Me.ResumeLayout(False)
@@ -131,7 +119,6 @@ Partial Class Aplikasi
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
     Friend WithEvents Tpassword As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Tusername As TextBox

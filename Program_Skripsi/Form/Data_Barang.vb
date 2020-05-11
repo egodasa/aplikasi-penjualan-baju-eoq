@@ -104,13 +104,13 @@
     Private Sub ResetData()
         Tkode_barang.Clear()
         Tnama_barang.Clear()
-        Tharga_barang.Value = 0
-        Tstock.Value = 0
+        Tharga_barang.Clear()
+        Tstock.Clear()
         Tbiaya_pesan.Value = 0
         Tbiaya_simpan.Value = 0
         Tjml_kebutuhan.Value = 0
         Tleadtime.Clear()
-        Tcadangan.Value = 0
+        Tcadangan.Clear()
         Tsatuan.Clear()
     End Sub
 

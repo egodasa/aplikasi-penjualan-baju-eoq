@@ -243,6 +243,9 @@
     <None Include="Laporan\laporan-pembelian.php">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Laporan\cetak-nota.php">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Laporan\laporan-supplier.php">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

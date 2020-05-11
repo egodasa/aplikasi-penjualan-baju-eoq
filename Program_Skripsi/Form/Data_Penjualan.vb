@@ -31,7 +31,14 @@
         Tsub_total.Text = total_harga
     End Sub
     Private Sub BuatNoNota()
-        Tno_nota.Text = DateTime.Now.ToString("ddMMyyhhmmssffff")
+        Dim no_nota As String
+        Dim nomor As DataTable = Aplikasi.Db.JalankanDanAmbilData("SELECT CONCAT('NP', LPAD((right(no_nota, 6) + 1), 6, '0')) AS no_nota FROM `penjualan` ORDER BY `no_nota` DESC LIMIT 1")
+        If nomor.Rows.Count = 0 Then
+            Tno_nota.Text = "NP000001"
+        Else
+            Tno_nota.Text = nomor.Rows(0).Item("no_nota")
+        End If
+
     End Sub
     Private Sub ResetBarang()
         Ckode_barang.SelectedIndex = -1
@@ -227,7 +234,7 @@
 
     Private Sub AksiCetakNota(sender As Object, e As EventArgs) Handles Button4.Click
         Dim no_nota As String = DGpenjualan.Rows(DGpenjualan.CurrentRow.Index).Cells("no_nota").Value
-        Cetak_Laporan.url = Aplikasi.url_laporan & "/cetak-nota.php?no_nota=" & no_nota
+        Cetak_Laporan.url = Aplikasi.url_laporan & "/cetak-nota.php?nota=" & no_nota
         Cetak_Laporan.ShowDialog()
     End Sub
 

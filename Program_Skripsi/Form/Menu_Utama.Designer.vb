@@ -69,37 +69,37 @@ Partial Class Menu_Utama
         'PenggunaToolStripMenuItem
         '
         Me.PenggunaToolStripMenuItem.Name = "PenggunaToolStripMenuItem"
-        Me.PenggunaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PenggunaToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
         Me.PenggunaToolStripMenuItem.Text = "Pengguna"
         '
         'BarangToolStripMenuItem
         '
         Me.BarangToolStripMenuItem.Name = "BarangToolStripMenuItem"
-        Me.BarangToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.BarangToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
         Me.BarangToolStripMenuItem.Text = "Barang"
         '
         'SupplierToolStripMenuItem
         '
         Me.SupplierToolStripMenuItem.Name = "SupplierToolStripMenuItem"
-        Me.SupplierToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SupplierToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
         Me.SupplierToolStripMenuItem.Text = "Supplier"
         '
         'PembelianToolStripMenuItem
         '
         Me.PembelianToolStripMenuItem.Name = "PembelianToolStripMenuItem"
-        Me.PembelianToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PembelianToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
         Me.PembelianToolStripMenuItem.Text = "Pembelian"
         '
         'PenjualanToolStripMenuItem
         '
         Me.PenjualanToolStripMenuItem.Name = "PenjualanToolStripMenuItem"
-        Me.PenjualanToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PenjualanToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
         Me.PenjualanToolStripMenuItem.Text = "Penjualan"
         '
         'EOQToolStripMenuItem
         '
         Me.EOQToolStripMenuItem.Name = "EOQToolStripMenuItem"
-        Me.EOQToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EOQToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
         Me.EOQToolStripMenuItem.Text = "EOQ"
         '
         'TSMlaporan
@@ -171,6 +171,7 @@ Partial Class Menu_Utama
         Me.BackColor = System.Drawing.Color.HotPink
         Me.ClientSize = New System.Drawing.Size(526, 289)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Name = "Menu_Utama"
         Me.Text = "Menu_Utama"
         Me.MenuStrip1.ResumeLayout(False)

@@ -417,9 +417,9 @@ Partial Class Data_Eoq
         Me.Label17.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.Location = New System.Drawing.Point(589, 247)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(47, 17)
+        Me.Label17.Size = New System.Drawing.Size(38, 17)
         Me.Label17.TabIndex = 114
-        Me.Label17.Text = "/Bulan"
+        Me.Label17.Text = "/Hari"
         '
         'Data_Eoq
         '

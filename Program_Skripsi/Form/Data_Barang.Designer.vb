@@ -60,16 +60,13 @@ Partial Class Data_Barang
         Me.Tbiaya_pesan = New System.Windows.Forms.NumericUpDown()
         Me.Tbiaya_simpan = New System.Windows.Forms.NumericUpDown()
         Me.Tjml_kebutuhan = New System.Windows.Forms.NumericUpDown()
-        Me.Tharga_barang = New System.Windows.Forms.NumericUpDown()
-        Me.Tstock = New System.Windows.Forms.NumericUpDown()
-        Me.Tcadangan = New System.Windows.Forms.NumericUpDown()
+        Me.Tharga_barang = New System.Windows.Forms.TextBox()
+        Me.Tstock = New System.Windows.Forms.TextBox()
+        Me.Tcadangan = New System.Windows.Forms.TextBox()
         CType(Me.DGbarang, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tbiaya_pesan, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tbiaya_simpan, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tjml_kebutuhan, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Tharga_barang, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Tstock, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Tcadangan, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Tsatuan
@@ -399,26 +396,23 @@ Partial Class Data_Barang
         'Tharga_barang
         '
         Me.Tharga_barang.Location = New System.Drawing.Point(141, 251)
-        Me.Tharga_barang.Maximum = New Decimal(New Integer() {100000000, 0, 0, 0})
         Me.Tharga_barang.Name = "Tharga_barang"
         Me.Tharga_barang.Size = New System.Drawing.Size(170, 20)
-        Me.Tharga_barang.TabIndex = 71
+        Me.Tharga_barang.TabIndex = 74
         '
         'Tstock
         '
         Me.Tstock.Location = New System.Drawing.Point(141, 280)
-        Me.Tstock.Maximum = New Decimal(New Integer() {100000000, 0, 0, 0})
         Me.Tstock.Name = "Tstock"
         Me.Tstock.Size = New System.Drawing.Size(170, 20)
-        Me.Tstock.TabIndex = 72
+        Me.Tstock.TabIndex = 75
         '
         'Tcadangan
         '
-        Me.Tcadangan.Location = New System.Drawing.Point(141, 309)
-        Me.Tcadangan.Maximum = New Decimal(New Integer() {100000000, 0, 0, 0})
+        Me.Tcadangan.Location = New System.Drawing.Point(141, 308)
         Me.Tcadangan.Name = "Tcadangan"
         Me.Tcadangan.Size = New System.Drawing.Size(170, 20)
-        Me.Tcadangan.TabIndex = 73
+        Me.Tcadangan.TabIndex = 76
         '
         'Data_Barang
         '
@@ -461,9 +455,6 @@ Partial Class Data_Barang
         CType(Me.Tbiaya_pesan, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Tbiaya_simpan, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Tjml_kebutuhan, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Tharga_barang, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Tstock, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Tcadangan, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -496,9 +487,6 @@ Partial Class Data_Barang
     Friend WithEvents Tbiaya_pesan As NumericUpDown
     Friend WithEvents Tbiaya_simpan As NumericUpDown
     Friend WithEvents Tjml_kebutuhan As NumericUpDown
-    Friend WithEvents Tharga_barang As NumericUpDown
-    Friend WithEvents Tstock As NumericUpDown
-    Friend WithEvents Tcadangan As NumericUpDown
     Friend WithEvents no As DataGridViewTextBoxColumn
     Friend WithEvents kode_barang As DataGridViewTextBoxColumn
     Friend WithEvents nama_barang As DataGridViewTextBoxColumn
@@ -510,4 +498,7 @@ Partial Class Data_Barang
     Friend WithEvents leadtime As DataGridViewTextBoxColumn
     Friend WithEvents stock_cadangan As DataGridViewTextBoxColumn
     Friend WithEvents satuan As DataGridViewTextBoxColumn
+    Friend WithEvents Tharga_barang As TextBox
+    Friend WithEvents Tstock As TextBox
+    Friend WithEvents Tcadangan As TextBox
 End Class

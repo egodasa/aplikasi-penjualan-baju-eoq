@@ -121,6 +121,7 @@ Partial Class Aplikasi
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximumSize = New System.Drawing.Size(288, 221)
         Me.MinimumSize = New System.Drawing.Size(287, 220)
         Me.Name = "Aplikasi"

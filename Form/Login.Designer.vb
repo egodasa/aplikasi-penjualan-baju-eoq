@@ -112,7 +112,7 @@ Partial Class Aplikasi
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.HotPink
-        Me.ClientSize = New System.Drawing.Size(272, 182)
+        Me.ClientSize = New System.Drawing.Size(281, 191)
         Me.Controls.Add(Me.Breset)
         Me.Controls.Add(Me.Bsimpan)
         Me.Controls.Add(Me.Tpassword)

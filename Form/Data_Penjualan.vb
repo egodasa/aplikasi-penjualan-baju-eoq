@@ -31,7 +31,6 @@
         Tsub_total.Text = total_harga
     End Sub
     Private Sub BuatNoNota()
-        Dim no_nota As String
         Dim nomor As DataTable = Aplikasi.Db.JalankanDanAmbilData("SELECT CONCAT('NP', LPAD((right(no_nota, 6) + 1), 6, '0')) AS no_nota FROM `penjualan` ORDER BY `no_nota` DESC LIMIT 1")
         If nomor.Rows.Count = 0 Then
             Tno_nota.Text = "NP000001"
@@ -148,17 +147,7 @@
 
     End Sub
     Private Sub AmbilDataPembelian()
-        Dim sql As String = "Select
-                                penjualan.no_nota,
-                                penjualan.tgl_jual,
-                                penjualan.total_harga,
-                                penjualan.nm_pembeli,
-                                penjualan.uraian_jual,
-                                SUM(detail_penjualan.jumlah) AS jumlah
-                             From
-                                penjualan Inner Join
-                                detail_penjualan On detail_penjualan.no_nota = penjualan.no_nota 
-                             GROUP BY penjualan.no_nota ORDER BY penjualan.tgl_jual DESC"
+        Dim sql As String = "Select penjualan.no_nota, penjualan.tgl_jual, penjualan.total_harga, penjualan.nm_pembeli, penjualan.uraian_jual, SUM(detail_penjualan.jumlah) AS jumlah From penjualan Inner Join detail_penjualan On detail_penjualan.no_nota = penjualan.no_nota  GROUP BY penjualan.no_nota ORDER BY penjualan.tgl_jual DESC"
         DGpenjualan.Rows.Clear()
         DGpenjualan.DataSource = Nothing
         Dim data_penjualan As DataTable = Aplikasi.Db.JalankanDanAmbilData(sql)

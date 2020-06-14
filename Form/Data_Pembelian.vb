@@ -109,18 +109,7 @@
 
     End Sub
     Private Sub AmbilDataPembelian()
-        Dim sql As String = "Select
-                                pembelian.no_nota,
-                                pembelian.tgl_beli,
-                                pembelian.total_harga,
-                                pembelian.kode_supplier,
-                                supplier.nama_supplier,
-                                SUM(detail_pembelian.jumlah) AS jumlah
-                             From
-                                pembelian Inner Join
-                                detail_pembelian On detail_pembelian.no_nota = pembelian.no_nota 
-                                Inner Join supplier On pembelian.kode_supplier = supplier.kode_supplier 
-                             GROUP BY pembelian.no_nota ORDER BY pembelian.tgl_beli DESC"
+        Dim sql As String = "Select pembelian.no_nota, pembelian.tgl_beli, pembelian.total_harga, pembelian.kode_supplier, supplier.nama_supplier, SUM(detail_pembelian.jumlah) AS jumlah From pembelian Inner Join detail_pembelian On detail_pembelian.no_nota = pembelian.no_nota  Inner Join supplier On pembelian.kode_supplier = supplier.kode_supplier  GROUP BY pembelian.no_nota ORDER BY pembelian.tgl_beli DESC"
         DGpembelian.Rows.Clear()
         DGpembelian.DataSource = Nothing
         Dim data_pembelian As DataTable = Aplikasi.Db.JalankanDanAmbilData(sql)

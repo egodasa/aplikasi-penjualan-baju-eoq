@@ -2,7 +2,7 @@
     Public Db As New Db()
     Public level As String
     Public username As String
-    Public url_laporan As String = "http://localhost:8090"
+    Public url_laporan As String = "http://localhost/report_program_skripsi"
     Private Sub Keluar(sender As Object, e As EventArgs) Handles Breset.Click
         Me.Close()
     End Sub
@@ -58,4 +58,7 @@
     End Function
 
 
+    Private Sub Aplikasi_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

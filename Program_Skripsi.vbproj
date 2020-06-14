@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E8D8961A-4CE6-4152-A0CA-110BDECA3FFF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Program_Skripsi.My.MyApplication</StartupObject>
+    <RootNamespace>Program_Skripsi</RootNamespace>
+    <AssemblyName>Program_Skripsi</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Program_Skripsi.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Program_Skripsi.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Database\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Database\Koneksi.vb" />
+    <Compile Include="Form\Beranda.Designer.vb">
+      <DependentUpon>Beranda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Beranda.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Cetak_Laporan.Designer.vb">
+      <DependentUpon>Cetak_Laporan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Cetak_Laporan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Data_Barang.Designer.vb">
+      <DependentUpon>Data_Barang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Data_Barang.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Data_Eoq.Designer.vb">
+      <DependentUpon>Data_Eoq.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Data_Eoq.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Data_Pembelian.Designer.vb">
+      <DependentUpon>Data_Pembelian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Data_Pembelian.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Data_Pengguna.Designer.vb">
+      <DependentUpon>Data_Pengguna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Data_Pengguna.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Data_Penjualan.Designer.vb">
+      <DependentUpon>Data_Penjualan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Data_Penjualan.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Data_Supplier.Designer.vb">
+      <DependentUpon>Data_Supplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Data_Supplier.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Laporan_Penjualan_Bulanan.Designer.vb">
+      <DependentUpon>Laporan_Penjualan_Bulanan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Laporan_Penjualan_Bulanan.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Laporan_Penjualan_Harian.Designer.vb">
+      <DependentUpon>Laporan_Penjualan_Harian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Laporan_Penjualan_Harian.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Laporan_Penjualan_Tahunan.Designer.vb">
+      <DependentUpon>Laporan_Penjualan_Tahunan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Laporan_Penjualan_Tahunan.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Menu_Utama.Designer.vb">
+      <DependentUpon>Menu_Utama.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Menu_Utama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\Beranda.resx">
+      <DependentUpon>Beranda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Cetak_Laporan.resx">
+      <DependentUpon>Cetak_Laporan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Data_Barang.resx">
+      <DependentUpon>Data_Barang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Data_Eoq.resx">
+      <DependentUpon>Data_Eoq.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Data_Pembelian.resx">
+      <DependentUpon>Data_Pembelian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Data_Pengguna.resx">
+      <DependentUpon>Data_Pengguna.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Data_Penjualan.resx">
+      <DependentUpon>Data_Penjualan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Data_Supplier.resx">
+      <DependentUpon>Data_Supplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Laporan_Penjualan_Bulanan.resx">
+      <DependentUpon>Laporan_Penjualan_Bulanan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Laporan_Penjualan_Harian.resx">
+      <DependentUpon>Laporan_Penjualan_Harian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Laporan_Penjualan_Tahunan.resx">
+      <DependentUpon>Laporan_Penjualan_Tahunan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Menu_Utama.resx">
+      <DependentUpon>Menu_Utama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="report_program_skripsi\header_laporan.php" />
+    <None Include="report_program_skripsi\helper.php" />
+    <None Include="report_program_skripsi\koneksi.php" />
+    <None Include="report_program_skripsi\laporan-barang.php" />
+    <None Include="report_program_skripsi\laporan-eoq.php" />
+    <None Include="report_program_skripsi\laporan-pembelian.php" />
+    <None Include="report_program_skripsi\laporan-penjualan-bulanan.php" />
+    <None Include="report_program_skripsi\laporan-penjualan-harian.php" />
+    <None Include="report_program_skripsi\laporan-penjualan-tahunan.php" />
+    <None Include="report_program_skripsi\laporan-supplier.php" />
+    <None Include="report_program_skripsi\style_laporan.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database\dbperabot.sql" />
+    <Content Include="Database\MySql.Data.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

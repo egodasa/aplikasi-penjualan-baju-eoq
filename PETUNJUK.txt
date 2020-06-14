@@ -1,0 +1,5 @@
+1. Pastikan xampp sudah terinstall. Jika database sudah ada. maka tidak perlu di import/dibuat ulang.
+2. Silahkan copas folder "report_program_skripsi" ke folder HTDOCS pada xampp. Isi folder tersebut adalah laporan seperti laporan pembelian, eoq dll pada program. Lokasi foldernya di C:\xampp\htdocs. Foldernya juga ikut dicopas dan jangan diganti namanya.
+3. Buka programnya lewat visual studio 2010 dengan cara mengklik file "Program_Skripsi.sln" atau 
+bisa lewat visual studio 2010 langsung.
+4. Langkah nomor 2 hanya dilakukan sekali. Jadi pastikan folder "report_program_skripsi" sudah ada di htdocs sebelum menjalankan program.

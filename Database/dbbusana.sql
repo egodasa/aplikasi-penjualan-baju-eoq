@@ -66,11 +66,9 @@ CREATE TABLE `detail_penjualan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO `detail_penjualan` (`id_detail`, `no_nota`, `kode_barang`, `harga_barang`, `sub_total`, `jumlah`) VALUES
-(2,	'0803200822209606',	'B001',	20000,	20000,	2),
-(3,	'0803200822209606',	'B003',	2000,	12000,	2),
-(5,	'0803200845412956',	'B003',	120000,	240000,	2),
-(6,	'0803200850042180',	'B001',	98,	490,	5),
-(7,	'0803200850042180',	'B001',	98,	98,	1);
+(8,	'N000001',	'B001',	98,	196,	2),
+(9,	'N000001',	'B003',	120000,	120000,	1),
+(10,	'N000002',	'B003',	120000,	120000,	1);
 
 DROP TABLE IF EXISTS `eoq`;
 CREATE TABLE `eoq` (
@@ -106,12 +104,13 @@ CREATE TABLE `pengguna` (
   `username` varchar(20) NOT NULL,
   `password` varchar(255) NOT NULL,
   `level` enum('Karyawan','Pimpinan') NOT NULL,
+  `nohp` varchar(15) NOT NULL,
   PRIMARY KEY (`id_pengguna`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO `pengguna` (`id_pengguna`, `username`, `password`, `level`) VALUES
-(1,	'karyawan',	'9e014682c94e0f2cc834bf7348bda428',	'Karyawan'),
-(2,	'pimpinan',	'90973652b88fe07d05a4304f0a945de8',	'Pimpinan');
+INSERT INTO `pengguna` (`id_pengguna`, `username`, `password`, `level`, `nohp`) VALUES
+(1,	'karyawan',	'9e014682c94e0f2cc834bf7348bda428',	'Karyawan',	''),
+(2,	'pimpinan',	'90973652b88fe07d05a4304f0a945de8',	'Pimpinan',	'');
 
 DROP TABLE IF EXISTS `penjualan`;
 CREATE TABLE `penjualan` (
@@ -124,9 +123,8 @@ CREATE TABLE `penjualan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO `penjualan` (`no_nota`, `tgl_jual`, `nm_pembeli`, `uraian_jual`, `total_harga`) VALUES
-('0803200822209606',	'2020-03-08 00:00:00',	'Madam',	'Barang',	32000),
-('0803200845412956',	'2020-03-08 00:00:00',	'madam',	'madam dump',	240000),
-('0803200850042180',	'2020-03-08 00:00:00',	'Madam',	'baru',	588);
+('N000001',	'2020-05-10 00:00:00',	'Pembeli 1',	'Pembelian pertama',	120196),
+('N000002',	'2020-05-10 00:00:00',	'Pembeli 2',	'pembelian kedua',	120000);
 
 DROP TABLE IF EXISTS `supplier`;
 CREATE TABLE `supplier` (
@@ -140,4 +138,4 @@ CREATE TABLE `supplier` (
 INSERT INTO `supplier` (`kode_supplier`, `nama_supplier`, `alamat`, `no_telp`) VALUES
 ('S001',	'Supplier 1',	'Alamat 1',	'081266838995');
 
--- 2020-03-08 15:54:55
+-- 2020-06-22 13:07:53

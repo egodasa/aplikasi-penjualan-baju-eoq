@@ -72,7 +72,7 @@ INSERT INTO `detail_penjualan` (`id_detail`, `no_nota`, `kode_barang`, `harga_ba
 
 DROP TABLE IF EXISTS `eoq`;
 CREATE TABLE `eoq` (
-  `kode_eoq` int(11) NOT NULL,
+  `kode_eoq` varchar(20) NOT NULL,
   `kode_barang` varchar(20) NOT NULL,
   `biaya_pesan` decimal(10,0) NOT NULL,
   `biaya_simpan` decimal(10,0) NOT NULL,
@@ -136,6 +136,7 @@ CREATE TABLE `supplier` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO `supplier` (`kode_supplier`, `nama_supplier`, `alamat`, `no_telp`) VALUES
-('S001',	'Supplier 1',	'Alamat 1',	'081266838995');
+('S001',	'Supplier 1',	'Alamat 1',	'081266838995'),
+('S002',	'Supplier 1',	'Alamat 1',	'0812345');
 
--- 2020-06-22 13:07:53
+-- 2020-06-23 09:32:27

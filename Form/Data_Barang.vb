@@ -112,6 +112,7 @@
         Tleadtime.Clear()
         Tcadangan.Value = 0
         Tsatuan.Clear()
+        Tkode_barang.Text = Aplikasi.GenerateKode("barang", "kode_barang", "BR")
     End Sub
 
     Private Sub Simpan(sender As Object, e As EventArgs) Handles Bsimpan.Click
@@ -124,6 +125,7 @@
 
     Private Sub Hapus(sender As Object, e As EventArgs) Handles Button2.Click
         HapusData()
+        ResetData()
     End Sub
 
     Private Sub AmbilDataBarang(sender As Object, e As DataGridViewCellEventArgs) Handles DGbarang.CellContentClick
@@ -132,5 +134,10 @@
 
     Public Sub BukaForm()
         TampilData()
+        ResetData()
+    End Sub
+
+    Private Sub Data_Barang_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

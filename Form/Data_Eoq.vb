@@ -69,7 +69,7 @@
     Private Sub AmbilDataEoq()
         DGeoq.Rows.Clear()
         DGeoq.DataSource = Nothing
-        Dim data_eoq As DataTable = Aplikasi.Db.JalankanDanAmbilData("SELECT eoq.*, barang.nama_barang FROM eoq JOIN barang ON eoq.kode_barang = barang.nama_barang")
+        Dim data_eoq As DataTable = Aplikasi.Db.JalankanDanAmbilData("SELECT eoq.*, barang.nama_barang, barang.stock FROM eoq JOIN barang ON eoq.kode_barang = barang.kode_barang")
         Dim nomor As Int16 = 1
         For Each row As DataRow In data_eoq.Rows
             DGeoq.Rows.Add(New String() {
@@ -80,8 +80,8 @@
             row.Item("biaya_pesan"),
             row.Item("biaya_simpan"),
             row.Item("jml_kebutuhan"),
-            row.Item("eoq"),
-            row.Item("rop")
+            row.Item("jml_eoq"),
+            row.Item("frekuensi")
             })
             nomor += 1
         Next row
@@ -115,5 +115,9 @@
             ResetForm()
             AmbilDataEoq()
         End If
+    End Sub
+
+    Private Sub Data_Eoq_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

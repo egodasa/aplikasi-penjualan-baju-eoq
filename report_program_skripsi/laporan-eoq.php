@@ -6,7 +6,8 @@
 	<head>
 		<meta charset="UTF-8">
         <title>Laporan Proses EOQ</title>
-        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>		<?php include_once "style_laporan.php"; ?>
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+		<?php include_once "style_laporan.php"; ?>
 	</head>
 	<body>
 		<?php include_once "header_laporan.php"; ?>
@@ -28,7 +29,7 @@
 			</tr>
 			<?php
 				$no = 1;
-				$sql_query = mysqli_query($koneksi, "SELECT * FROM eoq");
+				$sql_query = mysqli_query($koneksi, "SELECT eoq.*, barang.nama_barang, barang.stock FROM eoq JOIN barang ON eoq.kode_barang = barang.kode_barang");
 				while($barang = mysqli_fetch_assoc($sql_query))
 				{
 			?>
@@ -37,8 +38,9 @@
 					<td><?=$barang['kode_eoq']?></td>
 					<td><?=$barang['kode_barang']?></td>
 					<td><?=$barang['nama_barang']?></td>
-					<td><?=$barang['biaya_pesan']?></td>
-					<td><?=$barang['biaya_simpan']?></td>
+					<td><?=$barang['stock']?></td>
+					<td><?=rupiah($barang['biaya_pesan'])?></td>
+					<td><?=rupiah($barang['biaya_simpan'])?></td>
 					<td><?=$barang['jml_kebutuhan']?></td>
 					<td><?=$barang['jml_eoq']?></td>
 					<td><?=$barang['frekuensi']?></td>

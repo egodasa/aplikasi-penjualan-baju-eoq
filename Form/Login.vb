@@ -30,7 +30,7 @@
     End Sub
 
     Public Function GenerateKode(ByVal tabel As String, ByVal kolom As String, ByVal prefix As String)
-        Dim hitung As DataTable = Db.JalankanDanAmbilData("SELECT LEFT(" & kolom & ", 5) AS kode FROM " & tabel & " ORDER BY " & kolom & " DESC LIMIT 1")
+        Dim hitung As DataTable = Db.JalankanDanAmbilData("SELECT RIGHT(" & kolom & ", 5) AS kode FROM " & tabel & " ORDER BY " & kolom & " DESC LIMIT 1")
         Dim kode As Integer
         Dim kode_baru As String
         If hitung.Rows.Count = 0 Then

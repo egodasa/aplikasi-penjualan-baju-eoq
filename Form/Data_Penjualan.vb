@@ -30,15 +30,7 @@
         total_harga = jumlah * harga
         Tsub_total.Text = total_harga
     End Sub
-    Private Sub BuatNoNota()
-        Dim nomor As DataTable = Aplikasi.Db.JalankanDanAmbilData("SELECT CONCAT('NP', LPAD((right(no_nota, 6) + 1), 6, '0')) AS no_nota FROM `penjualan` ORDER BY `no_nota` DESC LIMIT 1")
-        If nomor.Rows.Count = 0 Then
-            Tno_nota.Text = "NP000001"
-        Else
-            Tno_nota.Text = nomor.Rows(0).Item("no_nota")
-        End If
 
-    End Sub
     Private Sub ResetBarang()
         Ckode_barang.SelectedIndex = -1
         Tharga_beli.Clear()
@@ -50,7 +42,7 @@
         Ttgl_beli.ResetText()
         Tnm_pembeli.Clear()
         Turaian_jual.Clear()
-        BuatNoNota()
+        Tno_nota.Text = Aplikasi.GenerateKode("penjualan", "no_nota", "NP")
         AmbilDataBarang()
         AmbilDataPembelian()
     End Sub
@@ -73,12 +65,13 @@
             Dim kode_barang As String = Ckode_barang.SelectedValue
             Dim harga_barang As String = Tharga_beli.Text
             Dim sub_total As String = Tsub_total.Text
-            Dim sql As String = "INSERT INTO detail_penjualan (no_nota, kode_barang, harga_barang, sub_total, jumlah) VALUES (
-                             '" & no_nota & "', '" & kode_barang & "', '" & harga_barang & "', '" & sub_total & "', '" & jumlah & "')"
+            Dim sql As String = "INSERT INTO detail_penjualan (no_nota, kode_barang, harga_barang, sub_total, jumlah) VALUES ('" & no_nota & "', '" & kode_barang & "', '" & harga_barang & "', '" & sub_total & "', '" & jumlah & "')"
             Aplikasi.Db.JalankanSql(sql)
             If Aplikasi.Db.ApakahError Then
                 MessageBox.Show("Error : " & Aplikasi.Db.AmbilPesanError())
             Else
+                ' update stok barang setelah dilakukan penjualan
+                Aplikasi.Db.JalankanSql("UPDATE barang SET stock = stock - " & jumlah & " WHERE kode_barang = '" & kode_barang & "'")
                 MessageBox.Show("Barang berhasil ditambahkan ke keranjang", "Pesan")
                 AmbilDataKeranjang()
                 ResetBarang()
@@ -112,6 +105,8 @@
         If Aplikasi.Db.ApakahError Then
             MessageBox.Show("Error : " & Aplikasi.Db.AmbilPesanError())
         Else
+            ' update stok barang setelah dilakukan penghapusan barang dari keranjang
+            Aplikasi.Db.JalankanSql("UPDATE barang SET stock = stock + " & DGkeranjang.CurrentRow.Cells("jumlah").Value.ToString() & " WHERE kode_barang = '" & DGkeranjang.CurrentRow.Cells("kode_barang").Value.ToString() & "'")
             MessageBox.Show("Pesan", "Barang berhasil dihapus dari keranjang")
             AmbilDataKeranjang()
         End If
@@ -215,6 +210,8 @@
 
     Private Sub AksiHapusPembelian(sender As Object, e As EventArgs) Handles Button3.Click
         HapusDataPembelian()
+        ResetPembelian()
+        ResetBarang()
     End Sub
 
     Private Sub AksiHitungSubTotal(sender As Object, e As KeyEventArgs) Handles Tjumlah.KeyUp
@@ -228,5 +225,9 @@
     End Sub
 
     Private Sub FlowLayoutPanel1_Paint(sender As Object, e As PaintEventArgs)
+    End Sub
+
+    Private Sub Data_Penjualan_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

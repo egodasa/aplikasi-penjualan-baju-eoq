@@ -1,7 +1,7 @@
 Imports MySql.Data
 Imports MySql.Data.MySqlClient
 Public Class Db
-    Private url_koneksi As String = "server=localhost;user=root;database=dbbusana;port=3306;password=;"
+    Private url_koneksi As String = "server=localhost;user=root;database=dbbusana;port=3306;password=mysql;"
     Private koneksi As New MySqlConnection
     Private is_error As Boolean ' jika ada koneksi atau proses query error, maka nilai is error akan bernilai false
     Private pesan_error As String = Nothing ' semua pesan error akan dimasukkan ke variabel ini

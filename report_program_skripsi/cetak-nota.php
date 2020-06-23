@@ -2,13 +2,14 @@
 	include_once "koneksi.php";
 	include_once "helper.php";
 	$nota = $_GET['nota'];
-	$data_penjualan = mysqli_fetch_assoc(mysqli_query($koneksi, "SELECT *, LEFT(tgl, 10) AS tgl_jual FROM penjualan WHERE no_nota = '$nota'"));
+	$data_penjualan = mysqli_fetch_assoc(mysqli_query($koneksi, "SELECT *, LEFT(tgl_jual, 10) AS tgl_jual FROM penjualan WHERE no_nota = '$nota'"));
 ?>
 <html>
 	<head>
 		<meta charset="UTF-8">
         <title>Nota Penjualan</title>
-        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>		<?php include_once "style_laporan.php"; ?>
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+		<?php include_once "style_laporan.php"; ?>
 	</head>
 	<body>
 		<?php include_once "header_laporan.php"; ?>

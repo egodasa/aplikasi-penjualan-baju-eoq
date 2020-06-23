@@ -112,6 +112,7 @@
         Tleadtime.Clear()
         Tcadangan.Clear()
         Tsatuan.Clear()
+        Tkode_barang.Text = Aplikasi.GenerateKode("barang", "kode_barang", "B")
     End Sub
 
     Private Sub Simpan(sender As Object, e As EventArgs) Handles Bsimpan.Click
@@ -132,5 +133,10 @@
 
     Public Sub BukaForm()
         TampilData()
+        ResetData()
+    End Sub
+
+    Private Sub Data_Barang_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

@@ -22,9 +22,11 @@
     End Function
     Private Sub ResetBarang()
         Ckode_barang.SelectedIndex = -1
+        Ckode_supplier.SelectedIndex = -1
         Tharga_beli.Clear()
         Tjumlah.Clear()
         Tsub_total.Clear()
+        Tno_nota.Text = Aplikasi.GenerateKode("pembelian", "no_nota", "PB")
     End Sub
     Private Sub ResetPembelian()
         Tno_nota.Clear()
@@ -38,8 +40,7 @@
         Dim harga_barang As String = Tharga_beli.Text
         Dim jumlah As String = Tjumlah.Text
         Dim sub_total As String = Tsub_total.Text
-        Dim sql As String = "INSERT INTO detail_pembelian (no_nota, kode_barang, harga_barang, sub_total, jumlah) VALUES (
-                             '" & no_nota & "', '" & kode_barang & "', '" & harga_barang & "', '" & sub_total & "', '" & jumlah & "')"
+        Dim sql As String = "INSERT INTO detail_pembelian (no_nota, kode_barang, harga_barang, sub_total, jumlah) VALUES ('" & no_nota & "', '" & kode_barang & "', '" & harga_barang & "', '" & sub_total & "', '" & jumlah & "')"
         Aplikasi.Db.JalankanSql(sql)
         If Aplikasi.Db.ApakahError Then
             MessageBox.Show("Error : " & Aplikasi.Db.AmbilPesanError())
@@ -60,6 +61,9 @@
         If Aplikasi.Db.ApakahError Then
             MessageBox.Show("Error : " & Aplikasi.Db.AmbilPesanError())
         Else
+            'update stock barang setelah dilakukan pembelian
+            Aplikasi.Db.JalankanDanAmbilData("UPDATE barang JOIN detail_pembelian ON barang.kode_barang = detail_pembelian.kode_barang SET barang.stock = barang.stock + detail_pembelian.jumlah WHERE detail_pembelian.no_nota = '" & Tno_nota.Text & "'")
+
             MessageBox.Show("Pembelian berhasil disimpan", "Pesan")
             ResetPembelian()
             ResetBarang()
@@ -184,5 +188,11 @@
 
     Private Sub AksiHapusPembelian(sender As Object, e As EventArgs) Handles Button3.Click
         HapusDataPembelian()
+        ResetBarang()
+        ResetPembelian()
+    End Sub
+
+    Private Sub Data_Pembelian_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

@@ -73,6 +73,7 @@
         Tnama_supplier.Clear()
         Talamat.Clear()
         Tnohp.Clear()
+        Tkode_supplier.Text = Aplikasi.GenerateKode("supplier", "kode_supplier", "SP")
     End Sub
 
     Private Sub Simpan(sender As Object, e As EventArgs) Handles Bsimpan.Click
@@ -89,10 +90,14 @@
 
     Public Sub BukaForm()
         TampilData()
+        ResetData()
     End Sub
 
     Private Sub Edit(sender As Object, e As EventArgs) Handles Button1.Click
         EditData()
     End Sub
 
+    Private Sub Data_Supplier_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

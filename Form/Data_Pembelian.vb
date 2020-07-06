@@ -150,15 +150,17 @@
     End Sub
 
     Public Sub BukaForm()
-        Me.data_barang = Aplikasi.Db.JalankanDanAmbilData("SELECT * FROM barang")
+        Me.data_barang = Aplikasi.Db.JalankanDanAmbilData("SELECT *, CONCAT(kode_barang, ' - ', nama_barang) AS ket FROM barang")
         Ckode_barang.DataSource = data_barang
-        Ckode_barang.DisplayMember = "nama_barang"
+        Ckode_barang.DisplayMember = "ket"
         Ckode_barang.ValueMember = "kode_barang"
+        Ckode_barang.SelectedIndex = -1
 
-        Me.data_supplier = Aplikasi.Db.JalankanDanAmbilData("SELECT * FROM supplier")
-        Ckode_supplier.DisplayMember = "nama_supplier"
+        Me.data_supplier = Aplikasi.Db.JalankanDanAmbilData("SELECT *, CONCAT(kode_supplier, ' - ', nama_supplier) AS ket FROM supplier")
+        Ckode_supplier.DisplayMember = "ket"
         Ckode_supplier.ValueMember = "kode_supplier"
         Ckode_supplier.DataSource = data_supplier
+        Ckode_supplier.SelectedIndex = -1
 
         ResetBarang()
         AmbilDataPembelian()

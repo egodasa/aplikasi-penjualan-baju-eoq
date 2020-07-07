@@ -67,8 +67,7 @@
             Dim kode_barang As String = Ckode_barang.SelectedValue
             Dim harga_barang As String = Tharga_beli.Text
             Dim sub_total As String = Tsub_total.Text
-            Dim sql As String = "INSERT INTO detail_penjualan (no_nota, kode_barang, harga_barang, sub_total, jumlah) VALUES (
-                             '" & no_nota & "', '" & kode_barang & "', '" & harga_barang & "', '" & sub_total & "', '" & jumlah & "')"
+            Dim sql As String = "INSERT INTO detail_penjualan (no_nota, kode_barang, harga_barang, sub_total, jumlah) VALUES ('" & no_nota & "', '" & kode_barang & "', '" & harga_barang & "', '" & sub_total & "', '" & jumlah & "')"
             Aplikasi.Db.JalankanSql(sql)
             If Aplikasi.Db.ApakahError Then
                 MessageBox.Show("Error : " & Aplikasi.Db.AmbilPesanError())

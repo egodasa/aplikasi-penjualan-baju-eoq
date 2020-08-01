@@ -8,6 +8,7 @@
         Tkode_eoq.Text = Aplikasi.GenerateKode("eoq", "kode_eoq", "E")
         TampilDetailBarang()
         AmbilDataEoq()
+        AmbilJumlahKebutuhan()
     End Sub
     Public Sub ResetForm()
         Tkode_eoq.Clear()
@@ -38,7 +39,7 @@
         Dim biaya_simpan As Double = Val(Tbiaya_simpan.Text)
         Dim kebutuhan As Integer = Val(Tjml_kebutuhan.Text)
         Dim eoq As Double
-        eoq = Math.Sqrt(2 * biaya_pemesanan * biaya_simpan) / kebutuhan
+        eoq = Math.Sqrt((2 * biaya_pemesanan * kebutuhan) / biaya_simpan)
         Teoq.Text = eoq
     End Sub
     Public Sub HitungRop()
@@ -48,13 +49,16 @@
         Trop.Text = hari * leadtime * stock
     End Sub
 
-    Private Sub AmbilJumlahKebutuhan(sender As Object, e As EventArgs) Handles Twaktu.ValueChanged
+    Private Sub AmbilJumlahKebutuhan()
         Dim bulan As String = Twaktu.Value.ToString("yyyy-MM")
         Dim kode_barang As String = Ckode_barang.SelectedValue
         Dim penjualan As DataTable
         penjualan = Aplikasi.Db.JalankanDanAmbilData("SELECT IFNULL(SUM(detail_penjualan.jumlah), 0) AS jumlah FROM detail_penjualan JOIN penjualan ON detail_penjualan.no_nota = penjualan.no_nota WHERE LEFT(penjualan.tgl_jual, 7) = '" & bulan & "' AND detail_penjualan.kode_barang = '" & kode_barang & "'")
         Tjml_kebutuhan.Text = penjualan.Rows(0).Item("jumlah")
         Thari.Text = Val(penjualan.Rows(0).Item("jumlah")) / 30
+    End Sub
+    Private Sub EventAmbilJumlahKebutuhan(ByVal sender As Object, ByVal e As EventArgs) Handles Twaktu.ValueChanged
+        AmbilJumlahKebutuhan()
     End Sub
 
     Private Sub AksiHitungEoq(sender As Object, e As EventArgs) Handles Button4.Click
@@ -117,7 +121,5 @@
         End If
     End Sub
 
-    Private Sub Data_Eoq_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-    End Sub
 End Class

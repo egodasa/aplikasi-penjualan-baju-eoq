@@ -29,32 +29,17 @@
         ResetLogin()
     End Sub
 
-    Public Function GenerateKode(ByVal tabel As String, ByVal kolom As String, ByVal prefix As String)
-        Dim hitung As DataTable = Db.JalankanDanAmbilData("SELECT RIGHT(" & kolom & ", 5) AS kode FROM " & tabel & " ORDER BY " & kolom & " DESC LIMIT 1")
-        Dim kode As Integer
-        Dim kode_baru As String
-        If hitung.Rows.Count = 0 Then
-            kode_baru = prefix & "00001"
+
+
+    Public Function GenerateKode(ByVal tabel As String, ByVal kolom As String, ByVal prefix As String, Optional ByVal banyak_nol As Integer = 5)
+        Dim no_nota As String
+        Dim nomor As DataTable = Db.JalankanDanAmbilData("SELECT CONCAT('" & prefix & "', LPAD((right(" & kolom & ", " & banyak_nol + 1 & ") + 1), " & banyak_nol + 1 & ", '0')) AS kode FROM `" & tabel & "` ORDER BY `" & kolom & "` DESC LIMIT 1")
+        If nomor.Rows.Count = 0 Then
+            no_nota = prefix & "000001"
         Else
-            kode = Val(hitung.Rows(0).Item("kode"))
-            kode += 1
-            If kode >= 1 And kode <= 9 Then
-                kode_baru = prefix & "0000" & kode
-            ElseIf kode >= 10 And kode <= 99 Then
-                kode_baru = prefix & "000" & kode
-            ElseIf kode >= 100 And kode <= 999 Then
-                kode_baru = prefix & "000" & kode
-            ElseIf kode >= 1000 And kode <= 9999 Then
-                kode_baru = prefix & "000" & kode
-            ElseIf kode >= 10000 And kode <= 99999 Then
-                kode_baru = prefix & "00" & kode
-            ElseIf kode >= 100000 And kode <= 999999 Then
-                kode_baru = prefix & "0" & kode
-            Else
-                kode_baru = prefix & kode
-            End If
+            no_nota = nomor.Rows(0).Item("kode")
         End If
-        Return kode_baru
+        Return no_nota
     End Function
 
 

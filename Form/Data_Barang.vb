@@ -112,7 +112,7 @@
         Tleadtime.Clear()
         Tcadangan.Value = 0
         Tsatuan.Clear()
-        Tkode_barang.Text = Aplikasi.GenerateKode("barang", "kode_barang", "BR")
+        Tkode_barang.Text = Aplikasi.GenerateKode("barang", "kode_barang", "BR", 2)
     End Sub
 
     Private Sub Simpan(sender As Object, e As EventArgs) Handles Bsimpan.Click
